@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<template id="print_check_generic">
+    <t t-call="web.html_container">
+        <t t-foreach="docs" t-as="o">
+            <div t-att-data-oe-model="o._name" t-att-data-oe-id="o.id" t-foreach="o._check_get_pages()" t-as="page" class="page article" t-attf-style="font-size: 10pt;">
+                <t t-call="l10n_mx_check_printing.generic_check" />
+            </div>
+        </t>
+    </t>
+</template>
+
+<report id="action_print_check_generic"
+    string="Print Check Generic"
+    model="account.payment"
+    name="l10n_mx_check_printing.print_check_generic"
+    file="l10n_mx_check_printing.print_check_generic"
+    report_type="qweb-pdf"
+    attachment_use="True"
+    attachment="'check_'+(object.partner_id and object.partner_id.name or 'Internal')+'_'+(object.name)+'_generic.pdf'"
+    paperformat="l10n_mx_check_printing.paperformat_check_mx"
+    print_report_name="'Check Generic - %s' % (object.partner_id.name or '',)"
+    menu="False"
+/>
+</odoo>

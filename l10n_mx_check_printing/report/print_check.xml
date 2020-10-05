@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<template id="generic_check">
+    <div>
+        <br/><br/><br/><br/>
+        <div class="row">
+            <div class="col col-8"> </div>
+            <div class="col col-2 text-left">
+                <span t-esc="page['payment_date']"/>
+            </div>
+            <div class="col col-2"> </div>
+        </div>
+        <br/><br/><br/>
+        <div class="row">
+            <div class="col col-2"> </div>
+            <div class="col col-6 text-left" t-esc="page['partner_name']"/>
+            <div class="col col-2 text-left">
+                              <span t-esc="page['amount']"/>
+            </div>
+            <div class="col col-2"> </div>
+        </div>
+        <br/>
+        <div class="row">
+            <div class="col col-2"> </div>
+            <div class="col col-10 text-left" style="padding-top:8px;" t-esc="page['amount_in_word']"/>
+        </div>
+        <br/><br/><br/><br/><br/>
+        <div class="row">
+            <div class="col col-9"> </div>
+            <div class="col col-2 text-left">
+                            <span t-if="page['sequence_number']" t-esc="page['sequence_number']"/>
+            </div>
+            <div class="col col-1"> </div>
+        </div>
+    </div>
+
+</template>
+
+<template id="bbva_bancomer_check">
+    <div>
+        <br/><br/><br/><br/>
+        <div class="row" style="margin-left: 40px;">
+            <div class="col col-3 text-left offset-6" style="padding-top:18px;">
+                 <span t-esc="page['payment_date']"/>
+            </div>
+            <div class="col col-2"> </div>
+        </div>
+        <br/>
+        <div class="row" style="margin-left: 16px; margin-top: 6px;">
+            <div class="col col-7 text-left offset-1">
+                         <span t-esc="page['partner_name']"/>
+            </div>
+            <div class="col col-4 text-left" style="margin-left: 20px;">
+                             <span t-esc="page['amount']"/>
+            </div>
+        </div>
+        <br/>
+        <div class="row" style="margin-left: 16px; margin-top: 4px;">
+            <div class="col col-11 text-left offset-1">
+                        <span t-esc="page['amount_in_word']"/>
+            </div>
+        </div>
+        <br/><br/><br/><br/><br/><br/><br/>
+        <div class="row">
+            <div class="col col-2 text-left offset-9" style="padding-top:4px;">
+                             <span t-if="page['sequence_number']" t-esc="page['sequence_number']"/>
+            </div>
+            <div class="col col-1"> </div>
+        </div>
+    </div>
+</template>
+
+<template id="banamex_check">
+    <div>
+        <br/>
+        <div class="row">
+            <div class="col col-2 offset-8 text-left" style="padding-top:8px;">
+              <span t-esc="page['payment_date']"/>
+            </div>
+            <div class="col col-2"> </div>
+        </div>
+        <br/><br/><br/>
+        <div class="row">
+            <div class="col col-7 text-left offset-1" style="padding-top:5px;">
+                         <span t-esc="page['partner_name']"/>
+            </div>
+            <div class="col col-2"> </div>
+            <div class="col col-2"> </div>
+        </div>
+        <div class="row">
+            <div class="col col-4 text-left offset-8">
+                               <span t-esc="page['amount']"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-11 text-left offset-1">
+                         <span t-esc="page['amount_in_word']"/>
+            </div>
+        </div>
+        <br/><br/><br/><br/><br/><br/><br/><br/>
+        <div class="row">
+            <div class="col col-1"> </div>
+            <div class="col col-8 text-center offset-1" style="padding-top:6px;">******PARA ABONO EN CUENTA DEL BENIFICIARIO******</div>
+            <div class="col col-2 text-left"  style="padding-top:10px;">
+                              <span t-if="page['sequence_number']" t-esc="page['sequence_number']"/>
+            </div>
+            <div class="col col-1"> </div>
+        </div>
+    </div>
+</template>
+
+<template id="hsbc_check">
+    <div>
+        <br/><br/>
+        <div class="row">
+            <div class="col col-4 text-left offset-8" style="padding-top:7px;">
+                               <span t-esc="page['payment_date']"/>
+            </div>
+        </div>
+        <br/><br/><br/>
+        <div class="row">
+            <div class="col col-6 text-left offset-2" style="padding-top:8px;">
+                                    <span t-esc="page['partner_name']"/>
+            </div>
+            <div class="col col-4 text-left" style="padding-top:8px;">
+                                     <span t-esc="page['amount']"/>
+            </div>
+        </div>
+        <br/><br/>
+        <div class="row">
+            <div class="col col-10 text-left offset-2" style="padding-top:3px;">
+                <span t-esc="page['amount_in_word']"/>
+            </div>
+        </div>
+        <br/>
+        <div class="row">
+            <div class="col col-7 text-left offset-2" style="padding-top:5px;">
+                        <span>******PARA ABONO EN CUENTA DEL BENIFICIARIO******</span>
+            </div>
+            <div class="col col-2"> </div>
+            <div class="col col-1"> </div>
+        </div>
+        <br/><br/><br/><br/><br/>
+        <div class="row">
+            <div class="col col-2 text-left offset-9" style="padding-top:5px;">
+                              <span t-if="page['sequence_number']" t-esc="page['sequence_number']"/>
+            </div>
+            <div class="col col-1"> </div>
+        </div>
+    </div>
+</template>
+
+<template id="santander_check">
+    <div>
+        <br/>
+        <div class="row">
+            <div class="col col-3 text-left offset-6" style="padding-top:8px;">
+                           <span t-esc="page['payment_date']"/>
+            </div>
+            <div class="col col-3"> </div>
+        </div>
+        <br/><br/><br/><br/>
+        <div class="row">
+            <div class="col col-7 text-left offset-1">
+                         <span t-esc="page['partner_name']" style="padding-top:8px;"/>
+            </div>
+            <div class="col col-2 text-left">
+                         <span t-esc="page['amount']" style="padding-top:7px;"/>
+            </div>
+            <div class="col col-2"> </div>
+        </div>
+        <br/>
+        <div class="row">
+            <div class="col col-11 text-left offset-1">
+                         <span t-esc="page['amount_in_word']"/>
+            </div>
+        </div>
+        <br/><br/><br/><br/><br/>
+        <div class="row">
+            <div class="col col-2 text-left offset-9" style="padding-top:14px;">
+                              <span t-if="page['sequence_number']" t-esc="page['sequence_number']"/>
+            </div>
+            <div class="col col-1"> </div>
+        </div>
+    </div>
+</template>
+
+<template id="scotiabank_check">
+     <div>
+        <br/><br/>
+        <div class="row">
+            <div class="col col-3 text-left offset-6" style="padding-top:12px;">
+                           <span t-esc="page['payment_date']"/>
+            </div>
+            <div class="col col-3"> </div>
+        </div>
+        <br/><br/><br/><br/>
+        <div class="row">
+            <div class="col col-7 text-left offset-1">
+                         <span t-esc="page['partner_name']" style="padding-top:8px;"/>
+            </div>
+            <div class="col col-4 text-left">
+                             <span t-esc="page['amount']" style="padding-top:8px;"/>
+            </div>
+        </div>
+        <br/><br/>
+        <div class="row">
+            <div class="col col-11 text-left offset-1">
+                        <span t-esc="page['amount_in_word']"/>
+            </div>
+        </div>
+        <br/><br/><br/><br/><br/><br/>
+        <div class="row">
+            <div class="col col-2 text-left offset-9" style="padding-top:4px;">
+                             <span t-if="page['sequence_number']" t-esc="page['sequence_number']"/>
+            </div>
+            <div class="col col-1"> </div>
+        </div>
+    </div>
+</template>
+</odoo>

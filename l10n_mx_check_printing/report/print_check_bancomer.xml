@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<template id="print_check_bancomer">
+    <t t-call="web.html_container">
+        <t t-foreach="docs" t-as="o">
+            <div t-att-data-oe-model="o._name" t-att-data-oe-id="o.id" t-foreach="o.get_pages()" t-as="page" class="page article ckmx_page ckmx_top_page ckmx_bank_page" t-attf-style="top: {{ o.journal_id.mx_check_margin_top }}in; left: {{ o.journal_id.mx_check_margin_left }}in;">
+                <t t-call="l10n_mx_check_printing.bancomer_check" />
+            </div>
+        </t>
+    </t>
+</template>
+</odoo>
