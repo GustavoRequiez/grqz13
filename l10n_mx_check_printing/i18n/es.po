@@ -1,0 +1,129 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#    * l10n_mx_check_printing
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-13 21:23+0000\n"
+"PO-Revision-Date: 2018-11-13 21:23+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_mx_check_printing
+#: model_terms:ir.ui.view,arch_db:l10n_mx_check_printing.banamex_check
+msgid "******PARA ABONO EN CUENTA DEL BENIFICIARIO******"
+msgstr ""
+
+#. module: l10n_mx_check_printing
+#: model_terms:ir.ui.view,arch_db:l10n_mx_check_printing.hsbc_check
+msgid "<span>******PARA ABONO EN CUENTA DEL BENIFICIARIO******</span>"
+msgstr ""
+
+#. module: l10n_mx_check_printing
+#: selection:account.journal,mx_check_layout:0
+msgid "BBVA Bancomer Check"
+msgstr "Cheque BBVA Bancomer"
+
+#. module: l10n_mx_check_printing
+#: selection:account.journal,mx_check_layout:0
+msgid "Banamex Check"
+msgstr "Cheque Banamex"
+
+#. module: l10n_mx_check_printing
+#: model:ir.model.fields,field_description:l10n_mx_check_printing.field_account_journal__mx_check_layout
+msgid "Check Layout"
+msgstr "Disposición del cheque"
+
+#. module: l10n_mx_check_printing
+#: selection:account.journal,mx_check_layout:0
+msgid "Generic Check"
+msgstr "Cheque Genérico"
+
+#. module: l10n_mx_check_printing
+#: selection:account.journal,mx_check_layout:0
+msgid "HSBC Check"
+msgstr "Cheque HSBC"
+
+#. module: l10n_mx_check_printing
+#: model:ir.model,name:l10n_mx_check_printing.model_account_journal
+msgid "Journal"
+msgstr "Diario"
+
+#. module: l10n_mx_check_printing
+#: model_terms:ir.ui.view,arch_db:l10n_mx_check_printing.view_account_journal_form_inherited_mx
+msgid "MX Cheque Printing"
+msgstr "Impresión de Cheque para México"
+
+#. module: l10n_mx_check_printing
+#: selection:account.journal,mx_check_layout:0
+msgid "None"
+msgstr "Ninguno"
+
+#. module: l10n_mx_check_printing
+#: model:ir.model,name:l10n_mx_check_printing.model_account_payment
+msgid "Payments"
+msgstr "Pagos"
+
+#. module: l10n_mx_check_printing
+#: model:ir.actions.report,name:l10n_mx_check_printing.action_print_check_bbva_bancomer
+msgid "Print Check BBVA Bancomer"
+msgstr "Impresión de Cheque BBVA Bancomer"
+
+#. module: l10n_mx_check_printing
+#: model:ir.actions.report,name:l10n_mx_check_printing.action_print_check_banamex
+msgid "Print Check Banamex"
+msgstr "Impresión de Cheque Banamex"
+
+#. module: l10n_mx_check_printing
+#: model:ir.actions.report,name:l10n_mx_check_printing.action_print_check_generic
+msgid "Print Check Generic"
+msgstr "Impresión de Cheque Genérico"
+
+#. module: l10n_mx_check_printing
+#: model:ir.actions.report,name:l10n_mx_check_printing.action_print_check_hsbc
+msgid "Print Check HSBC"
+msgstr "Impresión de Cheque HSBC"
+
+#. module: l10n_mx_check_printing
+#: model:ir.actions.report,name:l10n_mx_check_printing.action_print_check_santander
+msgid "Print Check Santander"
+msgstr "Impresión de Cheque Santander"
+
+#. module: l10n_mx_check_printing
+#: model:ir.actions.report,name:l10n_mx_check_printing.action_print_check_scotiabank
+msgid "Print Check Scotiabank"
+msgstr "Impresión de Cheque Scotiabank"
+
+#. module: l10n_mx_check_printing
+#: model_terms:ir.ui.view,arch_db:l10n_mx_check_printing.view_account_payment_form_inherited_mx_cheques
+msgid "Print Cheque"
+msgstr "Imprimir Cheque"
+
+#. module: l10n_mx_check_printing
+#: selection:account.journal,mx_check_layout:0
+msgid "Santander Check"
+msgstr "Cheque Santander"
+
+#. module: l10n_mx_check_printing
+#: selection:account.journal,mx_check_layout:0
+msgid "Scotiabank Check"
+msgstr "Cheque Scotiabank"
+
+#. module: l10n_mx_check_printing
+#: model:ir.model.fields,help:l10n_mx_check_printing.field_account_journal__mx_check_layout
+msgid "Select the format corresponding to the bank you will be printing your checks on. In order to disable the printing feature, select 'None'."
+msgstr "Seleccione el formato correspondiente al banco para el cual imprimirá el cheque. Si desea deshabilitar la opción de impresión seleccione 'Ninguno'."
+
+#. module: l10n_mx_check_printing
+#: code:addons/l10n_mx_check_printing/models/account_payment.py:17
+#, python-format
+msgid "There is no check layout configured.\n"
+"Make sure the proper check printing module is installed and its configuration (in Journals > 'Advance Settings' tab) is correct."
+msgstr "No se ha configurado un formato de cheque.\n"
+"Verifique que el modulo de impresión de cheque este instalado y su configuración (en la pestaña Diarios > 'Configuración Avanzada') sea correcta."

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<template id="print_check_bbva_bancomer">
+    <t t-call="web.html_container">
+        <t t-foreach="docs" t-as="o">
+            <div t-att-data-oe-model="o._name" t-att-data-oe-id="o.id" t-foreach="o.get_pages()" t-as="page" class="page article" t-attf-style="font-size: 8pt;">
+                <t t-call="l10n_mx_check_printing.bbva_bancomer_check" />
+            </div>
+        </t>
+    </t>
+</template>
+
+<report id="action_print_check_bbva_bancomer"
+    string="Print Check BBVA Bancomer"
+    model="account.payment"
+    name="l10n_mx_check_printing.print_check_bbva_bancomer"
+    file="l10n_mx_check_printing.print_check_bbva_bancomer"
+    report_type="qweb-pdf"
+    attachment_use="True"
+    attachment="'check_'+(object.partner_id and object.partner_id.name or 'Internal')+'_'+(object.name)+'_bbva_bancomer.pdf'"
+    paperformat="l10n_mx_check_printing.paperformat_check_mx"
+    print_report_name="'Check BBVA Bancomer - %s' % (object.partner_id.name or '',)"
+    menu="False"
+/>
+</odoo>
