@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record model="ir.ui.view" id="process_measurement_view_form">
+    <field name="name">process.measurement.view.form</field>
+    <field name="model">process.measurement</field>
+    <field name="arch" type="xml">
+      <form string="Measure Process">
+        <p class="oe_grey">
+          Do you want to print?
+        </p>
+        <field name="name" invisible="1"/>
+        <field name="csv_file" filename="name"/>
+        <footer>
+          <button name="get_csv_file" string="Get" type="object" default_focus="1" class="oe_highlight"/>
+          or
+          <button string="Cancel" class="oe_link" special="cancel"/>
+        </footer>
+      </form>
+    </field>
+  </record>
+
+  <act_window id="action_process_measurement" name="Get file" view_id="process_measurement_view_form" res_model="process.measurement" binding_model="mrp.production" view_mode="form" target="new"/>
+
+</odoo>

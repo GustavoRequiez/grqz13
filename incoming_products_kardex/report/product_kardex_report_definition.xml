@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <!-- <report id="print_product_kardex" model="incoming.products.kardex" string="Incoming Product Kardex" report_type="qweb-pdf" name="incoming_products_kardex.incoming_products_kardex_report_template"
+  file="incoming_products_kardex.incoming_products_kardex_report_template"/> -->
+  <report
+    id="print_product_kardex_report_pdf"
+    string="Incoming Products Kardex"
+    model="incoming.products.kardex"
+    report_type="qweb-pdf"
+    name="incoming_products_kardex.incoming_products_kardex_report_template"
+    file="incoming_products_kardex.incoming_products_kardex_report_template"
+    paperformat="incoming_products_kardex.incoming_products_kardex_paperformat"/>
+  <!-- paperformat="incoming_products_kardex.incoming_products_kardex_paperformat" -->
+
+  <record id="print_product_kardex_report_pdf" model="ir.actions.report">
+    <field name="print_report_name">'Incoming Product Kardex'</field>
+  </record>
+</odoo>

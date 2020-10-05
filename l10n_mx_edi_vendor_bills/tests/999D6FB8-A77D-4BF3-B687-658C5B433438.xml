@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv33.xsd" Version="3.3" Serie="TOR" Folio="045948" Fecha="2018-04-03T02:24:56" Sello="OQYaGBxRcT4CoIxNau7oOc+CRHvNsFnSNQrw4uJuQi427+63vuOkRFP1cO3KtZ/11vQwlA+deuHk2AH9oCuoyYAj496hbyCCjMoKfaTfOQcHf8RHNJLoWKsybbCqeW/iSFQ6zcJbucMA6ZkuARDVpwrm68xoeL5MoFgDrlQcFWxjy8s8tazU1+MVS3j482Odf6fh9jfAgandKe7+TQ2ZV/AHMRXB0opF0iZB9gm0iaqjgWgScFKnhQkL5bkdgRMna24vn9ppt8URGnYoJ0HBzRwqJpnTcksfkgjoLkyt/kAoceyXTHiYbEAT0nYTUUO70HuQWzxHU2kK18SibqVeiw==" FormaPago="01" NoCertificado="00001000000403159096" Certificado="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" CondicionesDePago="CONTADO" SubTotal="155.59" Descuento="0.00" Moneda="MXN" TipoCambio="1" Total="180.48" TipoDeComprobante="I" MetodoPago="PUE" LugarExpedicion="76120">
+    <cfdi:Emisor Rfc="DME021218T82" Nombre="DTS MEXICO S DE RL DE CV" RegimenFiscal="601" />
+    <cfdi:Receptor Rfc="EKU9003173C9" Nombre="Your Company" UsoCFDI="G01" />
+    <cfdi:Conceptos>
+        <cfdi:Concepto ClaveProdServ="10121801" NoIdentificacion="0110134259" Cantidad="5" ClaveUnidad="H87" Unidad="EA" Descripcion="PEDIGREE BN SECO 1125/420G" ValorUnitario="13.36" Importe="66.80" Descuento="0">
+            <cfdi:Impuestos>
+                <cfdi:Traslados>
+                    <cfdi:Traslado Base="66.80" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="10.69" />
+                </cfdi:Traslados>
+            </cfdi:Impuestos>
+        </cfdi:Concepto>
+        <cfdi:Concepto ClaveProdServ="10121801" NoIdentificacion="0210166206" Cantidad="5" ClaveUnidad="H87" Unidad="EA" Descripcion="PEDIGREE PANC SECO 420G" ValorUnitario="12.93" Importe="64.65" Descuento="0">
+            <cfdi:Impuestos>
+                <cfdi:Traslados>
+                    <cfdi:Traslado Base="64.65" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="10.34" />
+                </cfdi:Traslados>
+            </cfdi:Impuestos>
+        </cfdi:Concepto>
+        <cfdi:Concepto ClaveProdServ="10121801" NoIdentificacion="0310166266" Cantidad="2" ClaveUnidad="H87" Unidad="EA" Descripcion="PEDIGREE RP SECO 1125/350G" ValorUnitario="12.07" Importe="24.14" Descuento="0">
+            <cfdi:Impuestos>
+                <cfdi:Traslados>
+                    <cfdi:Traslado Base="24.14" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="3.86" />
+                </cfdi:Traslados>
+            </cfdi:Impuestos>
+        </cfdi:Concepto>
+    </cfdi:Conceptos>
+    <cfdi:Impuestos TotalImpuestosTrasladados="24.89">
+        <cfdi:Traslados>
+            <cfdi:Traslado Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="24.89" />
+        </cfdi:Traslados>
+    </cfdi:Impuestos>
+<cfdi:Complemento><tfd:TimbreFiscalDigital xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd" Version="1.1" UUID="999D6FB8-A77D-4BF3-B687-658C5B433438" FechaTimbrado="2018-04-04T02:25:04" SelloCFD="OQYaGBxRcT4CoIxNau7oOc+CRHvNsFnSNQrw4uJuQi427+63vuOkRFP1cO3KtZ/11vQwlA+deuHk2AH9oCuoyYAj496hbyCCjMoKfaTfOQcHf8RHNJLoWKsybbCqeW/iSFQ6zcJbucMA6ZkuARDVpwrm68xoeL5MoFgDrlQcFWxjy8s8tazU1+MVS3j482Odf6fh9jfAgandKe7+TQ2ZV/AHMRXB0opF0iZB9gm0iaqjgWgScFKnhQkL5bkdgRMna24vn9ppt8URGnYoJ0HBzRwqJpnTcksfkgjoLkyt/kAoceyXTHiYbEAT0nYTUUO70HuQWzxHU2kK18SibqVeiw==" NoCertificadoSAT="00001000000404477432" SelloSAT="kj6TWK87RFrv3nliE0HuCGQjsCw58EPUQ28U3TXh8tiQDKSopnpkWEZL2UWY+1mHCQecGCXJEBR5eswMU4738vQlEkePvfH9Iy3Dhsua7mQu1v3AFUt7baK2BsIDA/VtoTAhgwIAR4L3W9MitxM2wPBCwQCKQP7xQQ0Ia6XgKSQwe6DXKY4u+RD2BKfOg/q/SzGkMPiK3W1Y6WyRdCzuBODdwGXFwVRMDaJYdp+AkphghOPMRz/FDFFS1pPFVtINqUCUpw8GlQ0TzXvx6OGyOSewFEQSIoxHg2OTp3jBg2j+pLOIHalw49A+9gNF8c1XlMqmshnRm9bEa9mpSP64UQ==" RfcProvCertif="EME000602QR9" /></cfdi:Complemento></cfdi:Comprobante>

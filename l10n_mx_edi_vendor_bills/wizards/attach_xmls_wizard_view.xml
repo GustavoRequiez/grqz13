@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record model="ir.ui.view" id="attach_xmls_wizard_form_view">
+        <field name="name">attach_xmls_wizard_form</field>
+        <field name="model">attach.xmls.wizard</field>
+        <field name="arch" type="xml">
+            <form class="form-xml">
+                <group class="wizard_fields">
+                    <group>
+                        <field name="journal_id" options="{'no_create': True}"/>
+                        <field name="account_id" options="{'no_create': True}"/>
+                    </group>
+                    <group groups="l10n_mx_edi_vendor_bills.allow_force_invoice_generation">
+                        <field name="omit_cfdi_related"/>
+                    </group>
+                </group>
+                <br/><br/><br/>
+                <field nolabel="1" name="dragndrop" widget="attach_xmls_wizard_widget" string="Attach Supplier XML's"/>
+                <footer class="xml-footer"/>
+            </form>
+        </field>
+    </record>
+    <record id="attach_xmls_wizard_action" model="ir.actions.act_window">
+        <field name="name">Attach Supplier Files</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name='res_model'>attach.xmls.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="attach_xmls_wizard_form_view"/>
+        <field name="context">{'l10n_mx_edi_invoice_type': 'in'}</field>
+        <field name="target">new</field>
+    </record>
+    <menuitem action="attach_xmls_wizard_action" id="menu_atach_xmls_wizard" name="Attach Multiple Supplier XML's" parent="account.menu_finance_payables"/>
+</odoo>

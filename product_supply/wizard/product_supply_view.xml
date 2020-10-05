@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record id="product_supply_view" model="ir.ui.view">
+    <field name="name">product.supply.view</field>
+    <field name="model">product.supply</field>
+    <field name="arch" type="xml">
+      <form string="Products supply">
+        <p class="oe_grey">
+          you want to print?
+        </p>
+        <footer>
+          <button name="confirm" string="Confirm" type="object" default_focus="1" class="oe_highlight"/>
+          or
+          <button string="Cancel" class="oe_link" special="cancel"/>
+        </footer>
+      </form>
+    </field>
+  </record>
+  <act_window id="action_product_supply" name="Confirm supply" res_model="product.supply" binding_model="stock.move" view_mode="form" target="new" groups=""/>
+
+</odoo>

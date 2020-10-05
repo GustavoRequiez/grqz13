@@ -1,0 +1,266 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* mrp_ii
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0+e-20170815\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-10-12 14:55+0000\n"
+"PO-Revision-Date: 2017-10-12 14:55+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: mrp_ii
+#: model:ir.model.fields,field_description:mrp_ii.field_bill_material_ii_dis_product_in
+msgid "Availability Incoming Product"
+msgstr "Productos Entrantes Disponibles"
+
+#. module: mrp_ii
+#: model:ir.model.fields,field_description:mrp_ii.field_bill_material_ii_dis_product
+msgid "Availability Product"
+msgstr "Productos Disponibles"
+
+#. module: mrp_ii
+#: model:ir.model.fields,field_description:mrp_ii.field_mrp_ii_bill_material_ii_ids
+#: model:ir.ui.view,arch_db:mrp_ii.bill_material_ii_view
+#: model:ir.ui.view,arch_db:mrp_ii.mrp_ii_view
+msgid "BoM"
+msgstr "LdM"
+
+#. module: mrp_ii
+#: model:ir.model.fields,field_description:mrp_ii.field_bill_material_ii_bill_material_ii_purchase_ids
+msgid "BoM-Purchase"
+msgstr "BoM-Purchase"
+
+#. module: mrp_ii
+#: model:ir.model.fields,field_description:mrp_ii.field_bill_material_ii_bill_material_ii_sale_ids
+msgid "BoM-Sale"
+msgstr "BoM-Sale"
+
+#. module: mrp_ii
+#: model:ir.ui.view,arch_db:mrp_ii.mrp_ii_view
+msgid "Calculate"
+msgstr "Calcular"
+
+#. module: mrp_ii
+#: model:ir.model.fields,field_description:mrp_ii.field_stock_move_compromise_qty_move
+msgid "Compromise"
+msgstr "Comprometer"
+
+#. module: mrp_ii
+#: model:ir.model.fields,field_description:mrp_ii.field_bill_material_ii_purchase_compromise_product
+msgid "Compromise Product"
+msgstr "Compromise Product"
+
+#. module: mrp_ii
+#: model:ir.model.fields,field_description:mrp_ii.field_bill_material_ii_create_uid
+#: model:ir.model.fields,field_description:mrp_ii.field_bill_material_ii_purchase_create_uid
+#: model:ir.model.fields,field_description:mrp_ii.field_bill_material_ii_sale_create_uid
+#: model:ir.model.fields,field_description:mrp_ii.field_mrp_ii_create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: mrp_ii
+#: model:ir.model.fields,field_description:mrp_ii.field_bill_material_ii_create_date
+#: model:ir.model.fields,field_description:mrp_ii.field_bill_material_ii_purchase_create_date
+#: model:ir.model.fields,field_description:mrp_ii.field_bill_material_ii_sale_create_date
+#: model:ir.model.fields,field_description:mrp_ii.field_mrp_ii_create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: mrp_ii
+#: model:ir.model.fields,help:mrp_ii.field_bill_material_ii_product_qty_product
+msgid "Current quantity of products.\n"
+"In a context with a single Stock Location, this includes goods stored at this Location, or any of its children.\n"
+"In a context with a single Warehouse, this includes goods stored in the Stock Location of this Warehouse, or any of its children.\n"
+"stored in the Stock Location of the Warehouse of this Shop, or any of its children.\n"
+"Otherwise, this includes goods stored in any Stock Location with 'internal' type."
+msgstr "Cantidad actual de los productos.\n"
+"En un contexto de una sola ubicación de existencias, esto incluye los bienes almacenados en esta ubicación, o cualquiera de sus hijas.\n"
+"En un contexto de un solo almacén, esto incluye los bienes almacenados en la ubicación de existencias de ese almacén, o cualquiera de sus hijas.\n"
+"En cualquier otro caso, esto incluye los bienes almacenados en cualquier ubicación de existencias de tipo 'Interna'."
+
+#. module: mrp_ii
+#: model:ir.model.fields,field_description:mrp_ii.field_bill_material_ii_purchase_partner_id
+#: model:ir.model.fields,field_description:mrp_ii.field_bill_material_ii_sale_partner_id
+msgid "Customer"
+msgstr "Cliente"
+
+#. module: mrp_ii
+#: model:ir.model.fields,field_description:mrp_ii.field_bill_material_ii_display_name
+#: model:ir.model.fields,field_description:mrp_ii.field_bill_material_ii_purchase_display_name
+#: model:ir.model.fields,field_description:mrp_ii.field_bill_material_ii_sale_display_name
+#: model:ir.model.fields,field_description:mrp_ii.field_mrp_ii_display_name
+msgid "Display Name"
+msgstr "Nombre a mostrar"
+
+#. module: mrp_ii
+#: model:ir.model.fields,field_description:mrp_ii.field_bill_material_ii_id
+#: model:ir.model.fields,field_description:mrp_ii.field_bill_material_ii_purchase_id
+#: model:ir.model.fields,field_description:mrp_ii.field_bill_material_ii_sale_id
+#: model:ir.model.fields,field_description:mrp_ii.field_mrp_ii_id
+msgid "ID"
+msgstr "ID"
+
+#. module: mrp_ii
+#: model:ir.model.fields,field_description:mrp_ii.field_bill_material_ii___last_update
+#: model:ir.model.fields,field_description:mrp_ii.field_bill_material_ii_purchase___last_update
+#: model:ir.model.fields,field_description:mrp_ii.field_bill_material_ii_sale___last_update
+#: model:ir.model.fields,field_description:mrp_ii.field_mrp_ii___last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: mrp_ii
+#: model:ir.model.fields,field_description:mrp_ii.field_bill_material_ii_purchase_write_uid
+#: model:ir.model.fields,field_description:mrp_ii.field_bill_material_ii_sale_write_uid
+#: model:ir.model.fields,field_description:mrp_ii.field_bill_material_ii_write_uid
+#: model:ir.model.fields,field_description:mrp_ii.field_mrp_ii_write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: mrp_ii
+#: model:ir.model.fields,field_description:mrp_ii.field_bill_material_ii_purchase_write_date
+#: model:ir.model.fields,field_description:mrp_ii.field_bill_material_ii_sale_write_date
+#: model:ir.model.fields,field_description:mrp_ii.field_bill_material_ii_write_date
+#: model:ir.model.fields,field_description:mrp_ii.field_mrp_ii_write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: mrp_ii
+#: model:ir.actions.act_window,name:mrp_ii.action_mrp_ii
+#: model:ir.model.fields,field_description:mrp_ii.field_bill_material_ii_mrp_ii_id
+#: model:ir.model.fields,field_description:mrp_ii.field_bill_material_ii_purchase_bill_material_ii_id
+#: model:ir.model.fields,field_description:mrp_ii.field_bill_material_ii_sale_bill_material_ii_id
+#: model:ir.ui.menu,name:mrp_ii.menu_mrp_ii
+#: model:ir.ui.view,arch_db:mrp_ii.mrp_ii_view
+msgid "MRP II"
+msgstr "MRP II"
+
+#. module: mrp_ii
+#: model:ir.model.fields,field_description:mrp_ii.field_bill_material_ii_purchase_move_id
+#: model:ir.model.fields,field_description:mrp_ii.field_bill_material_ii_sale_move_id
+msgid "Move"
+msgstr "Movimiento"
+
+#. module: mrp_ii
+#: model:ir.model.fields,field_description:mrp_ii.field_bill_material_ii_purchase_move_in_id
+msgid "Move In"
+msgstr "Move In"
+
+#. module: mrp_ii
+#: model:ir.model.fields,field_description:mrp_ii.field_bill_material_ii_product_id
+#: model:ir.model.fields,field_description:mrp_ii.field_mrp_ii_product_id
+msgid "Product"
+msgstr "Producto"
+
+#. module: mrp_ii
+#: model:ir.model.fields,field_description:mrp_ii.field_bill_material_ii_purchase_picking_purchase_order
+msgid "Purchase Order"
+msgstr "Pedido de compra"
+
+#. module: mrp_ii
+#: model:ir.model.fields,field_description:mrp_ii.field_bill_material_ii_purchase_product_qty
+#: model:ir.model.fields,field_description:mrp_ii.field_bill_material_ii_qty_product
+#: model:ir.model.fields,field_description:mrp_ii.field_bill_material_ii_sale_product_qty
+#: model:ir.model.fields,field_description:mrp_ii.field_mrp_ii_qty_product
+msgid "Quantity"
+msgstr "Cantidad"
+
+#. module: mrp_ii
+#: model:ir.model.fields,field_description:mrp_ii.field_bill_material_ii_sale_product_reserved_qty
+msgid "Quantity Reserved"
+msgstr "Cantidad reservada"
+
+#. module: mrp_ii
+#: model:ir.model.fields,help:mrp_ii.field_bill_material_ii_product_incoming_qty
+msgid "Quantity of products that are planned to arrive.\n"
+"In a context with a single Stock Location, this includes goods arriving to this Location, or any of its children.\n"
+"In a context with a single Warehouse, this includes goods arriving to the Stock Location of this Warehouse, or any of its children.\n"
+"Otherwise, this includes goods arriving to any Stock Location with 'internal' type."
+msgstr "Cantidad de los productos que está planificado que llegue.\n"
+"En un contexto de una sola ubicación de existencias, esto incluye los bienes almacenados en esta ubicación, o cualquiera de sus hijas.\n"
+"En un contexto de un solo almacén, esto incluye los bienes almacenados en la ubicación de existencias de ese almacén, o cualquiera de sus hijas.\n"
+"En cualquier otro caso, esto incluye los bienes almacenados en cualquier ubicación de existencias de tipo 'Interna'."
+
+#. module: mrp_ii
+#: model:ir.model.fields,help:mrp_ii.field_bill_material_ii_sale_product_reserved_qty
+msgid "Quantity that has already been reserved for this move"
+msgstr "Cantidad que ha sido ya reservada para este movimiento"
+
+#. module: mrp_ii
+#: model:ir.model.fields,help:mrp_ii.field_bill_material_ii_purchase_picking_purchase_order
+msgid "Reference of the document"
+msgstr "Referencia del documento"
+
+#. module: mrp_ii
+#: model:ir.ui.view,arch_db:mrp_ii.bill_material_ii_view
+msgid "Sale"
+msgstr "Venta"
+
+#. module: mrp_ii
+#: model:ir.ui.view,arch_db:mrp_ii.bill_material_ii_view
+msgid "Sale - Purchase"
+msgstr "Sale - Purchase"
+
+#. module: mrp_ii
+#: model:ir.model.fields,field_description:mrp_ii.field_bill_material_ii_purchase_sale_id
+#: model:ir.model.fields,field_description:mrp_ii.field_bill_material_ii_sale_sale_id
+msgid "Sale Order"
+msgstr "Pedido de venta"
+
+#. module: mrp_ii
+#: model:ir.model,name:mrp_ii.model_stock_move
+msgid "Stock Move"
+msgstr "Movimiento de Inventario"
+
+#. module: mrp_ii
+#: model:ir.model.fields,help:mrp_ii.field_bill_material_ii_purchase_product_qty
+#: model:ir.model.fields,help:mrp_ii.field_bill_material_ii_sale_product_qty
+msgid "This is the quantity of products from an inventory point of view. For moves in the state 'done', this is the quantity of products that were actually moved. For other moves, this is the quantity of product that is planned to be moved. Lowering this quantity does not generate a backorder. Changing this quantity on assigned moves affects the product reservation, and should be done with care."
+msgstr "Ésta es la cantidad de productos desde un punto de vista de inventario. Para movimientos en el estado 'Realizado', ésta es la cantidad de productos que se movieron realmente. Para otros movimiento, ésta es la cantidad de producto que está planeado mover. Disminuyendo esta cantidad no se genera un pedido en espera. Cambiando esta cantidad en movimientos asignados, afecta la reserva de producto, y debe ser realizado con cuidado."
+
+#. module: mrp_ii
+#: model:ir.model.fields,field_description:mrp_ii.field_bill_material_ii_total_compromise_product
+msgid "Total Compromise Product"
+msgstr "Total de Productos Comprometidos"
+
+#. module: mrp_ii
+#: model:ir.model.fields,field_description:mrp_ii.field_bill_material_ii_product_incoming_qty
+msgid "Total Incoming Product"
+msgstr "Total Productos Entrantes"
+
+#. module: mrp_ii
+#: model:ir.model.fields,field_description:mrp_ii.field_bill_material_ii_product_qty_product
+msgid "Total Product"
+msgstr "Total de Productos"
+
+#. module: mrp_ii
+#: model:ir.model.fields,field_description:mrp_ii.field_bill_material_ii_total_reserved_product
+msgid "Total Reserved Product"
+msgstr "Total de Productos Reservados"
+
+#. module: mrp_ii
+#: model:ir.model,name:mrp_ii.model_bill_material_ii
+msgid "bill.material.ii"
+msgstr "bill.material.ii"
+
+#. module: mrp_ii
+#: model:ir.model,name:mrp_ii.model_bill_material_ii_purchase
+msgid "bill.material.ii.purchase"
+msgstr "bill.material.ii.purchase"
+
+#. module: mrp_ii
+#: model:ir.model,name:mrp_ii.model_bill_material_ii_sale
+msgid "bill.material.ii.sale"
+msgstr "bill.material.ii.sale"
+
+#. module: mrp_ii
+#: model:ir.model,name:mrp_ii.model_mrp_ii
+msgid "mrp.ii"
+msgstr "mrp.ii"
+

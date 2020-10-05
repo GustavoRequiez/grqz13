@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="res_company_view_form" model="ir.ui.view">
+        <field name="name">res.company.view.form.inherit.ftp</field>
+        <field name="model">res.company</field>
+        <field name="inherit_id" ref="base.view_company_form"/>
+        <field name="arch" type="xml">
+            <notebook position="inside">
+                <page string="OneBeat FTP">
+                    <group>
+                        <group>
+                            <field name="ftp_host"/>
+                            <field name="ftp_port"/>
+                        </group>
+                        <group>
+                            <field name="ftp_user"/>
+                            <field name="ftp_passwd" password="True"/>
+                        </group>
+                    </group>
+                </page>
+            </notebook>
+        </field>
+    </record>
+
+
+</odoo>

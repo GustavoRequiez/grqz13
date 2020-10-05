@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_move_tree_receipt_picking_compromise" model="ir.ui.view">
+        <field name="name">view.move.tree.receipt.picking.compromise</field>
+        <field name="model">stock.move</field>
+        <field name="inherit_id" ref="stock.view_move_tree_receipt_picking"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='location_id']" position="before">
+                <field name="compromise_qty_move" />
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

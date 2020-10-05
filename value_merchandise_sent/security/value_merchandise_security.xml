@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record model="res.groups" id="value_merchandise_group">
+    <field name="name">Value Merchandise</field>
+    <field name="category_id">32</field>
+  </record>
+</odoo>

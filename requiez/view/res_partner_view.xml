@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+  <record id="view_partner_requiez_form" model="ir.ui.view">
+    <field name="name">view.partner.requiez.form</field>
+    <field name="model">res.partner</field>
+    <field name="inherit_id" ref="base.view_partner_form"/>
+    <field name="arch" type="xml">
+      <xpath expr="//button[@name='toggle_active']" position="replace">
+        <button name="toggle_active" type="object" groups="requiez.group_archive" class="oe_stat_button" icon="fa-archive">
+          <field name="active" widget="boolean_button" options='{"terminology": "archive"}'/>
+        </button>
+      </xpath>
+      <xpath expr="//field[@name='ref']" position="replace"/>
+      <xpath expr="//field[@name='website']" position="after">
+        <field name="ref" string="Business Name"/>
+      </xpath>
+      <xpath expr="//field[@name='vat']" position="attributes">
+        <attribute name="attrs">{'required': [('customer','=',True)]}</attribute>
+      </xpath>
+
+    </field>
+  </record>
+  <record model="ir.ui.view" id="view_partner_credit_form">
+    <field name="name">res.partner.credit.form</field>
+    <field name="model">res.partner</field>
+    <field name="inherit_id" ref="account.view_partner_property_form"/>
+    <field name="arch" type="xml">
+      <group name="banks" position="before">
+        <group name="credit_control" string="credit control">
+          <field name="credit_limit" attrs="{'invisible': [('credit_ignore', '=', True)]}"/>
+          <field name="credit_ignore"/>
+          <field name="grace_days" attrs="{'invisible': [('expired_ignore', '=', True)]}"/>
+          <field name="expired_ignore"/>
+          <field name="sale_order_ignore"/>
+        </group>
+      </group>
+    </field>
+  </record>
+
+  <!---->
+  <record id="account_control_view_form_mgr" model="ir.ui.view">
+    <field name="name">account_control.form.inheritmgr</field>
+    <field name="model">res.partner</field>
+    <field name="inherit_id" ref="requiez.view_partner_credit_form"/>
+    <field name="groups_id" eval="[(6, 0, [ref('base.group_user') ])]"/>
+    <field name="arch" type="xml">
+      <field name="property_payment_term_id" position="attributes">
+        <attribute name="readonly">1</attribute>
+      </field>
+      <field name="credit_limit" position="attributes">
+        <attribute name="readonly">1</attribute>
+      </field>
+      <field name="credit_ignore" position="attributes">
+        <attribute name="readonly">1</attribute>
+      </field>
+      <field name="grace_days" position="attributes">
+        <attribute name="readonly">1</attribute>
+      </field>
+      <field name="expired_ignore" position="attributes">
+        <attribute name="readonly">1</attribute>
+      </field>
+      <field name="sale_order_ignore" position="attributes">
+        <attribute name="readonly">1</attribute>
+      </field>
+    </field>
+  </record>
+
+  <record id="account_control_view_form" model="ir.ui.view">
+    <field name="name">account.control.form.inherit</field>
+    <field name="model">res.partner</field>
+    <field name="inherit_id" ref="requiez.account_control_view_form_mgr"/>
+    <field name="groups_id" eval="[(6, 0, [ref('requiez.account_control_group') ])]"/>
+    <field name="arch" type="xml">
+      <field name="property_payment_term_id" position="attributes">
+        <attribute name="readonly">0</attribute>
+      </field>
+      <field name="credit_limit" position="attributes">
+        <attribute name="readonly">0</attribute>
+      </field>
+      <field name="credit_ignore" position="attributes">
+        <attribute name="readonly">0</attribute>
+      </field>
+      <field name="grace_days" position="attributes">
+        <attribute name="readonly">0</attribute>
+      </field>
+      <field name="expired_ignore" position="attributes">
+        <attribute name="readonly">0</attribute>
+      </field>
+      <field name="sale_order_ignore" position="attributes">
+        <attribute name="readonly">0</attribute>
+      </field>
+    </field>
+  </record>
+  <!---->
+
+  <record id="partner_credit_view_tree" model="ir.ui.view">
+    <field name="name">partner.credit.tree</field>
+    <field name="model">res.partner</field>
+    <field name="priority" eval="100"/>
+    <field name="arch" type="xml">
+      <tree>
+        <field name="name"/>
+        <field name="credit_limit"/>
+        <field name="credit_used"/>
+        <field name="credit_avaiable"/>
+      </tree>
+    </field>
+  </record>
+
+  <record model="ir.actions.act_window" id="partner_credit_action_tree">
+    <field name="name">Partner</field>
+    <field name="res_model">res.partner</field>
+    <field name="view_mode">tree</field>
+    <field name="view_id" ref="partner_credit_view_tree"/>
+  </record>
+
+  <menuitem id="menu_partner_credit" name="Partner credit" parent="account.menu_finance_reports" action="partner_credit_action_tree"/>
+
+</odoo>

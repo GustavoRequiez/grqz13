@@ -1,0 +1,173 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* stock_kardex
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0+e-20170815\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-11-17 08:50+0000\n"
+"PO-Revision-Date: 2017-11-17 08:50+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: stock_kardex
+#: model:ir.ui.view,arch_db:stock_kardex.stock_kardex_view
+msgid "Calculate"
+msgstr "Calcular"
+
+#. module: stock_kardex
+#: model:ir.model.fields,field_description:stock_kardex.field_stock_kardex_create_uid
+#: model:ir.model.fields,field_description:stock_kardex.field_stock_kardex_detail_create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: stock_kardex
+#: model:ir.model.fields,field_description:stock_kardex.field_stock_kardex_create_date
+#: model:ir.model.fields,field_description:stock_kardex.field_stock_kardex_detail_create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: stock_kardex
+#: model:ir.model.fields,field_description:stock_kardex.field_stock_kardex_detail_move_date
+msgid "Date"
+msgstr "Fecha"
+
+#. module: stock_kardex
+#: model:ir.model.fields,field_description:stock_kardex.field_stock_kardex_detail_location_dest_id
+msgid "Destination Location"
+msgstr "Ubicación destino"
+
+#. module: stock_kardex
+#: model:ir.model.fields,field_description:stock_kardex.field_stock_kardex_stock_kardex_detail_ids
+#: model:ir.ui.view,arch_db:stock_kardex.stock_kardex_view
+msgid "Detail"
+msgstr "Detalle"
+
+#. module: stock_kardex
+#: model:ir.model.fields,field_description:stock_kardex.field_stock_kardex_detail_display_name
+#: model:ir.model.fields,field_description:stock_kardex.field_stock_kardex_display_name
+msgid "Display Name"
+msgstr "Nombre a mostrar"
+
+#. module: stock_kardex
+#: model:ir.model.fields,field_description:stock_kardex.field_stock_kardex_date_end
+msgid "End Date"
+msgstr "Fecha finalización"
+
+#. module: stock_kardex
+#: model:ir.model.fields,field_description:stock_kardex.field_stock_kardex_stock_end
+msgid "Ending stock"
+msgstr "Stock Final"
+
+#. module: stock_kardex
+#: model:ir.model.fields,field_description:stock_kardex.field_stock_kardex_detail_id
+#: model:ir.model.fields,field_description:stock_kardex.field_stock_kardex_id
+msgid "ID"
+msgstr "ID"
+
+#. module: stock_kardex
+#: model:ir.actions.act_window,name:stock_kardex.action_stock_kardex
+#: model:ir.model.fields,field_description:stock_kardex.field_stock_kardex_detail_stock_kardex_id
+#: model:ir.ui.menu,name:stock_kardex.menu_stock_kardex
+#: model:ir.ui.view,arch_db:stock_kardex.stock_kardex_view
+msgid "Kardex"
+msgstr "Kardex"
+
+#. module: stock_kardex
+#: model:ir.ui.view,arch_db:stock_kardex.stock_kardex_detail_view
+msgid "Kardex Detail"
+msgstr "Kardex Detalle"
+
+#. module: stock_kardex
+#: model:ir.model.fields,field_description:stock_kardex.field_stock_kardex___last_update
+#: model:ir.model.fields,field_description:stock_kardex.field_stock_kardex_detail___last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: stock_kardex
+#: model:ir.model.fields,field_description:stock_kardex.field_stock_kardex_detail_write_uid
+#: model:ir.model.fields,field_description:stock_kardex.field_stock_kardex_write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: stock_kardex
+#: model:ir.model.fields,field_description:stock_kardex.field_stock_kardex_detail_write_date
+#: model:ir.model.fields,field_description:stock_kardex.field_stock_kardex_write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: stock_kardex
+#: model:ir.model.fields,field_description:stock_kardex.field_stock_kardex_location_id
+msgid "Location"
+msgstr "Ubicación"
+
+#. module: stock_kardex
+#: model:ir.model.fields,help:stock_kardex.field_stock_kardex_detail_location_dest_id
+msgid "Location where the system will stock the finished products."
+msgstr "Ubicación donde el sistema almacenará los productos finalizados."
+
+#. module: stock_kardex
+#: model:ir.model.fields,field_description:stock_kardex.field_stock_kardex_detail_stock_move_id
+msgid "Move"
+msgstr "Movimiento"
+
+#. module: stock_kardex
+#: model:ir.model.fields,help:stock_kardex.field_stock_kardex_detail_move_date
+msgid "Move date: scheduled date until move is done, then date of actual move processing"
+msgstr "Fecha del movimiento: Fecha planificada hasta que el movimiento esté realizado, después fecha real en que el movimiento ha sido procesado."
+
+#. module: stock_kardex
+#: model:ir.model.fields,field_description:stock_kardex.field_stock_kardex_product_id
+msgid "Product"
+msgstr "Producto"
+
+#. module: stock_kardex
+#: model:ir.model.fields,field_description:stock_kardex.field_stock_kardex_detail_move_qty_product
+msgid "Quantity"
+msgstr "Cantidad"
+
+#. module: stock_kardex
+#: model:ir.model.fields,field_description:stock_kardex.field_stock_kardex_detail_qty_product
+msgid "Quantity Total"
+msgstr "Cantidad Total"
+
+#. module: stock_kardex
+#: model:ir.model.fields,help:stock_kardex.field_stock_kardex_detail_location_id
+msgid "Sets a location if you produce at a fixed location. This can be a partner location if you subcontract the manufacturing operations."
+msgstr "Indica una ubicación si se producen en una ubicación fija. Puede ser una ubicación de empresa si subcontrata las operaciones de fabricación."
+
+#. module: stock_kardex
+#: model:ir.model.fields,field_description:stock_kardex.field_stock_kardex_detail_location_id
+msgid "Source Location"
+msgstr "Ubicación origen"
+
+#. module: stock_kardex
+#: model:ir.model.fields,field_description:stock_kardex.field_stock_kardex_date_start
+msgid "Start Date"
+msgstr "Fecha de inicio"
+
+#. module: stock_kardex
+#: model:ir.model.fields,field_description:stock_kardex.field_stock_kardex_stock_start
+msgid "Starting stock"
+msgstr "Stock Inicial"
+
+#. module: stock_kardex
+#: model:ir.model.fields,help:stock_kardex.field_stock_kardex_detail_move_qty_product
+msgid "This is the quantity of products from an inventory point of view. For moves in the state 'done', this is the quantity of products that were actually moved. For other moves, this is the quantity of product that is planned to be moved. Lowering this quantity does not generate a backorder. Changing this quantity on assigned moves affects the product reservation, and should be done with care."
+msgstr "Ésta es la cantidad de productos desde un punto de vista de inventario. Para movimientos en el estado 'Realizado', ésta es la cantidad de productos que se movieron realmente. Para otros movimiento, ésta es la cantidad de producto que está planeado mover. Disminuyendo esta cantidad no se genera un pedido en espera. Cambiando esta cantidad en movimientos asignados, afecta la reserva de producto, y debe ser realizado con cuidado."
+
+#. module: stock_kardex
+#: model:ir.model,name:stock_kardex.model_stock_kardex
+msgid "stock.kardex"
+msgstr "stock.kardex"
+
+#. module: stock_kardex
+#: model:ir.model,name:stock_kardex.model_stock_kardex_detail
+msgid "stock.kardex.detail"
+msgstr "stock.kardex.detail"
+

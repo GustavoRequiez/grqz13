@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record id="mrp" model="report.paperformat">
+    <field name="name">mrp</field>
+    <field name="orientation">Landscape</field>
+  </record>
+  <record id="product_label" model="report.paperformat">
+    <field name="name">Product Label</field>
+    <field name="format">custom</field>
+    <field name="page_height">102</field>
+    <field name="page_width">51</field>
+    <field name="margin_top">2</field>
+    <field name="margin_left">2</field>
+    <field name="margin_right">2</field>
+    <field name="margin_bottom">2</field>
+    <field name="header_spacing">0</field>
+  </record>
+  <record id="shipping_label" model="report.paperformat">
+    <field name="name">Shipping Label</field>
+    <field name="format">custom</field>
+    <field name="page_height">110</field>
+    <field name="page_width">102</field>
+    <field name="margin_top">2</field>
+    <field name="margin_left">2</field>
+    <field name="margin_right">2</field>
+    <field name="margin_bottom">2</field>
+    <field name="header_spacing">0</field>
+  </record>
+  <record id="shipping_order" model="report.paperformat">
+    <field name="name">Shipping Order</field>
+    <field name="format">Letter</field>
+    <field name="margin_top">2</field>
+    <field name="margin_left">2</field>
+    <field name="margin_right">2</field>
+    <field name="margin_bottom">2</field>
+    <field name="header_spacing">0</field>
+    <field name="orientation">Landscape</field>
+  </record>
+</odoo>

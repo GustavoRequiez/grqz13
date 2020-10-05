@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <template id="incoming_products_kardex_report_document">
+    <t t-set="docs" t-value="docs.with_context({'lang':user.partner_id.lang})"/>
+    <t t-set="stock_kardex_line_sorted" t-value="docs.stock_kardex_line_ids.sorted(key=lambda a:(a.product_name))"/>
+    <t t-foreach="stock_kardex_line_sorted" t-as="o">
+      <t t-call="web.basic_layout">
+        <div class="page">
+          <div class="row mt32 mb32">
+            <table class="table table-condensed">
+              <tr>
+
+                <td style="border:solid 1px;" colspan="10" width="500">
+
+                  <h1 style="text-align:center; font-size:70px;">PRODUCT</h1>
+                  <h1 style="text-align:center; font-size:70px;" t-if="o.product_conform">
+                    <strong>CONFORM</strong>
+                  </h1>
+                  <h1 style="text-align:center; font-size:70px;" t-else="">
+                    <strong>NO CONFORM</strong>
+                  </h1>
+
+                </td>
+              </tr>
+
+              <tr>
+                <td style="border:solid 1px;" colspan="4" width="200">
+                  <h1 style="text-align:center; font-size:40px;">SUPPLIER</h1>
+                </td>
+                <td style="border:solid 1px;" colspan="6" width="300">
+                  <h1 style="text-align:center; font-size:40px;">
+                    <strong><t t-esc="docs.supplier"/></strong>
+                  </h1>
+                </td>
+              </tr>
+
+              <tr>
+                <td style="border:solid 1px;" colspan="4" width="200">
+                  <h1 style="text-align:center; font-size:40px;">LOT/DOCUMENT</h1>
+                </td>
+                <td style="border:solid 1px;" colspan="6" width="300">
+                  <h1 style="text-align:center; font-size:40px;">
+                    <strong><t t-esc="docs.lot"/></strong>
+                  </h1>
+                </td>
+              </tr>
+
+              <tr>
+                <td style="border:solid 1px;" colspan="4" width="200">
+                  <h1 style="text-align:center; font-size:40px;">DATE</h1>
+                </td>
+                <td style="border:solid 1px; text-align: center; font-size:40px;" colspan="6" width="300">
+                  <strong><span t-field="docs.date" t-field-options='{"format": "dd/MM/yyyy"}'/></strong>
+                </td>
+              </tr>
+
+              <tr>
+                <td style="border:solid 1px;" colspan="4" width="200">
+                  <h1 style="text-align: center; font-size:40px;">RECEIVED</h1>
+                </td>
+                <td style="border:solid 1px;" colspan="6" width="300">
+                  <h1 style="text-align:center; font-size:40px;">
+                    <strong><t t-esc="docs.responsible"/></strong>
+                  </h1>
+                </td>
+              </tr>
+
+              <tr>
+                <td style="border:solid 1px;" colspan="10" width="500">
+                  <h1 style="text-align:center; font-size:40px;">CODE</h1>
+                </td>
+              </tr>
+
+              <tr>
+                <td style="border:solid 1px;" colspan="10" width="500">
+                  <h1 style="text-align:center; font-size:80px;">
+                    <strong>
+                      <t t-esc="o.product_name"/>
+                    </strong>
+                  </h1>
+                </td>
+              </tr>
+
+              <tr>
+                <td style="border:solid 1px;" colspan="4" width="200">
+                  <h1 style="text-align:center; font-size:40px;">QUANTITY</h1>
+                </td>
+                <td style="border:solid 1px;" colspan="6" width="300">
+                  <h1 style="text-align:center; font-size:60px;">
+                    <strong><t t-esc="o.qty_by_palette"/></strong>
+                  </h1>
+                </td>
+              </tr>
+              <tr>
+                <td style="border:solid 1px;" colspan="2" height="60" width="100"/>
+                <td style="border:solid 1px;" colspan="2" height="60" width="100"/>
+                <td style="border:solid 1px;" colspan="2" height="60" width="100"/>
+                <td style="border:solid 1px;" colspan="2" height="60" width="100"/>
+                <td style="border:solid 1px;" colspan="2" height="60" width="100"/>
+              </tr>
+              <tr>
+                <td style="border:solid 1px;" colspan="2" height="60" width="100"/>
+                <td style="border:solid 1px;" colspan="2" height="60" width="100"/>
+                <td style="border:solid 1px;" colspan="2" height="60" width="100"/>
+                <td style="border:solid 1px;" colspan="2" height="60" width="100"/>
+                <td style="border:solid 1px;" colspan="2" height="60" width="100"/>
+              </tr>
+              <tr>
+                <td style="border:solid 1px;" colspan="2" height="60" width="100"/>
+                <td style="border:solid 1px;" colspan="2" height="60" width="100"/>
+                <td style="border:solid 1px;" colspan="2" height="60" width="100"/>
+                <td style="border:solid 1px;" colspan="2" height="60" width="100"/>
+                <td style="border:solid 1px;" colspan="2" height="60" width="100"/>
+              </tr>
+              <tr>
+                <td colspan="10" height="60" width="500"/>
+              </tr>
+
+              <tr>
+                <td style="text-align:center;" colspan="5" width="250">
+                  <img t-att-src="'/report/barcode/?type=%s&amp;value=%s&amp;width=%s&amp;height=%s' % ('Code128', o.product_name, 600, 100)" style="width:300px;height:50px"/>
+                </td>
+                <td style="text-align:center;" colspan="5" width="250">
+                  <img t-att-src="'/report/barcode/?type=%s&amp;value=%s&amp;width=%s&amp;height=%s' % ('Code128', docs.lot, 600, 100)" style="width:300px;height:50px"/>
+                </td>
+              </tr>
+
+            </table>
+          </div>
+        </div>
+        <div class="footer">
+          <h6>4-AR-22 v0</h6>
+        </div>
+      </t>
+    </t>
+  </template>
+
+  <template id="incoming_products_kardex_report_template">
+    <t t-call="web.html_container">
+      <t t-call="incoming_products_kardex.incoming_products_kardex_report_document" t-lang="user.partner_id.lang"/>
+    </t>
+  </template>
+</odoo>

@@ -1,0 +1,106 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* measurement_processes_production
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-12-06 17:14+0000\n"
+"PO-Revision-Date: 2019-12-06 17:14+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: measurement_processes_production
+#: model:ir.ui.view,arch_db:measurement_processes_production.process_measurement_view
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: measurement_processes_production
+#: model:ir.model.fields,field_description:measurement_processes_production.field_process_measurement_create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: measurement_processes_production
+#: model:ir.model.fields,field_description:measurement_processes_production.field_process_measurement_create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: measurement_processes_production
+#: model:ir.model.fields,field_description:measurement_processes_production.field_process_measurement_csv_file
+msgid "Csv File"
+msgstr "Archivo csv"
+
+#. module: measurement_processes_production
+#: model:ir.model.fields,field_description:measurement_processes_production.field_process_measurement_display_name
+msgid "Display Name"
+msgstr "Nombre a mostrar"
+
+#. module: measurement_processes_production
+#: model:ir.ui.view,arch_db:measurement_processes_production.process_measurement_view
+msgid "Do you want to print?"
+msgstr "¿Deseas imprimir?"
+
+#. module: measurement_processes_production
+#: model:ir.ui.view,arch_db:measurement_processes_production.process_measurement_view
+msgid "Get"
+msgstr "Generar"
+
+#. module: measurement_processes_production
+#: model:ir.actions.act_window,name:measurement_processes_production.action_process_measurement
+msgid "Get file"
+msgstr "Obtener archivo"
+
+#. module: measurement_processes_production
+#: model:ir.model.fields,field_description:measurement_processes_production.field_process_measurement_id
+msgid "ID"
+msgstr "ID"
+
+#. module: measurement_processes_production
+#: model:ir.model.fields,field_description:measurement_processes_production.field_process_measurement___last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: measurement_processes_production
+#: model:ir.model.fields,field_description:measurement_processes_production.field_process_measurement_write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: measurement_processes_production
+#: model:ir.model.fields,field_description:measurement_processes_production.field_process_measurement_write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: measurement_processes_production
+#: model:ir.ui.view,arch_db:measurement_processes_production.process_measurement_view
+msgid "Measure Process"
+msgstr "Medición de procesos"
+
+#. module: measurement_processes_production
+#: model:ir.model.fields,field_description:measurement_processes_production.field_process_measurement_name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: measurement_processes_production
+#: model:ir.model,name:measurement_processes_production.model_measure_process_production
+msgid "measure.process.production"
+msgstr "measure.process.production"
+
+#. module: measurement_processes_production
+#: model:ir.model,name:measurement_processes_production.model_measure_process_production_line
+msgid "measure.process.production.line"
+msgstr "measure.process.production.line"
+
+#. module: measurement_processes_production
+#: model:ir.ui.view,arch_db:measurement_processes_production.process_measurement_view
+msgid "or"
+msgstr "ó"
+
+#. module: measurement_processes_production
+#: model:ir.model,name:measurement_processes_production.model_process_measurement
+msgid "process.measurement"
+msgstr "process.measurement"

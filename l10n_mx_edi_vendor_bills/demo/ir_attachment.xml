@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record model="ir.attachment" id="attachment_pdf">
+        <field name="name">invoice.pdf</field>
+        <field name="datas" type="base64" file="l10n_mx_edi_vendor_bills/tests/invoice.pdf"/>
+    </record>
+</odoo>

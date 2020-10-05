@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="sale_commission_form" model="ir.ui.view">
+        <field name="name">sale.commission.form</field>
+        <field name="model">sale.commission</field>
+        <field name="arch" type="xml">
+            <form string="Commission">
+                <group>
+                    <group>
+                        <field name="user_id" required="1"/>
+                        <field name="date_start" t-options="{'format': 'dd/MM/yyyy'}"/>
+                        <field name="date_end" t-options="{'format': 'dd/MM/yyyy'}"/>
+                    </group>
+                    <group>
+                        <field name="commission_tax" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+                        <field name="commission" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+                    </group>
+                </group>
+                <field name="sale_commission_detail_ids" nolabel="1" readonly="1">
+                    <tree limit="10">
+                        <field name="account_invoice_number"/>
+                        <field name="partner_id"/>
+                        <field name="currency_id" invisible="1"/>
+                        <field name="account_invoice_date" t-options="{'widget': 'date', 'format': 'dd/MM/yyyy'}"/>
+                        <field name="account_payment_date" t-options="{'widget': 'date'}"/>
+                        <field name="account_payment_amount" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+                        <field name="day_difference"/>
+                        <field name="day_int"/>
+                        <field name="penalization"/>
+                        <field name="commission_brand"/>
+                        <field name="before_penalization"/>
+                        <field name="commission"/>
+                        <field name="brand_id"/>
+                    </tree>
+                </field>
+                <footer>
+                    <button string="Calculate" name="calculate" type="object" class="btn-primary"/>
+                    <button name="print_commission" string="Print" type="object"/>
+                    <button string="Cancel" class="btn-default" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+    <record id="sale_commission_action" model="ir.actions.act_window">
+        <field name="name">Commission Calculation</field>
+        <field name="res_model">sale.commission</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+    <menuitem id="menu_sale_commission" name="Commission Calculation" parent="sale.menu_sale_report" action="sale_commission_action"/>
+
+    <record id="sale_commission_detail_view" model="ir.ui.view">
+        <field name="name">sale.commission.detail.view</field>
+        <field name="model">sale.commission.detail</field>
+        <field name="arch" type="xml">
+            <form string="Commission Detail">
+                <group>
+                    <group>
+                        <field name="account_invoice_number" readonly="1"/>
+                        <field name="partner_id" readonly="1"/>
+                        <field name="account_invoice_date" readonly="1"/>
+                    </group>
+                    <group>
+                        <field name="account_payment_date" readonly="1"/>
+                        <field name="account_payment_amount" readonly="1" options="{'currency_field': 'currency_id'}"/>
+                    </group>
+                </group>
+            </form>
+        </field>
+    </record>
+</odoo>

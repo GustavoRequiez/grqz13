@@ -1,0 +1,141 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* revenue_history_projection
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-06-22 14:29+0000\n"
+"PO-Revision-Date: 2020-06-22 14:29+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: revenue_history_projection
+#: model:ir.model.fields,field_description:revenue_history_projection.field_revenue_history_projection__create_uid
+#: model:ir.model.fields,field_description:revenue_history_projection.field_revenue_history_projection_line__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: revenue_history_projection
+#: model:ir.model.fields,field_description:revenue_history_projection.field_revenue_history_projection__create_date
+#: model:ir.model.fields,field_description:revenue_history_projection.field_revenue_history_projection_line__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: revenue_history_projection
+#: model:ir.model.fields,field_description:revenue_history_projection.field_revenue_history_projection_line__date_due
+msgid "Date due"
+msgstr "Vencimiento"
+
+#. module: revenue_history_projection
+#: model:ir.model.fields,field_description:revenue_history_projection.field_revenue_history_projection__projection_line_ids
+msgid "Details"
+msgstr "Detalles"
+
+#. module: revenue_history_projection
+#: model:ir.model.fields,field_description:revenue_history_projection.field_revenue_history_projection__display_name
+#: model:ir.model.fields,field_description:revenue_history_projection.field_revenue_history_projection_line__display_name
+msgid "Display Name"
+msgstr "Nombre a mostrar"
+
+#. module: revenue_history_projection
+#: selection:revenue.history.projection,type_report:0
+msgid "Expenses"
+msgstr "Egresos"
+
+#. module: revenue_history_projection
+#: model_terms:ir.ui.view,arch_db:revenue_history_projection.revenue_history_projection_view_form
+msgid "Get"
+msgstr "Generar"
+
+#. module: revenue_history_projection
+#: model:ir.model.fields,field_description:revenue_history_projection.field_revenue_history_projection__id
+#: model:ir.model.fields,field_description:revenue_history_projection.field_revenue_history_projection_line__id
+msgid "ID"
+msgstr ""
+
+#. module: revenue_history_projection
+#: selection:revenue.history.projection,type_report:0
+msgid "Income"
+msgstr "Ingresos"
+
+#. module: revenue_history_projection
+#: model:ir.model.fields,field_description:revenue_history_projection.field_revenue_history_projection_line__invoice_number
+msgid "Invoice"
+msgstr "Factura"
+
+#. module: revenue_history_projection
+#: model:ir.model.fields,field_description:revenue_history_projection.field_revenue_history_projection____last_update
+#: model:ir.model.fields,field_description:revenue_history_projection.field_revenue_history_projection_line____last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: revenue_history_projection
+#: model:ir.model.fields,field_description:revenue_history_projection.field_revenue_history_projection__write_uid
+#: model:ir.model.fields,field_description:revenue_history_projection.field_revenue_history_projection_line__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: revenue_history_projection
+#: model:ir.model.fields,field_description:revenue_history_projection.field_revenue_history_projection__write_date
+#: model:ir.model.fields,field_description:revenue_history_projection.field_revenue_history_projection_line__write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: revenue_history_projection
+#: model:ir.model.fields,field_description:revenue_history_projection.field_revenue_history_projection_line__partner_name
+msgid "Partner"
+msgstr "Empresa"
+
+#. module: revenue_history_projection
+#: model:ir.model.fields,field_description:revenue_history_projection.field_revenue_history_projection_line__Projection_id
+#: model_terms:ir.ui.view,arch_db:revenue_history_projection.revenue_history_projection_view_form
+msgid "Projection"
+msgstr "Proyección de Ingresos y Egresos"
+
+#. module: revenue_history_projection
+#: model:ir.actions.act_window,name:revenue_history_projection.revenue_history_projection_action
+#: model:ir.ui.menu,name:revenue_history_projection.menu_revenue_history_projection
+#: model_terms:ir.ui.view,arch_db:revenue_history_projection.view_revenue_history_projection_pivot
+msgid "Projection of Income and Expenses"
+msgstr "Proyección de Ingresos y Egresos"
+
+#. module: revenue_history_projection
+#: model:ir.model.fields,field_description:revenue_history_projection.field_revenue_history_projection_line__residual
+msgid "Residual"
+msgstr "Saldo"
+
+#. module: revenue_history_projection
+#: model_terms:ir.ui.view,arch_db:revenue_history_projection.view_revenue_history_projection_line_tree
+msgid "Revenue History Projection"
+msgstr "Proyección de Ingresos y Egresos"
+
+#. module: revenue_history_projection
+#: model:ir.model,name:revenue_history_projection.model_revenue_history_projection
+msgid "Revenue history projection"
+msgstr "Proyección de Ingresos y Egresos"
+
+#. module: revenue_history_projection
+#: model:ir.model,name:revenue_history_projection.model_revenue_history_projection_line
+msgid "Revenue history projection Lines"
+msgstr ""
+
+#. module: revenue_history_projection
+#: model:ir.model.fields,field_description:revenue_history_projection.field_revenue_history_projection__type_report
+msgid "Select a report type"
+msgstr "Seleccione el tipo de reporte"
+
+#. module: revenue_history_projection
+#: model:ir.model.fields,field_description:revenue_history_projection.field_revenue_history_projection_line__week_number
+msgid "Week number"
+msgstr "Número de semana"
+
+#. module: revenue_history_projection
+#: model:ir.model.fields,field_description:revenue_history_projection.field_revenue_history_projection_line__date_range
+msgid "Week range"
+msgstr "Rango de semana"

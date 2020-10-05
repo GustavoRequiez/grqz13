@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template id="report_sale_order_document_date" inherit_id="sale.report_saleorder_document">
+        <xpath expr="//table[@class='table table-sm o_main_table']/thead/tr" position="inside">
+            <th>Observation</th>
+        </xpath>
+        <xpath expr="//table[@class='table table-sm o_main_table']/tbody/t/t[@t-if]" position="inside">
+            <td class="text-right">
+                <span t-field="l.observation"/>
+            </td>
+        </xpath>
+    </template>
+</odoo>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="onebeat_wizard_view_form" model="ir.ui.view">
+        <field name="name">onebeat_wizard.view.form</field>
+        <field name="model">onebeat_wizard</field>
+        <field name="arch" type="xml">
+            <form>
+                <group col="4">
+                    <field name="start"/>
+                    <field name="stop"/>
+                </group>
+                <group col="1">
+                    <group col="3">
+                        <field name="stocklocations_file_fname" invisible="1"/>
+                        <field name="stocklocations_file" filename="stocklocations_file_fname"/>
+                        <button name="set_stocklocations_file" type="object" string="Generate"/>
+                    </group>
+
+                    <group col="3">
+                        <field name="mtsskus_file_fname" invisible="1"/>
+                        <field name="mtsskus_file" filename="mtsskus_file_fname"/>
+                        <button name="set_mtsskus_file" type="object" string="Generate"/>
+                    </group>
+
+                    <group col="3">
+                        <field name="transactions_file_fname" invisible="1"/>
+                        <field name="transactions_file" filename="transactions_file_fname"/>
+                        <button name="set_transactions_file" type="object" string="Generate"/>
+                    </group>
+
+                    <group col="3">
+                        <field name="status_file_fname" invisible="1"/>
+                        <field name="status_file" filename="status_file_fname"/>
+                        <button name="set_status_file" type="object" string="Generate"/>
+                    </group>
+                </group>
+                <footer/>
+            </form>
+        </field>
+    </record>
+
+    <act_window id="onebeat_wizard_action" name="Create Files" res_model="onebeat_wizard" view_mode="form" target="new"/>
+
+    <menuitem id="onebeat_wizard_menu" parent="stock.menu_warehouse_report" name="OneBeat" sequence="10" action="onebeat_wizard_action"/>
+</odoo>

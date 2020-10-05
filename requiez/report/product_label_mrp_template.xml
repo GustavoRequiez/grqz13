@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <template id="product_label_mrp_report_document">
+    <t t-foreach="docs" t-as="o">
+      <t t-call="web.basic_layout">
+        <t t-set="data" t-value="get_data(o)"/>
+        <t t-if="data">
+          <t t-foreach="data['qty']" t-as="qty">
+            <div class="page">
+              <table width="500">
+                <tr>
+                  <td t-if="data.get('date', False)" align="left" height="22px">
+                    <strong>
+                      <span t-esc="data.get('date')"/>
+                    </strong>
+                  </td>
+                  <td t-if="data.get('mrp_name', False)" align="left" height="22px">
+                    <strong>
+                      <span t-esc="data.get('mrp_name')"/>
+                    </strong>
+                  </td>
+                  <td t-if="data.get('type', False)" align="left" height="22px">
+                    <strong>
+                      <span t-esc="data.get('type')"/>
+                    </strong>
+                  </td>
+                </tr>
+                <tr>
+                  <td t-if="data.get('partner_name', False)" align="left" height="35px" colspan="3">
+                    <strong>
+                      <span style="font-size:15px;" t-esc="data.get('partner_name')"/>
+                    </strong>
+                  </td>
+                </tr>
+                <tr>
+                  <td t-if="data.get('product_default', False)" align="left" height="30px" colspan="3">
+                    <span style="font-size:15px;" t-esc="data.get('product_default')"/>
+                  </td>
+                </tr>
+                <tr>
+                  <td t-if="data.get('product_name', False)" align="left" height="95px" colspan="3">
+                    <strong><span style="font-size:16px;" t-esc="data.get('product_name')"/></strong>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="center" height="35px" colspan="3">
+                    <strong><span style="font-size:12px;" t-esc="data.get('observation')"/></strong>
+                  </td>
+                </tr>
+                <tr>
+                  <td height="20px" colspan="3" align="center">
+                    <strong>
+                      <span style="font-size:15px" t-esc="qty+1"/>
+                      /
+                      <span t-esc="data['qty']"/>
+                    </strong>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </t>
+        </t>
+      </t>
+    </t>
+  </template>
+  <template id="print_prod_label_mrp">
+    <t t-call="web.html_container">
+      <t t-call="requiez.product_label_mrp_report_document" t-lang="user.partner_id.lang"/>
+    </t>
+  </template>
+</odoo>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <template id="report_delivery_document_requiez" inherit_id="sale_order_observation.report_delivery_document_observation">
+    <xpath expr="//div[@name='partner_header']" position="replace">
+      <div class="col-xs-4 pull-right">
+        <div>
+          <span>
+            <strong>Customer Address:</strong>
+          </span>
+        </div>
+        <div t-if="o.partner_id" name="partner_header">
+          <div t-field="o.partner_id" t-options="{&quot;widget&quot;: &quot;contact&quot;, &quot;fields&quot;: [&quot;address&quot;, &quot;name&quot;, &quot;phone&quot;], &quot;no_marker&quot;: True}"/>
+        </div>
+      </div>
+    </xpath>
+  </template>
+</odoo>

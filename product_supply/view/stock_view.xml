@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+  <record id="view_outgoing_material_tree" model="ir.ui.view">
+    <field name="name">view.outgoing.material.tree</field>
+    <field name="model">stock.move</field>
+    <!--<field name="priority" eval="100"/>-->
+    <field name="arch" type="xml">
+      <tree>
+        <field name="product_default_code"/>
+        <field name="product_id"/>
+        <field name="product_brand"/>
+        <field name="product_uom_qty"/>
+        <field name="lotes"/>
+        <field name="reserved_availability"/>
+        <field name="origin"/>
+        <field name="product_default_code"/>
+        <field name="sale_order_type_id"/>
+        <field name="state"/>
+      </tree>
+    </field>
+  </record>
+
+  <record model="ir.actions.act_window" id="action_outgoing_material_tree">
+    <field name="name">Outgoing Material for Tomorrow</field>
+    <field name="res_model">stock.move</field>
+    <field name="view_mode">tree</field>
+    <field name="domain">[('state', 'in', ['confirmed', 'assigned']),
+      <!-- ('mrp_date','&lt;=', datetime.datetime.combine(context_today()+datetime.timedelta(days=1), datetime.time(23,59,59))), ('mrp_date','&gt;=', datetime.datetime.combine(context_today()+datetime.timedelta(days=1), datetime.time(0,0,0))), -->
+      ('raw_material_production_id','!=',False)]</field>
+    <field name="view_id" ref="view_outgoing_material_tree"/>
+  </record>
+
+  <menuitem id="menu_outgoing_material" name="Outgoing Material for Tomorrow" parent="mrp_workorder.mrp_workorder_menu_planning" action="action_outgoing_material_tree"/>
+
+  <record id="view_move_product_supply_search" model="ir.ui.view">
+    <field name="name">view.move.product.supply.search</field>
+    <field name="model">stock.move</field>
+    <field name="inherit_id" ref="stock.view_move_search"/>
+    <field name="arch" type="xml">
+      <xpath expr="//group" position="inside">
+        <filter string="Brand" name="by_product" domain="[]" context="{'group_by':'product_brand'}"/>
+      </xpath>
+    </field>
+  </record>
+
+  <record id="view_outgoing2_material_tree" model="ir.ui.view">
+    <field name="name">view.outgoing.material.tree</field>
+    <field name="model">stock.move</field>
+    <!--<field name="priority" eval="100"/>-->
+    <field name="arch" type="xml">
+      <tree>
+        <field name="product_default_code"/>
+        <field name="product_id"/>
+        <field name="product_brand"/>
+        <field name="product_uom_qty"/>
+        <field name="lotes"/>
+        <field name="reserved_availability"/>
+        <field name="origin"/>
+        <field name="mrp_date"/>
+        <field name="sale_order_type_id"/>
+        <field name="state"/>
+      </tree>
+    </field>
+  </record>
+
+  <record model="ir.actions.act_window" id="action_outgoing2_material_tree">
+    <field name="name">Outgoing Material</field>
+    <field name="res_model">stock.move</field>
+    <field name="view_mode">tree</field>
+    <field name="domain">[('state', 'in', ['confirmed', 'assigned']), ('raw_material_production_id','!=',False)]</field>
+    <field name="view_id" ref="view_outgoing2_material_tree"/>
+  </record>
+
+  <menuitem id="menu_outgoing2_material" name="Outgoing Material" parent="mrp_workorder.mrp_workorder_menu_planning" action="action_outgoing2_material_tree"/>
+
+</odoo>

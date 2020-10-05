@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <report id="mrp_drall_report"
+        string="Work Order Report"
+        model="mrp.production"
+        report_type="qweb-pdf"
+        file="requiez.mrp_drall_report2"
+        name="requiez.mrp_drall_report2"
+        paperformat="requiez.mrp"/>
+
+    <record id="mrp_drall_report" model="ir.actions.report">
+        <field name="print_report_name">'Work Order Report'</field>
+    </record>
+    <report id="print_product_label_picking"
+        string="Product Label"
+        model="stock.picking"
+        report_type="qweb-pdf"
+        file="requiez.print_prod_label_picking"
+        name="requiez.print_prod_label_picking"
+        paperformat="requiez.product_label"/>
+
+    <record id="print_product_label_picking" model="ir.actions.report">
+        <field name="print_report_name">'Product Label'</field>
+    </record>
+    <report id="print_shipping_label"
+        string="Shipping Label"
+        model="stock.picking"
+        report_type="qweb-pdf"
+        file="requiez.print_shipping_label_report"
+        name="requiez.print_shipping_label_report"
+        paperformat="requiez.shipping_label"
+    />
+    <record id="print_shipping_label" model="ir.actions.report">
+        <field name="print_report_name">'Shipping Label'</field>
+    </record>
+    <report id="print_shipping_order"
+        string="Shipping Order"
+        model="stock.picking"
+        report_type="qweb-pdf"
+        file="requiez.print_shipping_order_report"
+        name="requiez.print_shipping_order_report"
+        paperformat="requiez.shipping_order"
+    />
+    <record id="print_shipping_order" model="ir.actions.report">
+        <field name="print_report_name">'Shipping Order'</field>
+    </record>
+    <report id="print_product_label_mrp"
+        string="Product Label"
+        model="mrp.production"
+        report_type="qweb-pdf"
+        file="requiez.print_prod_label_mrp"
+        name="requiez.print_prod_label_mrp"
+        paperformat="requiez.product_label"/>
+
+    <record id="print_product_label_mrp" model="ir.actions.report">
+        <field name="print_report_name">'Product Label'</field>
+    </record>
+</odoo>

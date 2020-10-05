@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv33.xsd" Version="3.3" Sello="FLrWLCHF8xteWmJfjDVI8SvUg8KxuAaYXerImM+AoC5uRpwzWgoTMmrsFGj38WAK/iFjpnRplraOcX5s+nIE4ZKZ7d2PDZs9hY5Ycneo6STh+d0UXberaFEgtbt/8rJj2kWyshxJEfN6m8Pd0KueEHuEBWMtpov4dgAZgFzSvIZ7YzG8poGQv1t6l7tl6+dsztJUpEkGJk5QgF01WDFacrBK2Ny5mxaLkH/yoe619o1HdFq3DmjgZTgDeZZTaHZLXW9oFgFesNfnM/zRUL3FW153tlXD3JQU07OCqk9Wsabnhe070f5zm8HefBdrsg7tCZg00uPuTRfOr0+PDXXNXw==" Fecha="2017-06-27T18:46:13" Folio="24" Serie="INV 2017" FormaPago="99" NoCertificado="20001000000300022762" Certificado="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" CondicionesDePago="30 Net Days" SubTotal="509.33" Descuento="5.10" Moneda="MXN" Total="564.73" TipoDeComprobante="I" MetodoPago="PUE" LugarExpedicion="37200">
+    <cfdi:Emisor Rfc="EKU9003173C9" Nombre="YourCompany" RegimenFiscal="601"/>
+    <cfdi:Receptor Rfc="XEXX010101000" Nombre="Gemini Furniture" ResidenciaFiscal="USA" RegimenFiscal="601" UsoCFDI="P01"/>
+    <cfdi:Conceptos>
+        <cfdi:Concepto ClaveProdServ="01010101" NoIdentificacion="FURN_0789" Cantidad="2.0" ClaveUnidad="H87" Unidad="Unit s" Descripcion="FURN_0789  Individual Workplace" ValorUnitario="109.36" Importe="218.72" Descuento="2.19">
+            <cfdi:Impuestos>
+                <cfdi:Traslados>
+                    <cfdi:Traslado Base="216.53" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="34.64"/>
+                </cfdi:Traslados>
+                <cfdi:Retenciones>
+                    <cfdi:Retencion Base="216.53" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.040000" Importe="8.66"/>
+                </cfdi:Retenciones>
+            </cfdi:Impuestos>
+        </cfdi:Concepto>
+        <cfdi:Concepto ClaveProdServ="01010101" NoIdentificacion="FURN_0789" Cantidad="3.0" ClaveUnidad="H87" Unidad="Unit s" Descripcion="FURN_0789  Individual Workplace" ValorUnitario="96.87" Importe="290.61" Descuento="2.91">
+            <cfdi:Impuestos>
+                <cfdi:Traslados>
+                    <cfdi:Traslado Base="287.70" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="46.03"/>
+                </cfdi:Traslados>
+                <cfdi:Retenciones>
+                    <cfdi:Retencion Base="287.70" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.040000" Importe="11.51"/>
+                </cfdi:Retenciones>
+            </cfdi:Impuestos>
+        </cfdi:Concepto>
+    </cfdi:Conceptos>
+    <cfdi:Impuestos TotalImpuestosTrasladados="80.67" TotalImpuestosRetenidos="20.17">
+        <cfdi:Retenciones>
+            <cfdi:Retencion Importe="20.17" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.040000"/>
+        </cfdi:Retenciones>
+        <cfdi:Traslados>
+            <cfdi:Traslado Importe="80.67" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000"/>
+        </cfdi:Traslados>
+    </cfdi:Impuestos>
+    <cfdi:Complemento>
+        <tfd:TimbreFiscalDigital xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd" Version="1.1" SelloCFD="FLrWLCHF8xteWmJfjDVI8SvUg8KxuAaYXerImM+AoC5uRpwzWgoTMmrsFGj38WAK/iFjpnRplraOcX5s+nIE4ZKZ7d2PDZs9hY5Ycneo6STh+d0UXberaFEgtbt/8rJj2kWyshxJEfN6m8Pd0KueEHuEBWMtpov4dgAZgFzSvIZ7YzG8poGQv1t6l7tl6+dsztJUpEkGJk5QgF01WDFacrBK2Ny5mxaLkH/yoe619o1HdFq3DmjgZTgDeZZTaHZLXW9oFgFesNfnM/zRUL3FW153tlXD3JQU07OCqk9Wsabnhe070f5zm8HefBdrsg7tCZg00uPuTRfOr0+PDXXNXw==" NoCertificadoSAT="20001000000300022323" RfcProvCertif="FIN1203015JA" UUID="9A999DFA-B7E7-4320-B8D7-1DFE162B3F22" FechaTimbrado="2017-06-27T18:46:14" SelloSAT="cKOp1sx3cOdOkC86VyhCxt3dvcZT9ZgxH5rOSIw6YW2HlwdNyv7WDOOilgH1JtKjH1pKjsMS3utZyqAiM8jjI23EgXXKaPAV+PP+Y1bXaqma1x3iCuV8uWnuma1omg2rPzMcqVAjisCHJwW8RyZkDIGpQBO89OPRXIfQ2Fh6Wxdz/aeghCWuMO5uV22Eh/8hPqqVVRWteUtT+oRZ3++2vvmbQg2PeQhIj/qo+cJpz5OcXoZ11NK6L5oR1tUoXq1CvNDquQRdP2uzbpVlxVHJVNer2JAoxWqzrwJRA7C6ueYTyUUdovOv0jksG6BZVCduR/BGX0fn/2qM5/tVZzElBg=="/>
+    </cfdi:Complemento>
+</cfdi:Comprobante>

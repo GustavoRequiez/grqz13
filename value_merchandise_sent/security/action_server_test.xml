@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record model="ir.actions.server" id="print_instance">
+    <field name="name">Res Partner Server Action</field>
+    <field name="model_id" ref="sale.model_sale_order"/>
+    <field name="state">code</field>
+    <field name="code">
+      if records: raise Warning("Hello World!!!!!")
+      <!-- if object.some_condition(): action = { "type": "ir.actions.act_window", "view_mode": "form", "res_model": object._name, "res_id": object.id, } -->
+    </field>
+  </record>
+</odoo>

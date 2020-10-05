@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_inventory">
+
+
+        <div class="o_form_view">
+            <div class="page o_form_sheet_bg">
+                <div class="o_form_sheet">
+                    <div class="h2">MPS in Main Warehouse</div>
+                    <t t-foreach="products" t-as="product">
+                        <table class="table table-responsive table-sm mps_table">
+                            <thead>
+                                <tr class="table-active">
+                                    <td class="col-sm-4" style="width:33% !important">
+                                        <t t-if="product[0].apply_active">
+                                            <button role="button" class="btn btn-sm btn-primary float-right o_mps_apply" t-att-data-product="product[0].id">Apply</button>
+                                        </t>
+                                        <strong class="btn btn-sm btn-link o_mps_product_name" t-att-data-product="product[0].id" t-esc="product[0].name_get()[0][1]"/>
+                                        <span class="text-muted"> by</span> <i t-esc="product[0].uom_id.name"/>
+                                    </td>
+                                    <td t-foreach="product[1]" t-as="period" class="text-center">
+                                        <t t-esc="period['period']"/>
+                                    </td>
+                                </tr>
+                            </thead>
+                            <tr class="start_inventory">
+                                <td>Starting Inventory</td>
+                                <td t-foreach="product[1]" t-as="item" class="text-right">
+                                    <t t-esc="format_float(item['initial'], {'precision': 2})"/>
+                                </td>
+                            </tr>
+                            <tr class="demand_forecast">
+                                <td><span class="fa fa-fw">-</span> Demand Forecast</td>
+                                <td t-foreach="product[1]" t-as="item" class="text-right">
+                                    <input type="text" data-name="forecast_qty" t-att-value="format_float(item['demand'], {'precision': 2})" style="background-color: #fffdbb" class="text-right o_mps_save_input_text" t-att-data-date="item['date']" t-att-data-date_to="item['date_to']" t-att-data-product="product[0].id"/>
+                                </td>
+                            </tr>
+                            <tr class="indirect_demand">
+                                <td><span class="fa fa-fw">-</span> Indirect Demand</td>
+                                <t t-foreach="product[1]" t-as="item">
+                                    <td t-attf-class="text-right #{(not item['indirect']) and 'text-muted' or ''}">
+                                        <t t-esc="format_float(item['indirect'], {'precision': 2})"/>
+                                    </td>
+                                </t>
+                            </tr>
+                            <tr class="to_produce">
+                                <td class="o_mps_visible_procurement">
+                                    <span class="fa fa-fw">+</span>
+                                    <t t-esc="product[1][0]['route_type']"/>
+                                    <span title="Launch Procurement" role="img" aria-label="Launch Procurement" class="fa fa-bullseye fa-lg o_mps_generate_procurement text-success o_invisible_modifier" t-att-data-product="product[0].id"></span>
+                                    <button class="btn btn-sm btn-link float-right open_forecast_wizard" t-att-data-product="product[0].id">
+                                        <t t-if="product[0].mps_min_supply or product[0].mps_max_supply">
+                                            <span t-esc="(product[0].mps_min_supply % 1) and product[0].mps_min_supply or int(product[0].mps_min_supply)"/>
+                                            &lt;&amp;hellip;&lt;
+                                            <span t-esc="(product[0].mps_max_supply % 1) and product[0].mps_max_supply or int(product[0].mps_max_supply)"/>
+                                        </t>
+                                        <t t-if="not (product[0].mps_min_supply or product[0].mps_max_supply)">
+                                            set min-max
+                                        </t>
+                                    </button>
+                                </td>
+                                <t t-foreach="product[1]" t-as="item">
+                                    <t t-if="item['state']=='done'">
+                                        <td class="text-right active">
+                                            <t t-esc="format_float(item['to_supply'], {'precision': 2})"/>
+                                        </td>
+                                    </t><t t-if="item['state']=='draft'">
+                                        <td t-attf-class="text-right #{(item['procurement_enable']) and 'table-success' or ''} #{(item['procurement_done']) and 'active' or ''}">
+
+                                            <span t-if="item['mode']=='auto'" class="o_mps_auto_mode" t-att-data-product="product[0].id" t-att-data-date="item['date']" t-att-data-date_to="item['date_to']" t-att-data-value="format_float(item['to_supply'], {'precision': 2})">
+                                                <t t-esc="format_float(item['to_supply'], {'precision': 2})"/>
+                                            </span>
+
+                                            <input t-if="item['mode']=='manual'" type="text" data-name="to_supply" t-att-value="format_float(item['to_supply'], {'precision': 2})" t-att-data-product="product[0].id" t-att-data-date="item['date']" t-att-data-date_to="item['date_to']" style="background-color: #fffdbb" class="text-right o_mps_save_input_supply" title="double click in order to empty"/>
+                                        </td>
+                                    </t>
+                                </t>
+                            </tr>
+                            <tr class="forecast_inventory">
+                                <td><span class="fa fa-fw">=</span> 
+                                    Forecasted Inventory
+                                    <button class="btn btn-sm btn-link float-right text-muted open_forecast_wizard" t-att-data-product="product[0].id">
+                                        <t t-if="product[0].mps_forecasted">
+                                            <span class="fa fa-map-marker text-muted fa-fw" role="img" aria-label="Forecasted" title="Forecasted"/>
+                                            <span t-esc="(product[0].mps_forecasted) %1 and product[0].mps_forecasted or int(product[0].mps_forecasted)" class="text-muted"/>
+                                        </t>
+                                        <t t-if="not product[0].mps_forecasted">
+                                            set target
+                                        </t>
+                                    </button>
+                                </td>
+                                <t t-foreach="product[1]" t-as="item">
+                                    <td t-attf-class="text-right #{(item['forecasted']&lt;0) and 'table-danger' or ''}">
+                                        <t t-esc="format_float(item['forecasted'], {'precision': 2})"/>
+                                    </td>
+                                </t>
+                            </tr>
+                        </table>
+                    </t>
+                    <button type="button" class='btn btn-link o_mps_add_product'>Add a Product</button>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <template id="mrp_mps_report_backend" inherit_id="web.assets_backend" active="True">
+        <xpath expr="." position="inside">
+            <script type="text/javascript" src="/mrp_mps/static/src/js/mrp_mps_report_widget.js"></script>
+        </xpath>
+    </template>
+</odoo>

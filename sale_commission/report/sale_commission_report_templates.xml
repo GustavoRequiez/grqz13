@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+  <template id="sale_commission_report_document">
+    <t t-set="docs" t-value="docs.with_context({'lang':user.partner_id.lang})"/>
+    <t t-call="web.external_layout">
+      <div class="page">
+        <br/>
+        <h3>COMMISSION CALCULATION</h3>
+        <div class="row mt32 mb32">
+          <div class="col-xs-6">
+            <ul class="list-unstyled">
+              <li>
+                <strong>SELLER: </strong>
+                <span t-field="docs.user_id.name"/>
+              </li>
+              <li>
+                <strong>COMMISSION: </strong>
+                <span t-field="docs.commission" widget="monetary"/>
+              </li>
+              <li>
+                <strong>COMMISSION WITH TAX: </strong>
+                <span t-field="docs.commission_tax" widget="monetary"/>
+              </li>
+            </ul>
+          </div>
+          <div class="col-xs-6">
+            <ul class="list-unstyled">
+              <li>
+                <strong>INITIAL DATE: </strong>
+                <span t-field="docs.date_start" t-field-options="{'format': 'dd/MM/yyyy'}"/>
+              </li>
+              <li>
+                <strong>FINAL DATE: </strong>
+                <span t-field="docs.date_end" t-field-options="{'format': 'dd/MM/yyyy'}"/>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <table class="table table-condensed">
+          <thead>
+            <tr>
+              <th>
+                <span>Number</span>
+              </th>
+              <th>
+                <span>Customer</span>
+              </th>
+              <th>
+                <span>Invoice date</span>
+              </th>
+              <th>
+                <span>Payment date</span>
+              </th>
+              <th>
+                <span>Amount</span>
+              </th>
+              <th>
+                <span>Days of difference</span>
+              </th>
+              <th>
+                <span>Days of interest</span>
+              </th>
+              <th>
+                <span>Penalty amount</span>
+              </th>
+              <th>
+                <span>Brand commission</span>
+              </th>
+              <th>
+                <span>Amount before penalty</span>
+              </th>
+              <th>
+                <span>Commission</span>
+              </th>
+              <th>
+                <span>Brand</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr t-foreach="docs.sale_commission_detail_ids" t-as="o">
+              <td>
+                <span t-field="o.account_invoice_number"/>
+              </td>
+              <td>
+                <span t-field="o.partner_id.name"/>
+              </td>
+              <td>
+                <span t-field="o.account_invoice_date" t-field-options="{' format': ' dd MM yyyy'}"/>
+              </td>
+              <td>
+                <span t-field="o.account_payment_date" t-field-options="{' format': ' dd MM yyyy'}"/>
+              </td>
+              <td>
+                <span t-field="o.account_payment_amount"/>
+              </td>
+              <td>
+                <span t-field="o.day_difference"/>
+              </td>
+              <td>
+                <span t-field="o.day_int"/>
+              </td>
+              <td>
+                <span t-field="o.penalization"/>
+              </td>
+              <td>
+                <span t-field="o.commission_brand"/>
+              </td>
+              <td>
+                <span t-field="o.before_penalization"/>
+              </td>
+              <td>
+                <span t-field="o.commission"/>
+              </td>
+              <td>
+                <span t-field="o.brand_id"/>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </t>
+  </template>
+  <template id="sale_commission_report_template">
+    <t t-call="web.html_container">
+      <t t-call="sale_commission.sale_commission_report_document" t-lang="user.partner_id.lang"/>
+    </t>
+  </template>
+</odoo>

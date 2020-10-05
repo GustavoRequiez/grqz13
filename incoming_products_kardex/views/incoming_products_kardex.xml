@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record model="ir.ui.view" id="incoming_products_kardex_view_form">
+    <field name="name">incoming.products.kardex.view.form</field>
+    <field name="model">incoming.products.kardex</field>
+    <field name="arch" type="xml">
+      <form string="Kardex">
+        <sheet>
+          <group>
+            <group>
+              <field name="picking_id"/>
+              <button name="get_stock_picking_data" string="Get data" type="object" class="oe_highlight"/>
+            </group>
+            <group>
+              <field name="date"/>
+              <field name="supplier"/>
+              <field name="lot"/>
+              <field name="responsible"/>
+              <field name="getted" invisible="True"/>
+            </group>
+          </group>
+          <notebook name="Moves">
+            <page name="Lines" string='Kardex'>
+              <list>
+                <field name="stock_kardex_line_ids">
+                  <tree>
+                    <field name="product_name"/>
+                    <field name="ordered_qty"/>
+                    <field name="qty_by_palette"/>
+                    <field name="product_conform"/>
+                  </tree>
+                </field>
+              </list>
+            </page>
+          </notebook>
+          <footer>
+            <button name="get_kardex" attrs="{'invisible':[('getted','=',True)]}" string="Get" type="object" class="oe_highlight"/>
+            <button name="print_kardex" string="Print" type="object" class="oe_highlight"/>
+          </footer>
+        </sheet>
+      </form>
+
+    </field>
+  </record>
+
+  <record model="ir.ui.view" id="stock_kardex_line_view_form">
+    <field name="name">stock_kardex_line_view_form</field>
+    <field name="model">stock.kardex.line</field>
+    <field name="arch" type="xml">
+      <form string="Kardex">
+        <group>
+          <field name="stock_kardex_id" invisible="True"/>
+          <field name="product_name"/>
+          <field name="ordered_qty"/>
+          <field name="qty_by_palette"/>
+          <field name="product_conform"/>
+        </group>
+      </form>
+    </field>
+  </record>
+
+  <record id="incoming_products_kardex_action" model="ir.actions.act_window">
+    <field name="name">Kardex</field>
+    <field name="res_model">incoming.products.kardex</field>
+    <field name="view_mode">form</field>
+    <field name="target">new</field>
+  </record>
+
+  <menuitem id="menu_incoming_products_kardex" name="Incoming Products" sequence="23" parent="stock.menu_stock_inventory_control" action="incoming_products_kardex_action"/>
+
+</odoo>

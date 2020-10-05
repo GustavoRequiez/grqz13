@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="mrp_production_sale_observation_form_view" model="ir.ui.view">
+        <field name="name">mrp.production.sale.observation.form.view</field>
+        <field name="model">mrp.production</field>
+        <field name="inherit_id" ref="mrp_sale_info.mrp_production_form_view" />
+        <field name="arch" type="xml">
+            <field name="sale_id" position="after">
+                <field name="sale_type_id"/>
+                <field name="sale_line_observation"/>
+            </field>
+        </field>
+    </record>
+    <record id="mrp_production_sale_observation_tree_view" model="ir.ui.view">
+        <field name="name">mrp.production.sale.observation.tree.view</field>
+        <field name="model">mrp.production</field>
+        <field name="inherit_id" ref="mrp.mrp_production_tree_view" />
+        <field name="arch" type="xml">
+            <field name="product_id" position="after">
+                <field name="sale_type_id"/>
+                <field name="type_priority" invisible="1"/>
+                <field name="sale_line_observation"/>
+            </field>
+        </field>
+    </record>
+</odoo>

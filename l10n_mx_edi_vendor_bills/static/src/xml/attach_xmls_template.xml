@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+    <t t-name="attach_xmls_template">
+        <div style="margin:-24px -16px;padding:0px;">
+            <div id="dragandrophandler" class="dnd_normal"><p>Drag and Drop your files here</p><p>or Click to upload the files</p></div>
+            <input type="file" id="files" multiple="multiple" style="display:none;"/>
+            <div id="alertscontent" stsyle="margin:0;padding:0;"></div>
+            <div id="filescontent"></div>
+            <div id="dndfooter">
+                <button id="save" class="btn btn-sm btn-primary"><span>Save</span></button>
+                <button id="show" class="btn btn-sm btn-primary" style="display: none;"><span>Show invoices</span></button>
+                <button id="close" class="btn btn-sm oe_link"><span>Cancel</span></button>
+            </div>
+        </div>
+    </t>
+</template>

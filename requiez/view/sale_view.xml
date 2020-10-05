@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record id="view_order_no_open_form" model="ir.ui.view">
+    <field name="name">view.order.no.open.form</field>
+    <field name="model">sale.order</field>
+    <field name="inherit_id" ref="sale.view_order_form"/>
+    <field name="arch" type="xml">
+      <xpath expr="//field[@name='partner_id']" position="attributes">
+        <attribute name="options">{&quot;always_reload&quot;: True, 'no_open':True, 'no_create':True}</attribute>
+        <attribute name="domain">"[('customer','=',True),('is_company','=',True)]"</attribute>
+      </xpath>
+      <xpath expr="//field[@name='order_line']/form/group/group/field[@name='product_id']" position="attributes">
+        <attribute name="options">{'no_open':True, 'no_create':True}</attribute>
+      </xpath>
+      <xpath expr="//field[@name='order_line']/tree/field[@name='product_id']" position="attributes">
+        <attribute name="options">{'no_open':True, 'no_create':True}</attribute>
+      </xpath>
+      <xpath expr="//field[@name='partner_invoice_id']" position="attributes">
+        <attribute name="options">{'no_open':True, 'no_create':True}</attribute>
+      </xpath>
+      <xpath expr="//field[@name='partner_shipping_id']" position="attributes">
+        <attribute name="options">{'no_open':True, 'no_create':True}</attribute>
+        <attribute name="domain">[('parent_id.id','=',partner_id),('type','=','delivery')]</attribute>
+      </xpath>
+      <xpath expr="//button[@name='action_confirm'][2]" position="attributes">
+        <attribute name="groups">requiez.group_confirm_order</attribute>
+      </xpath>
+      <xpath expr="//button[@name='action_confirm'][1]" position="attributes">
+        <attribute name="groups">requiez.group_confirm_order</attribute>
+      </xpath>
+    </field>
+  </record>
+
+  <menuitem name="Invoice" action="account.action_account_invoice_report_all" id="menu_report_product_payment_all" parent="sale.menu_sale_report" sequence="10"/>
+
+  <record id="sale_order_date_promised_form" model="ir.ui.view">
+    <field name="name">sale.order.date.promised.form</field>
+    <field name="model">sale.order</field>
+    <field name="inherit_id" ref="sale_stock.view_order_form_inherit_sale_stock"/>
+    <field name="arch" type="xml">
+      <xpath expr="//field[@name='commitment_date']" position="after">
+        <field name="date_promised" attrs="{'required': True}"/>
+      </xpath>
+    </field>
+  </record>
+</odoo>

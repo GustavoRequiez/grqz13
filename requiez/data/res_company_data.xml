@@ -1,0 +1,35 @@
+<odoo noupdate="1">
+    <record id="base.main_partner" model="res.partner">
+        <field name="name">Grupo Requiez, S.A de C.V</field>
+        <field name="company_type">company</field>
+        <field name="street">Av. Lopez Mateos Sur 7000</field>
+        <field name="street2">Urban Center La Rioja, Piso 3, Los Gavilanes</field>
+        <field name="city">Tlajomulco de Zúñiga</field>
+        <field name="state_id" eval="ref('base.state_mx_jal')"/>
+        <field name="zip">45643</field>
+        <field name="country_id" eval="ref('base.mx')"/>
+        <field name="phone">33 3833 7788</field>
+        <field name="email">info2@requiez.com</field>
+        <field name="website">http://www.gruporequiez.com/</field>
+        <field name="vat">GRE851219528</field>
+    </record>
+    <!-- Chart Template -->
+    <record id="base.main_company" model="res.company">
+        <field name="name">Grupo Requiez, S.A de C.V</field>
+        <field name="logo" type="base64" file="requiez/static/src/img/company_logo.jpg"/>
+        <field name="report_header">DISEÑO · CONFORT · CALIDAD · INNOVACION</field>
+        <field name="vat">GRE851219528</field>
+        <field name="external_report_layout">standard</field>
+        <field name="chart_template_id" eval="ref('requiez.mx_coa')"/>
+    </record>
+    <record id="report_partner" model="res.partner">
+        <field name="name">Report Partner</field>
+        <field name="company_type">person</field>
+        <field name="street">Av. Guadalajara 106-A, CLJ CP 45173</field>
+        <field name="street2">KM11 Carretera LIBRE Acatlán de Juárez</field>
+        <field name="city">CD. Guzmán</field>
+        <field name="state_id" eval="ref('base.state_mx_jal')"/>
+        <field name="zip">33334962402</field>
+        <field name="country_id" eval="ref('base.mx')"/>
+    </record>
+</odoo>

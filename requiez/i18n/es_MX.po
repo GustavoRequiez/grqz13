@@ -1,0 +1,555 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* requiez
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-03-26 18:05+0000\n"
+"PO-Revision-Date: 2020-03-26 18:05+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: requiez
+#: model_terms:ir.ui.view,arch_db:requiez.report_invoice_document_requiez
+msgid "&amp;nbsp;<span>on</span>"
+msgstr "&amp;nbsp;<span>en</span>"
+
+#. module: requiez
+#: model_terms:ir.ui.view,arch_db:requiez.report_inventory_purchase
+msgid "<span class=\"fa fa-fw\">+</span>Incoming Product"
+msgstr "<span class=\"fa fa-fw\">+</span>Productos entrantes"
+
+#. module: requiez
+#: model_terms:ir.ui.view,arch_db:requiez.report_inventory_purchase
+msgid "<span class=\"fa fa-fw\">+</span>Product Incomming forecast"
+msgstr "<span class=\"fa fa-fw\">+</span>Previsión de entrada de producto"
+
+#. module: requiez
+#: model_terms:ir.ui.view,arch_db:requiez.report_inventory_purchase
+msgid "<span class=\"fa fa-fw\">-</span>Compromise Product"
+msgstr "<span class=\"fa fa-fw\">+</span>Comprometer producto"
+
+#. module: requiez
+#: model_terms:ir.ui.view,arch_db:requiez.report_inventory_purchase
+msgid "<span class=\"fa fa-fw\">-</span>Outgoing Product"
+msgstr "<span>Producto saliente</span>"
+
+#. module: requiez
+#: model_terms:ir.ui.view,arch_db:requiez.shipping_label_report_document
+msgid "<span>BOX NUMBER</span>"
+msgstr "<span>Numero de cajas</span>"
+
+#. module: requiez
+#: model_terms:ir.ui.view,arch_db:requiez.shipping_label_report_document
+msgid "<span>CLIENT REF</span>"
+msgstr "<span>Referencia del cliente</span>"
+
+#. module: requiez
+#: model_terms:ir.ui.view,arch_db:requiez.shipping_order_report_document
+msgid "<span>Customer</span>"
+msgstr "<span>Cliente</span>"
+
+#. module: requiez
+#: model_terms:ir.ui.view,arch_db:requiez.shipping_order_report_document
+msgid "<span>Declared Value</span>"
+msgstr "<span>Valor declarado</span>"
+
+#. module: requiez
+#: model_terms:ir.ui.view,arch_db:requiez.shipping_label_report_document
+#: model_terms:ir.ui.view,arch_db:requiez.shipping_order_report_document
+msgid "<span>Delivery Address</span>"
+msgstr "<span>Dirección de entrega</span>"
+
+#. module: requiez
+#: model_terms:ir.ui.view,arch_db:requiez.shipping_label_report_document
+#: model_terms:ir.ui.view,arch_db:requiez.shipping_order_report_document
+msgid "<span>Destination</span>"
+msgstr "<span>Destino</span>"
+
+#. module: requiez
+#: model_terms:ir.ui.view,arch_db:requiez.shipping_order_report_document
+msgid "<span>No. of Boxes</span>"
+msgstr "<span>Número de cajas</span>"
+
+#. module: requiez
+#: model_terms:ir.ui.view,arch_db:requiez.shipping_label_report_document
+msgid "<span>Recipient</span>"
+msgstr "<span>Destinatario</span>"
+
+#. module: requiez
+#: model_terms:ir.ui.view,arch_db:requiez.shipping_label_report_document
+msgid "<span>SALE ORDER</span>"
+msgstr "<span>Pedido de venta</span>"
+
+#. module: requiez
+#: model_terms:ir.ui.view,arch_db:requiez.shipping_order_report_document
+msgid "<span>Sale Order</span>"
+msgstr "<span>Pedido de venta</span>"
+
+#. module: requiez
+#: model_terms:ir.ui.view,arch_db:requiez.shipping_label_report_document
+msgid "<span>TOTAL OF BOX IN GUIA</span>"
+msgstr "<span>TOTAL DE CAJAS EN GUIA</span>"
+
+#. module: requiez
+#: model_terms:ir.ui.view,arch_db:requiez.shipping_order_report_document
+msgid "<span>Transport</span>"
+msgstr "<span>Transporte</span>"
+
+#. module: requiez
+#: model_terms:ir.ui.view,arch_db:requiez.shipping_order_report_document
+msgid "<strong>\n"
+"                      <span>S/V</span>\n"
+"                    </strong>"
+msgstr ""
+
+#. module: requiez
+#: model_terms:ir.ui.view,arch_db:requiez.report_sale_order_document_date
+msgid "<strong>Customer Purchase Order:</strong>"
+msgstr "<strong>Orden de compra del cliente:</strong>"
+
+#. module: requiez
+#: model_terms:ir.ui.view,arch_db:requiez.report_sale_order_document_date
+msgid "<strong>Promised Date of Delivery:</strong>"
+msgstr "<strong>Fecha promesa de entrega:</strong>"
+
+#. module: requiez
+#: model_terms:ir.ui.view,arch_db:requiez.report_sale_order_document_date
+msgid "<strong>Shipping Address:</strong>"
+msgstr "<strong>Dirección de entrega:</strong>"
+
+#. module: requiez
+#: model_terms:ir.ui.view,arch_db:requiez.mrp_report_document
+msgid "<strong>WORK ORDER</strong>"
+msgstr "<strong>ORDEN DE TRABAJO</strong>"
+
+#. module: requiez
+#: model:res.groups,name:requiez.account_control_group
+msgid "Account Control"
+msgstr "Control de cuenta"
+
+#. module: requiez
+#: model_terms:ir.ui.view,arch_db:requiez.view_picking_account_moves_form_requiez
+msgid "Account Moves"
+msgstr "Movimientos contables"
+
+#. module: requiez
+#: model:ir.model.fields,field_description:requiez.field_mrp_mps_location__active
+msgid "Active"
+msgstr "Activo"
+
+#. module: requiez
+#: model:res.groups,name:requiez.group_archive
+msgid "Archive Product/Partner"
+msgstr "Archivar Producto/Cliente"
+
+#. module: requiez
+#: model:ir.model.fields,field_description:requiez.field_stock_picking__box
+msgid "Boxes"
+msgstr "Cajas"
+
+#. module: requiez
+#: model:ir.model.fields,help:requiez.field_stock_picking__box
+msgid "Boxes number."
+msgstr "Número de cajas"
+
+#. module: requiez
+#: model_terms:ir.ui.view,arch_db:requiez.view_partner_requiez_form
+msgid "Business Name"
+msgstr "Nombre comercial"
+
+#. module: requiez
+#: model_terms:ir.ui.view,arch_db:requiez.shipping_label_report_document
+msgid "C.P"
+msgstr "C.P."
+
+#. module: requiez
+#: model_terms:ir.ui.view,arch_db:requiez.upload_forecast_view
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: requiez
+#: model:ir.model.fields,help:requiez.field_stock_location__default_location
+msgid "Check this box to allow the use                                       of this location as the default                                       location."
+msgstr "Marque esta casilla para permitir el uso de esta ubicación como la ubicación predeterminada."
+
+#. module: requiez
+#: model_terms:ir.ui.view,arch_db:requiez.upload_forecast_view
+msgid "Confirm"
+msgstr "Confirmar"
+
+#. module: requiez
+#: model:ir.model,name:requiez.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: requiez
+#: model:ir.model.fields,field_description:requiez.field_mrp_mps_location__create_uid
+#: model:ir.model.fields,field_description:requiez.field_upload_forecast__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: requiez
+#: model:ir.model.fields,field_description:requiez.field_mrp_mps_location__create_date
+#: model:ir.model.fields,field_description:requiez.field_upload_forecast__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: requiez
+#: model:ir.model.fields,field_description:requiez.field_res_partner__credit_avaiable
+#: model:ir.model.fields,field_description:requiez.field_res_users__credit_avaiable
+msgid "Credit Avaiable"
+msgstr "Crédito disponible"
+
+#. module: requiez
+#: model:ir.model.fields,field_description:requiez.field_res_partner__credit_expired
+#: model:ir.model.fields,field_description:requiez.field_res_users__credit_expired
+msgid "Credit Expired"
+msgstr "Crédito expirado"
+
+#. module: requiez
+#: model:ir.model.fields,field_description:requiez.field_res_partner__credit_ignore
+#: model:ir.model.fields,field_description:requiez.field_res_users__credit_ignore
+msgid "Credit Ignore"
+msgstr "Permitir sobre pasar límite de crédito"
+
+#. module: requiez
+#: model:ir.model.fields,field_description:requiez.field_res_partner__credit_limit
+#: model:ir.model.fields,field_description:requiez.field_res_users__credit_limit
+msgid "Credit Limit"
+msgstr "Crédito límite"
+
+#. module: requiez
+#: model:ir.model.fields,field_description:requiez.field_res_partner__credit_used
+#: model:ir.model.fields,field_description:requiez.field_res_users__credit_used
+msgid "Credit Used"
+msgstr "Crédito utilizado"
+
+#. module: requiez
+#: model_terms:ir.ui.view,arch_db:requiez.mrp_report_document
+msgid "Current Date"
+msgstr "Fecha actual"
+
+#. module: requiez
+#: model_terms:ir.ui.view,arch_db:requiez.mrp_report_document
+msgid "Customer"
+msgstr "Cliente"
+
+#. module: requiez
+#: model:ir.model.fields,field_description:requiez.field_sale_order__client_order_ref
+msgid "Customer Reference"
+msgstr "Referencia cliente"
+
+#. module: requiez
+#: model:ir.model.fields,field_description:requiez.field_sale_order__date_promised
+msgid "Date Promised"
+msgstr "Fecha Promesa de Entrega"
+
+#. module: requiez
+#: model:ir.model.fields,field_description:requiez.field_mrp_mps_location__display_name
+#: model:ir.model.fields,field_description:requiez.field_report_requiez_print_prod_label_mrp__display_name
+#: model:ir.model.fields,field_description:requiez.field_report_requiez_print_prod_label_picking__display_name
+#: model:ir.model.fields,field_description:requiez.field_upload_forecast__display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: requiez
+#: model:ir.model.fields,field_description:requiez.field_res_partner__expired_ignore
+#: model:ir.model.fields,field_description:requiez.field_res_users__expired_ignore
+msgid "Expired Ignore"
+msgstr "Permitir vender a crédito con saldo vencido"
+
+#. module: requiez
+#: model:ir.model.fields,field_description:requiez.field_upload_forecast__data_file
+msgid "File"
+msgstr "Archivo"
+
+#. module: requiez
+#: model:ir.model.fields,field_description:requiez.field_upload_forecast__name
+msgid "File Name"
+msgstr "Nombre del archivo"
+
+#. module: requiez
+#: model:ir.model.fields,field_description:requiez.field_res_partner__grace_days
+#: model:ir.model.fields,field_description:requiez.field_res_users__grace_days
+msgid "Grace Days"
+msgstr "Días de gracia"
+
+#. module: requiez
+#: model:ir.model.fields,field_description:requiez.field_mrp_mps_location__id
+#: model:ir.model.fields,field_description:requiez.field_report_requiez_print_prod_label_mrp__id
+#: model:ir.model.fields,field_description:requiez.field_report_requiez_print_prod_label_picking__id
+#: model:ir.model.fields,field_description:requiez.field_upload_forecast__id
+msgid "ID"
+msgstr "ID"
+
+#. module: requiez
+#: model:ir.model,name:requiez.model_stock_location
+msgid "Inventory Locations"
+msgstr "Ubicaciones de inventario"
+
+#. module: requiez
+#: model:ir.model,name:requiez.model_account_invoice
+#: model:ir.ui.menu,name:requiez.menu_report_product_payment_all
+msgid "Invoice"
+msgstr "Factura"
+
+#. module: requiez
+#: model:res.groups,name:requiez.account_invoice_cancel
+msgid "Invoice Cancel"
+msgstr "Cancelar factura"
+
+#. module: requiez
+#: model:ir.model.fields,field_description:requiez.field_stock_location__default_location
+msgid "Is the default location?"
+msgstr "Es ubicación por defecto?"
+
+#. module: requiez
+#: model:ir.model.fields,field_description:requiez.field_stock_picking__account_moves
+msgid "Jornal Entry"
+msgstr "Diario de entrada"
+
+#. module: requiez
+#: model:ir.model.fields,field_description:requiez.field_mrp_mps_location____last_update
+#: model:ir.model.fields,field_description:requiez.field_report_requiez_print_prod_label_mrp____last_update
+#: model:ir.model.fields,field_description:requiez.field_report_requiez_print_prod_label_picking____last_update
+#: model:ir.model.fields,field_description:requiez.field_upload_forecast____last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: requiez
+#: model:ir.model.fields,field_description:requiez.field_mrp_mps_location__write_uid
+#: model:ir.model.fields,field_description:requiez.field_upload_forecast__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: requiez
+#: model:ir.model.fields,field_description:requiez.field_mrp_mps_location__write_date
+#: model:ir.model.fields,field_description:requiez.field_upload_forecast__write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: requiez
+#: model:ir.model.fields,field_description:requiez.field_mrp_mps_location__location_id
+msgid "Location"
+msgstr "Ubicación"
+
+#. module: requiez
+#: model:ir.model.fields,field_description:requiez.field_stock_warehouse_orderpoint__mps
+msgid "MPS"
+msgstr "MPS"
+
+#. module: requiez
+#: model:ir.actions.act_window,name:requiez.action_mrp_mps_location
+#: model:ir.ui.menu,name:requiez.mrp_mps_location_menu
+msgid "MPS Location"
+msgstr "Ubicación MPS"
+
+#. module: requiez
+#: model:ir.model,name:requiez.model_mrp_mps_report
+msgid "MPS Report"
+msgstr "Reporte MPS"
+
+#. module: requiez
+#: model:ir.model,name:requiez.model_stock_warehouse_orderpoint
+msgid "Minimum Inventory Rule"
+msgstr "Regla de inventario mínimo"
+
+#. module: requiez
+#: model_terms:ir.ui.view,arch_db:requiez.mrp_report_document
+msgid "Observation"
+msgstr "Observación"
+
+#. module: requiez
+#: model:ir.actions.act_window,name:requiez.partner_credit_action_tree
+msgid "Partner"
+msgstr "Cliente"
+
+#. module: requiez
+#: model:ir.ui.menu,name:requiez.menu_partner_credit
+msgid "Partner credit"
+msgstr "Crédito del cliente"
+
+#. module: requiez
+#: model:ir.model.fields,field_description:requiez.field_account_invoice__date_payment
+msgid "Payment Date"
+msgstr "Fecha de pago"
+
+#. module: requiez
+#: model:ir.model.fields,field_description:requiez.field_account_invoice__prioritized
+msgid "Prioritized"
+msgstr "Priorizado"
+
+#. module: requiez
+#: model_terms:ir.ui.view,arch_db:requiez.mrp_report_document
+msgid "Priority"
+msgstr "Prioridad"
+
+#. module: requiez
+#: model:ir.model,name:requiez.model_procurement_group
+msgid "Procurement Group"
+msgstr "Grupo de abastecimiento"
+
+#. module: requiez
+#: model_terms:ir.ui.view,arch_db:requiez.mrp_report_document
+msgid "Product"
+msgstr "Producto"
+
+#. module: requiez
+#: model_terms:ir.ui.view,arch_db:requiez.mrp_report_document
+msgid "Product Code"
+msgstr "Código de producto"
+
+#. module: requiez
+#: model:ir.actions.report,name:requiez.print_product_label_mrp
+#: model:ir.actions.report,name:requiez.print_product_label_picking
+msgid "Product Label"
+msgstr "Etiqueta de producto"
+
+#. module: requiez
+#: model_terms:ir.ui.view,arch_db:requiez.mrp_report_document
+msgid "Production Order"
+msgstr "Orden de producción"
+
+#. module: requiez
+#: model_terms:ir.ui.view,arch_db:requiez.mrp_report_document
+msgid "Quantity"
+msgstr "Cantidad"
+
+#. module: requiez
+#: model:res.groups,name:requiez.group_confirm_order
+msgid "Responsible Confirm Order"
+msgstr "Responsable de confirmar Orden"
+
+#. module: requiez
+#: model:res.groups,name:requiez.group_prioritize
+msgid "Responsible for prioritize invoice"
+msgstr "Responsable de priorizar factura"
+
+#. module: requiez
+#: model:ir.model,name:requiez.model_sale_order
+msgid "Sale Order"
+msgstr "Pedido de venta"
+
+#. module: requiez
+#: model:ir.model.fields,field_description:requiez.field_res_partner__sale_order_ignore
+#: model:ir.model.fields,field_description:requiez.field_res_users__sale_order_ignore
+msgid "Sale Order Ignore"
+msgstr "Ignorar ventas sin facturar"
+
+#. module: requiez
+#: model:ir.actions.act_window,name:requiez.action_sale_order_type
+#: model:ir.ui.menu,name:requiez.menu_sale_order_type
+#: model_terms:ir.ui.view,arch_db:requiez.mrp_mps_location_view
+msgid "Sale Order Type"
+msgstr "Tipo de pedido de venta"
+
+#. module: requiez
+#: model:ir.model,name:requiez.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Línea de pedido de venta"
+
+#. module: requiez
+#: model:ir.model.fields,field_description:requiez.field_sale_order__user_id
+msgid "Salesperson"
+msgstr "Comercial"
+
+#. module: requiez
+#: model:ir.actions.report,name:requiez.print_shipping_label
+msgid "Shipping Label"
+msgstr "Etiqueta de envío"
+
+#. module: requiez
+#: model:ir.actions.report,name:requiez.print_shipping_order
+msgid "Shipping Order"
+msgstr "Orden de envío"
+
+#. module: requiez
+#: model:ir.model.fields,field_description:requiez.field_upload_forecast__state
+msgid "State"
+msgstr "Provincia"
+
+#. module: requiez
+#: model:ir.model,name:requiez.model_stock_move
+msgid "Stock Move"
+msgstr "Movimiento de existencias"
+
+#. module: requiez
+#: model:ir.model.fields,field_description:requiez.field_stock_picking__stock_move_ids
+msgid "Stock Moves"
+msgstr "Movimientos de stock"
+
+#. module: requiez
+#: model_terms:ir.ui.view,arch_db:requiez.shipping_label_report_document
+msgid "TEL."
+msgstr "Tel."
+
+#. module: requiez
+#: model_terms:ir.ui.view,arch_db:requiez.upload_forecast_view
+msgid "This wizard lets upload a file. First column: Product name,\n"
+"                    Second column: date. Third column: quantity"
+msgstr "Este asistente permite cargar un archivo. Primera columna: nombre del producto,\n"
+"                    Segunda columna: fecha. Tercera columna: cantidad"
+
+#. module: requiez
+#: model:ir.model,name:requiez.model_stock_picking
+msgid "Transfer"
+msgstr "Albarán"
+
+#. module: requiez
+#: model:ir.actions.act_window,name:requiez.action_upload_forecast
+#: model:ir.ui.menu,name:requiez.mrp_upload_forecast
+#: model_terms:ir.ui.view,arch_db:requiez.upload_forecast_view
+msgid "Upload Forecast"
+msgstr "Actualizar Previsión"
+
+#. module: requiez
+#: model:ir.actions.report,name:requiez.mrp_drall_report
+msgid "Work Order Report"
+msgstr "Reporte de orden de trabajo"
+
+#. module: requiez
+#: selection:upload.forecast,state:0
+msgid "choose"
+msgstr "Selección"
+
+#. module: requiez
+#: model_terms:ir.ui.view,arch_db:requiez.view_partner_credit_form
+msgid "credit control"
+msgstr "Control de crédito"
+
+#. module: requiez
+#: selection:upload.forecast,state:0
+msgid "get"
+msgstr "Obtener"
+
+#. module: requiez
+#: model:ir.model,name:requiez.model_mrp_mps_location
+msgid "mrp.mps.location"
+msgstr ""
+
+#. module: requiez
+#: model_terms:ir.ui.view,arch_db:requiez.upload_forecast_view
+msgid "or"
+msgstr "o"
+
+#. module: requiez
+#: model:ir.model,name:requiez.model_report_requiez_print_prod_label_mrp
+msgid "report.requiez.print_prod_label_mrp"
+msgstr ""
+
+#. module: requiez
+#: model:ir.model,name:requiez.model_report_requiez_print_prod_label_picking
+msgid "report.requiez.print_prod_label_picking"
+msgstr ""
+
+#. module: requiez
+#: model:ir.model,name:requiez.model_upload_forecast
+msgid "upload.forecast"
+msgstr ""
