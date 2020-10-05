@@ -47,6 +47,7 @@
         "mrp_maintenance",
         "mrp_plm",
         "mrp_mps",
+        "mrp_mpps_requiez",
         "pad",
         "pad_project",
         "product_compromise",
@@ -81,11 +82,7 @@
         "website_theme_install",
     ],
     "data": [
-        # Data
         "data/chart_template.xml",
-        "data/res_company_data.xml",
-        "data/report_data.xml",
-        "data/mail_template_data.xml",
         # Security
         "security/ir.model.access.csv",
         "security/responsible_confirm_order_security.xml",
@@ -93,7 +90,10 @@
         "security/archive_product_security.xml",
         "security/account_control_security.xml",
         "security/invoice_cancel_security.xml",
-
+        # Data
+        "data/res_company_data.xml",
+        "data/report_data.xml",
+        "data/mail_template_data.xml",
         # Views
         "view/res_partner_view.xml",
         "view/product_view.xml",
