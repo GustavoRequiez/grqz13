@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="mrp_mps_report_view_form" model="ir.ui.view">
+        <field name="name">mrp.mps.report.view.form</field>
+        <field name="model">mrp.mps.report</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <group>
+                        <field name="product_id" domain="[('mps_active', '=', False), ('type', '=', 'product')]"/>
+                    </group>
+                </group>
+                <footer>
+                    <button name="add_product_mps" type="object" string="Add Product" class="btn-primary"/>
+                    <button string="Cancel" class="btn btn-secondary" special="cancel" />
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="mrp_mps_report_action_client" model="ir.actions.client">
+        <field name="name">Master Production Schedule</field>
+        <field name="tag">mrp_mps_report</field>
+    </record>
+
+    <menuitem id="mrp_mps_menu_planning"
+        name="MPS"
+        sequence="3"
+        parent="mrp.mrp_planning_menu_root"/>
+
+    <menuitem
+        id="mrp_mps_report_menu"
+        name="Master Production Schedule"
+        action="mrp_mps_report_action_client"
+        groups="mrp.group_mrp_manager"
+        sequence="1"
+        parent="mrp_mps_menu_planning"/>
+</odoo>

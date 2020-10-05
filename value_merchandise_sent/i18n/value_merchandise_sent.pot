@@ -1,0 +1,149 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* value_merchandise_sent
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-01-15 19:42+0000\n"
+"PO-Revision-Date: 2020-01-15 19:42+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: value_merchandise_sent
+#: model:ir.ui.view,arch_db:value_merchandise_sent.upload_carrier_tracking_view
+#: model:ir.ui.view,arch_db:value_merchandise_sent.value_merchandise_sent_view
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: value_merchandise_sent
+#: model:ir.ui.view,arch_db:value_merchandise_sent.upload_carrier_tracking_view
+msgid "Confirm"
+msgstr "Confirmar"
+
+#. module: value_merchandise_sent
+#: model:ir.model.fields,field_description:value_merchandise_sent.field_upload_carrier_tracking_create_uid
+#: model:ir.model.fields,field_description:value_merchandise_sent.field_value_merchandise_sent_create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: value_merchandise_sent
+#: model:ir.model.fields,field_description:value_merchandise_sent.field_upload_carrier_tracking_create_date
+#: model:ir.model.fields,field_description:value_merchandise_sent.field_value_merchandise_sent_create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: value_merchandise_sent
+#: model:ir.model.fields,field_description:value_merchandise_sent.field_upload_carrier_tracking_csv_file
+#: model:ir.model.fields,field_description:value_merchandise_sent.field_value_merchandise_sent_csv_file
+msgid "Csv File"
+msgstr "Archivo CSV"
+
+#. module: value_merchandise_sent
+#: model:ir.model.fields,field_description:value_merchandise_sent.field_upload_carrier_tracking_display_name
+#: model:ir.model.fields,field_description:value_merchandise_sent.field_value_merchandise_sent_display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: value_merchandise_sent
+#: model:ir.ui.view,arch_db:value_merchandise_sent.value_merchandise_sent_view
+msgid "Do you want to print?"
+msgstr "Generar archivo?"
+
+#. module: value_merchandise_sent
+#: model:ir.model.fields,field_description:value_merchandise_sent.field_upload_carrier_tracking_data_file
+msgid "File"
+msgstr "Archivo"
+
+#. module: value_merchandise_sent
+#: model:ir.model.fields,field_description:value_merchandise_sent.field_upload_carrier_tracking_name
+msgid "File Name"
+msgstr "Nombre del archivo"
+
+#. module: value_merchandise_sent
+#: model:ir.ui.view,arch_db:value_merchandise_sent.value_merchandise_sent_view
+msgid "Get"
+msgstr "Generar"
+
+#. module: value_merchandise_sent
+#: model:ir.actions.act_window,name:value_merchandise_sent.action_value_merchandise_sent
+msgid "Get file"
+msgstr "Generar archivo"
+
+#. module: value_merchandise_sent
+#: model:ir.model.fields,field_description:value_merchandise_sent.field_upload_carrier_tracking_getted
+#: model:ir.model.fields,field_description:value_merchandise_sent.field_value_merchandise_sent_getted
+msgid "Getted"
+msgstr "generado"
+
+#. module: value_merchandise_sent
+#: model:ir.model.fields,field_description:value_merchandise_sent.field_upload_carrier_tracking_id
+#: model:ir.model.fields,field_description:value_merchandise_sent.field_value_merchandise_sent_id
+msgid "ID"
+msgstr "ID"
+
+#. module: value_merchandise_sent
+#: model:ir.model.fields,field_description:value_merchandise_sent.field_upload_carrier_tracking___last_update
+#: model:ir.model.fields,field_description:value_merchandise_sent.field_value_merchandise_sent___last_update
+msgid "Last Modified on"
+msgstr "Última modificación el"
+
+#. module: value_merchandise_sent
+#: model:ir.model.fields,field_description:value_merchandise_sent.field_upload_carrier_tracking_write_uid
+#: model:ir.model.fields,field_description:value_merchandise_sent.field_value_merchandise_sent_write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: value_merchandise_sent
+#: model:ir.model.fields,field_description:value_merchandise_sent.field_upload_carrier_tracking_write_date
+#: model:ir.model.fields,field_description:value_merchandise_sent.field_value_merchandise_sent_write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: value_merchandise_sent
+#: model:ir.model.fields,field_description:value_merchandise_sent.field_value_merchandise_sent_name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: value_merchandise_sent
+#: model:ir.model.fields,field_description:value_merchandise_sent.field_upload_carrier_tracking_state
+msgid "State"
+msgstr "Estado"
+
+#. module: value_merchandise_sent
+#: model:ir.actions.act_window,name:value_merchandise_sent.action_upload_carrier_tracking
+#: model:ir.ui.menu,name:value_merchandise_sent.menu_upload_carrier_tracking
+#: model:ir.ui.view,arch_db:value_merchandise_sent.upload_carrier_tracking_view
+msgid "Upload tracking reference"
+msgstr "Subir referencia de seguimiento"
+
+#. module: value_merchandise_sent
+#: model:res.groups,name:value_merchandise_sent.value_merchandise_group
+msgid "Value Merchandise"
+msgstr "Valor de mercancia"
+
+#. module: value_merchandise_sent
+#: model:ir.model,name:value_merchandise_sent.model_value_merchandise_sent
+#: model:ir.ui.view,arch_db:value_merchandise_sent.value_merchandise_sent_view
+msgid "Value of merchandise sent"
+msgstr "Valor de mercancia enviada"
+
+#. module: value_merchandise_sent
+#: selection:upload.carrier.tracking,state:0
+msgid "choose"
+msgstr "Seleccion"
+
+#. module: value_merchandise_sent
+#: selection:upload.carrier.tracking,state:0
+msgid "get"
+msgstr "Obtener"
+
+#. module: value_merchandise_sent
+#: model:ir.model,name:value_merchandise_sent.model_upload_carrier_tracking
+msgid "upload.carrier.tracking"
+msgstr ""

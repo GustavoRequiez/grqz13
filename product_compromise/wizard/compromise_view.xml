@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record id="compromise_view" model="ir.ui.view">
+    <field name="name">compromise.view</field>
+    <field name="model">compromise</field>
+    <field name="arch" type="xml">
+      <form string="Compromise Products">
+        <group col="4">
+          <field name="qty_compromise"/>
+          <field name="stock_move_in_id" options="{'no_open': True, 'no_create': True}"/>
+          <field name="compromise_max"/>
+        </group>
+        <footer>
+          <button name="confirm" string="Confirm" type="object" default_focus="1" class="oe_highlight"/>
+          or
+          <button string="Cancel" class="oe_link" special="cancel"/>
+        </footer>
+      </form>
+    </field>
+  </record>
+  <record id="action_compromise" model="ir.actions.act_window">
+    <field name="name">action.compromise</field>
+    <field name="res_model">compromise</field>
+    <!-- <field name="view_type">form</field> -->
+    <field name="view_mode">form</field>
+    <field name="target">new</field>
+  </record>
+  <record id="liberate_view" model="ir.ui.view">
+    <field name="name">liberate.view</field>
+    <field name="model">liberate</field>
+    <field name="arch" type="xml">
+      <form string="Liberate Products">
+        <group>
+          <field name="stock_move_in_id" options="{'no_open': True, 'no_create': True}"/>
+        </group>
+        <footer>
+          <button name="confirm" string="Confirm" type="object" default_focus="1" class="oe_highlight"/>
+          or
+          <button string="Cancel" class="oe_link" special="cancel"/>
+        </footer>
+      </form>
+    </field>
+  </record>
+  <record id="action_liberate" model="ir.actions.act_window">
+    <field name="name">action.liberate</field>
+    <field name="res_model">liberate</field>
+    <!-- <field name="view_type">form</field> -->
+    <field name="view_mode">form</field>
+    <field name="target">new</field>
+  </record>
+  <record id="reserve_view" model="ir.ui.view">
+    <field name="name">reserve.view</field>
+    <field name="model">reserve</field>
+    <field name="arch" type="xml">
+      <form string="Reserve Products">
+        <group col="4">
+          <field name="qty_reserve"/>
+        </group>
+        <footer>
+          <button name="confirm" string="Confirm" type="object" default_focus="1" class="oe_highlight"/>
+          or
+          <button string="Cancel" class="oe_link" special="cancel"/>
+        </footer>
+      </form>
+    </field>
+  </record>
+  <record id="action_reserve" model="ir.actions.act_window">
+    <field name="name">action.reserve</field>
+    <field name="res_model">reserve</field>
+    <!-- <field name="view_type">form</field> -->
+    <field name="view_mode">form</field>
+    <field name="target">new</field>
+  </record>
+</odoo>

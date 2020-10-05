@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="product_compromise_view" model="ir.ui.view">
+        <field name="name">product.compromise.view</field>
+        <field name="model">product.compromise</field>
+        <field name="arch" type="xml">
+            <form string="Product Compromise">
+                <sheet>
+                    <group col="4">
+                        <field name="stock_move_in_id" options="{'no_create': True}"/>
+                        <field name="move_picking_id"/>
+                        <field name="qty_compromise"/>
+                        <field name="state"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

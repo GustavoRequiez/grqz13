@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="sale_order_compromise_form" model="ir.ui.view">
+        <field name="name">sale.order.compromise.form</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='product_id']" position="after">
+                <field name="product_brand"/>
+                <field name="product_categ"/>
+                <field name="product_default_code"/>
+            </xpath>
+            <xpath expr="//page/field[@name='order_line']/form/div" position="replace">
+                <notebook>
+                    <page string="Materials List" >
+                        <field name="mrp_move_raw_ids" mode="tree">
+                            <form string="Sales Order Lines">
+                                <header attrs="{'invisible':[('state','=','done')]}">
+                                    <button name="action_compromise" type="object" string="Compromise" class="btn-primary"/>
+                                    <button name="action_liberate" type="object" string="Liberate" class="btn-primary"/>
+                                    <button name="action_reserve" type="object" string="Reserve" class="btn-primary"/>
+                                </header>
+                                <sheet>
+                                    <group>
+                                        <group>
+                                            <field name="product_id"/>
+                                            <field name="product_uom_qty" />
+                                            <field name="string_availability_info" />
+                                            <field name="compromise_qty" />
+                                        </group>
+                                        <group string='Total'>
+                                            <field name="product_qty_product" />
+                                            <field name="total_reserved_product" />
+                                            <field name="dis_product" />
+                                            <field name="product_incoming_qty" />
+                                            <field name="total_compromise_product" />
+                                            <field name="dis_product_in" />
+                                            <field name="state" invisible="1"/>
+                                        </group>
+                                    </group>
+                                    <field name="product_compromise_ids" mode="tree">
+                                        <tree string="Sales Order Lines" editable="bottom" >
+                                            <field name="stock_move_in_id" />
+                                            <field name="qty_compromise" />
+                                            <field name="state" />
+                                        </tree>
+                                    </field>
+                                </sheet>
+                            </form>
+                            <tree string="Sales Order Lines" editable="bottom">
+                                <field name="product_id" />
+                                <field name="product_uom_qty" />
+                                <field name="string_availability_info" />
+                                <field name="state" invisible="0"/>
+                            </tree>
+                        </field>
+                    </page>
+                    <page string="Invoice Lines" groups="base.group_no_one">
+                        <div groups="base.group_no_one">
+                            <field name="invoice_lines"/>
+                        </div>
+                    </page>
+                </notebook>
+            </xpath>
+        </field>
+    </record>
+</odoo>

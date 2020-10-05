@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+  <record id="mrp_ii_view" model="ir.ui.view">
+    <field name="name">mrp.ii.view</field>
+    <field name="model">mrp.ii</field>
+    <field name="arch" type="xml">
+      <form string="MRP II">
+        <sheet>
+          <group>
+            <group>
+              <field name="product_id"/>
+              <field name="qty_product"/>
+            </group>
+            <group>
+              <field name="location_id"/>
+              <field name="bom_id" domain="[('product_tmpl_id','=',product_id)]"/>
+            </group>
+          </group>
+          <field name="bill_material_ii_ids" mode="tree">
+            <tree string="BoM">
+              <field name="product_id"/>
+              <field name="qty_product"/>
+              <field name="product_qty_product"/>
+              <field name="total_reserved_product"/>
+              <field name="dis_product"/>
+              <field name="product_incoming_qty"/>
+              <field name="total_compromise_product"/>
+              <field name="dis_product_in"/>
+            </tree>
+          </field>
+        </sheet>
+        <footer>
+          <button string='Calculate' name="calculate" type="object" class="btn-primary"/>
+          <button string="Cancel" class="btn-default" special="cancel"/>
+        </footer>
+      </form>
+    </field>
+  </record>
+
+  <record model="ir.actions.act_window" id="action_mrp_ii">
+    <field name="name">MRP II</field>
+    <field name="res_model">mrp.ii</field>
+    <field name="view_mode">form</field>
+    <field name="target">new</field>
+  </record>
+
+  <menuitem id="menu_mrp_ii" name="MRP II" parent="mrp_workorder.mrp_workorder_menu_planning" action="action_mrp_ii"/>
+
+  <record id="bill_material_ii_view" model="ir.ui.view">
+    <field name="name">bill.material.ii.view</field>
+    <field name="model">bill.material.ii</field>
+    <field name="arch" type="xml">
+      <form string="BoM">
+        <sheet>
+          <group>
+            <group>
+              <field name="product_id" readonly="1"/>
+              <field name="qty_product" readonly="1"/>
+            </group>
+            <group>
+              <field name="product_qty_product"/>
+              <field name="total_reserved_product"/>
+              <field name="dis_product"/>
+              <field name="product_incoming_qty"/>
+              <field name="total_compromise_product"/>
+              <field name="dis_product_in"/>
+
+            </group>
+          </group>
+          <notebook>
+            <page string="Sale">
+              <field name="bill_material_ii_sale_ids" mode="tree">
+                <tree string="BoM">
+                  <field name="partner_id"/>
+                  <field name="sale_id"/>
+                  <field name="product_qty"/>
+                  <field name="product_reserved_qty"/>
+                </tree>
+              </field>
+            </page>
+            <page string="Sale - Purchase">
+              <field name="bill_material_ii_purchase_ids" mode="tree">
+                <tree string="BoM">
+                  <field name="partner_id"/>
+                  <field name="sale_id"/>
+                  <field name="product_qty"/>
+                  <field name="picking_purchase_order"/>
+                  <field name="compromise_product"/>
+                </tree>
+              </field>
+            </page>
+          </notebook>
+        </sheet>
+      </form>
+    </field>
+  </record>
+
+  <record id="bill_material_ii_purchase_view" model="ir.ui.view">
+    <field name="name">bill.material.ii.purchase.view</field>
+    <field name="model">bill.material.ii.purchase</field>
+    <field name="arch" type="xml">
+      <form string="BoM">
+        <sheet>
+          <group>
+            <group>
+              <field name="product_qty" readonly="1"/>
+              <field name="partner_id"/>
+              <field name="sale_id" readonly="1"/>
+            </group>
+            <group>
+              <field name="compromise_product"/>
+              <field name="picking_purchase_order"/>
+
+            </group>
+          </group>
+        </sheet>
+      </form>
+    </field>
+  </record>
+
+  <record id="bill_material_ii_sale_view" model="ir.ui.view">
+    <field name="name">bill.material.ii.sale.view</field>
+    <field name="model">bill.material.ii.sale</field>
+    <field name="arch" type="xml">
+      <form string="BoM">
+        <sheet>
+          <group>
+            <group>
+              <field name="partner_id"/>
+              <field name="sale_id" readonly="1"/>
+            </group>
+            <group>
+              <field name="product_qty"/>
+              <field name="product_reserved_qty"/>
+
+            </group>
+          </group>
+        </sheet>
+      </form>
+    </field>
+  </record>
+
+</odoo>

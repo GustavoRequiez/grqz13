@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_sale_commission_setting_sale_manager,sale.commission.setting,model_sale_commission_setting,sales_team.group_sale_manager,1,1,1,1
+access_account_association_sale_manager,account.association,model_account_association,sales_team.group_sale_manager,1,1,1,1
+access_sale_commission_brand,sale.commission.brand,model_sale_commission_brand,sales_team.group_sale_salesman,1,1,1,1
+access_account_association,account.association,model_account_association,base.group_user,1,0,0,0

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record model="ir.ui.view" id="revenue_history_projection_view_form">
+    <field name="name">revenue.history.projection.view.form</field>
+    <field name="model">revenue.history.projection</field>
+    <field name="type">form</field>
+    <field name="arch" type="xml">
+      <form string="Projection">
+        <group>
+          <group>
+            <field name="type_report" class="oe_inline" widget="radio"/>
+          </group>
+        </group>
+        <group>
+          <group>
+            <button name="get_revenue_history_projection" string="Get" type="object" class="oe_highlight"/>
+          </group>
+        </group>
+      </form>
+    </field>
+  </record>
+
+  <record id="view_revenue_history_projection_line_tree" model="ir.ui.view">
+    <field name="name">view.revenue.history.projection.line.tree</field>
+    <field name="model">revenue.history.projection.line</field>
+    <field name="type">tree</field>
+    <field name="arch" type="xml">
+      <tree string="Revenue History Projection">
+        <field name="partner_name"/>
+        <field name="invoice_number"/>
+        <field name="residual"/>
+        <field name="date_due"/>
+      </tree>
+    </field>
+  </record>
+
+  <record id="view_revenue_history_projection_pivot" model="ir.ui.view">
+    <field name="name">view.revenue.history.projection.pivot</field>
+    <field name="model">revenue.history.projection.line</field>
+    <field name="type">pivot</field>
+    <field name="arch" type="xml">
+      <pivot string="Projection of Income and Expenses">
+        <field name="week_number" type="col"/>
+        <field name="date_range" type="col"/>
+        <field name="partner_name" type="row"/>
+        <field name="invoice_number" type="row"/>
+        <field name="residual" type="measure"/>
+        <field name="date_due" type="row"/>
+      </pivot>
+    </field>
+  </record>
+
+  <record id="revenue_history_projection_action" model="ir.actions.act_window">
+    <field name="name">Projection of Income and Expenses</field>
+    <field name="res_model">revenue.history.projection</field>
+    <field name="view_mode">form</field>
+    <field name="target">new</field>
+  </record>
+
+  <menuitem id="menu_revenue_history_projection" name="Projection of Income and Expenses" sequence="20" parent="account_reports.account_reports_partners_reports_menu" action="revenue_history_projection_action"/>
+</odoo>

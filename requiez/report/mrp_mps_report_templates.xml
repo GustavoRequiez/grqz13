@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+  <template id="report_inventory_purchase" inherit_id="mrp_mps.report_inventory">
+
+    <xpath expr="//tr[hasclass('start_inventory')]" position="after">
+      <tr class="incoming_product">
+        <td>
+          <span class="fa fa-fw">+</span>Incoming Product</td>
+        <td t-foreach="product[1]" t-as="item" class="text-right">
+          <t t-esc="format_float(item['product_in'], {'precision': 2})"/>
+        </td>
+      </tr>
+      <tr class="compromise_product">
+        <td>
+          <span class="fa fa-fw">-</span>Compromise Product</td>
+        <td t-foreach="product[1]" t-as="item" class="text-right">
+          <t t-esc="format_float(item['compromise_qty'], {'precision': 2})"/>
+        </td>
+      </tr>
+      <tr class="outgoing_product">
+        <td>
+          <span class="fa fa-fw">-</span>Outgoing Product</td>
+        <td t-foreach="product[1]" t-as="item" class="text-right">
+          <t t-esc="format_float(item['product_out'], {'precision': 2})"/>
+        </td>
+      </tr>
+    </xpath>
+    <xpath expr="//tr[hasclass('indirect_demand')]" position="replace">
+      <tr class="compromise_product">
+        <td>
+          <span class="fa fa-fw">+</span>Product Incomming forecast</td>
+        <td t-foreach="product[1]" t-as="item" class="text-right">
+          <t t-esc="format_float(item['product_in_forecasted'], {'precision': 2})"/>
+        </td>
+      </tr>
+    </xpath>
+
+    <xpath expr="//strong[@class='btn btn-sm btn-link o_mps_product_name']" position="replace">
+      <!-- <strong class="oe_link o_mps_product_name" t-att-data-product="product[0].id" style="cursor:pointer;" t-esc="product[0].name_get()[0][1]"/> -->
+      <strong class="btn-link o_mps_product_name" t-att-data-product="product[0].id" style="cursor:pointer;" t-esc="product[0].name_get()[0][1]"/>
+    </xpath>
+  </template>
+
+</odoo>

@@ -1,0 +1,182 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* product_supply
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-04-01 18:23+0000\n"
+"PO-Revision-Date: 2020-04-01 18:23+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: product_supply
+#: model_terms:ir.ui.view,arch_db:product_supply.report_product_supply_document
+msgid "<strong>Date of Generation:</strong>"
+msgstr "<strong>Fecha de Generación:</strong>"
+
+#. module: product_supply
+#: model_terms:ir.ui.view,arch_db:product_supply.report_product_supply_document
+msgid "<strong>Destiny Location:</strong>"
+msgstr "<strong>Localización de Destino:</strong>"
+
+#. module: product_supply
+#: model_terms:ir.ui.view,arch_db:product_supply.report_product_supply_document
+msgid "<strong>Internal Reference</strong>"
+msgstr "<strong>Referencia Interna</strong>"
+
+#. module: product_supply
+#: model_terms:ir.ui.view,arch_db:product_supply.report_product_supply_document
+msgid "<strong>Lot</strong>"
+msgstr "<strong>Lote</strong>"
+
+#. module: product_supply
+#: model_terms:ir.ui.view,arch_db:product_supply.report_product_supply_document
+msgid "<strong>Origin Location:</strong>"
+msgstr "<strong>Localización de Origen:</strong>"
+
+#. module: product_supply
+#: model_terms:ir.ui.view,arch_db:product_supply.report_product_supply_document
+msgid "<strong>Product</strong>"
+msgstr "<strong>Producto</strong>"
+
+#. module: product_supply
+#: model_terms:ir.ui.view,arch_db:product_supply.report_product_supply_document
+msgid "<strong>Quantity</strong>"
+msgstr "<strong>Cantidad</strong>"
+
+#. module: product_supply
+#: model:ir.model.fields,field_description:product_supply.field_stock_move__product_brand
+#: model_terms:ir.ui.view,arch_db:product_supply.view_move_product_supply_search
+msgid "Brand"
+msgstr "Marca"
+
+#. module: product_supply
+#: model_terms:ir.ui.view,arch_db:product_supply.product_supply_view
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: product_supply
+#: model_terms:ir.ui.view,arch_db:product_supply.product_supply_view
+msgid "Confirm"
+msgstr "Confirmar"
+
+#. module: product_supply
+#: model:ir.actions.act_window,name:product_supply.action_product_supply
+msgid "Confirm supply"
+msgstr "Confirmar surtido"
+
+#. module: product_supply
+#: model:ir.model.fields,field_description:product_supply.field_product_supply__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: product_supply
+#: model:ir.model.fields,field_description:product_supply.field_product_supply__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: product_supply
+#: model:ir.model.fields,field_description:product_supply.field_stock_move__mrp_date
+msgid "Date_planned"
+msgstr "Fecha Planificada"
+
+#. module: product_supply
+#: model:ir.model.fields,field_description:product_supply.field_stock_move__product_default_code
+msgid "Default code"
+msgstr "Código predeterminado"
+
+#. module: product_supply
+#: model:ir.model.fields,field_description:product_supply.field_product_supply__display_name
+#: model:ir.model.fields,field_description:product_supply.field_report_product_supply_report_product_supply__display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: product_supply
+#: model:ir.model.fields,field_description:product_supply.field_product_supply__id
+#: model:ir.model.fields,field_description:product_supply.field_report_product_supply_report_product_supply__id
+msgid "ID"
+msgstr ""
+
+#. module: product_supply
+#: model:ir.model.fields,field_description:product_supply.field_product_supply____last_update
+#: model:ir.model.fields,field_description:product_supply.field_report_product_supply_report_product_supply____last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: product_supply
+#: model:ir.model.fields,field_description:product_supply.field_product_supply__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: product_supply
+#: model:ir.model.fields,field_description:product_supply.field_product_supply__write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: product_supply
+#: model:ir.model.fields,field_description:product_supply.field_stock_move__lotes
+msgid "Lotes"
+msgstr "Lotes"
+
+#. module: product_supply
+#: model:ir.actions.act_window,name:product_supply.action_outgoing2_material_tree
+#: model:ir.ui.menu,name:product_supply.menu_outgoing2_material
+msgid "Outgoing Material"
+msgstr "Materia Prima Saliente"
+
+#. module: product_supply
+#: model:ir.actions.act_window,name:product_supply.action_outgoing_material_tree
+#: model:ir.ui.menu,name:product_supply.menu_outgoing_material
+msgid "Outgoing Material for Tomorrow"
+msgstr "Materia Prima Saliente para mañana"
+
+#. module: product_supply
+#: model:ir.actions.report,name:product_supply.action_print_report_product_supply
+msgid "Product Supply Report"
+msgstr "Informe de suministro de productos"
+
+#. module: product_supply
+#: model_terms:ir.ui.view,arch_db:product_supply.product_supply_view
+msgid "Products supply"
+msgstr "Informe de suministro"
+
+#. module: product_supply
+#: model:ir.model.fields,field_description:product_supply.field_stock_move__sale_order_type_id
+msgid "Sale Order Type"
+msgstr "Tipo de pedido de venta"
+
+#. module: product_supply
+#: model:ir.model,name:product_supply.model_stock_move
+msgid "Stock Move"
+msgstr "Movimiento de existencias"
+
+#. module: product_supply
+#: model_terms:ir.ui.view,arch_db:product_supply.product_supply_view
+msgid "or"
+msgstr "o"
+
+#. module: product_supply
+#: model:ir.model,name:product_supply.model_product_supply
+msgid "product.supply"
+msgstr ""
+
+#. module: product_supply
+#: model:ir.model,name:product_supply.model_report_product_supply_report_product_supply
+msgid "report.product_supply.report_product_supply"
+msgstr ""
+
+#. module: product_supply
+#: model:ir.model,name:product_supply.model_report_product_supply_report_supply
+msgid "report.product_supply.report_supply"
+msgstr ""
+
+#. module: product_supply
+#: model_terms:ir.ui.view,arch_db:product_supply.product_supply_view
+msgid "you want to print?"
+msgstr "Quieres imprimir??"

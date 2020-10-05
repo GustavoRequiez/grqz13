@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <template id="report_product_supply">
+    <t t-call="web.html_container">
+      <t t-call="product_supply.report_product_supply_document" t-lang="user.partner_id.lang"/>
+    </t>
+  </template>
+  <!-- Translatable template -->
+  <template id="report_product_supply_document">
+    <t t-set="docs" t-value="docs.with_context({'lang':user.partner_id.lang})"/>
+    <t t-call="web.external_layout">
+      <div class="page" style="font-size:16px;">
+        <div class="row text-right" style="padding-right: 35px;">
+          <strong>Date of Generation:</strong>
+          <p t-raw="datetime.datetime.today().strftime('%d-%m-%Y %H:%M:%S')"/>
+          <strong>Origin Location:</strong>
+          <span t-esc="data['origin']"/>
+          <strong>Destiny Location:</strong>
+          <span t-esc="data['dest']"/>
+        </div>
+        <br/><br/>
+        <table class="table table-condensed">
+          <thead>
+            <tr>
+              <th >
+                <strong>Internal Reference</strong>
+              </th>
+              <th >
+                <strong>Product</strong>
+              </th>
+              <th >
+                <strong>Quantity</strong>
+              </th>
+              <th >
+                <strong>Lot</strong>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <t t-foreach="data['moves']" t-as="brand">
+              <tr>
+                <td t-if="brand != 'NA'" width="300" align="left">
+                  <span t-esc="brand"/>
+                </td>
+              </tr>
+              <t t-foreach="data['moves'][brand]" t-as="product">
+                <t t-foreach="data['moves'][brand][product]" t-as="lot">
+                  <t t-set="qty" t-value="data['moves'][brand][product][lot]['qty']"/>
+                  <t t-set="obj_lot" t-value="env['stock.production.lot'].browse(int(lot))"/>
+                  <t t-set="move" t-value="env['stock.move.line'].browse(data['moves'][brand][product][lot]['move'])"/>
+                  <tr>
+                    <td width="300" align="left">
+                      <span t-esc="move.product_id.default_code"/>
+                    </td>
+                    <td width="300" align="left">
+                      <span t-esc="move.product_id.name"/>
+                    </td>
+                    <td t-if="qty &gt; 0" width="300" align="left">
+                      <span t-esc="qty"/>
+                    </td>
+                    <td t-if="qty &gt; 0" width="300" align="left">
+                      <span t-esc="obj_lot.name"/>
+                    </td>
+                  </tr>
+                </t>
+              </t>
+            </t>
+          </tbody>
+        </table>
+      </div>
+    </t>
+  </template>
+</odoo>

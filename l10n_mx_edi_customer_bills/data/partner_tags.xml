@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="tag_customer_avoid_duplicate_folio" model="res.partner.category">
+        <field name="name">Avoid duplicate folio</field>
+    </record>
+</odoo>

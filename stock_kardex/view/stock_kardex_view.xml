@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+  <record id="stock_kardex_view" model="ir.ui.view">
+    <field name="name">stock.kardex.view</field>
+    <field name="model">stock.kardex</field>
+    <field name="arch" type="xml">
+      <form string="Kardex">
+        <!-- <header> <button name="calculate" string="Calculate" type="object"/> </header> -->
+        <sheet>
+          <group>
+            <group>
+              <field name="product_id"/>
+              <field name="location_id"/>
+              <field name="stock_start"/>
+              <field name="stock_end"/>
+              <field name="qty_reserve"/>
+            </group>
+            <group>
+              <field name="date_start"/>
+              <field name="date_end"/>
+            </group>
+          </group>
+          <field name="stock_kardex_detail_ids" mode="tree">
+            <tree string="Detail">
+              <!--<field name="stock_move_id" />-->
+              <field name="location_id"/>
+              <field name="location_dest_id"/>
+              <!--<field name="move_qty_product" />-->
+              <field name="product_incomming"/>
+              <field name="product_outgoing"/>
+              <field name="qty_product"/>
+              <field name="move_date"/>
+            </tree>
+          </field>
+        </sheet>
+        <footer>
+          <button string='Calculate' name="calculate" type="object" class="btn-primary"/>
+          <button string="Cancel" class="btn-default" special="cancel"/>
+        </footer>
+      </form>
+    </field>
+  </record>
+
+  <record model="ir.actions.act_window" id="action_stock_kardex">
+    <field name="name">Kardex</field>
+    <field name="res_model">stock.kardex</field>
+    <field name="view_mode">form</field>
+    <field name="target">new</field>
+  </record>
+
+  <menuitem id="menu_stock_kardex" name="Kardex" parent="stock.menu_stock_inventory_control" action="action_stock_kardex"/>
+
+  <record id="stock_kardex_detail_view" model="ir.ui.view">
+    <field name="name">stock.kardex.detail.view</field>
+    <field name="model">stock.kardex.detail</field>
+    <field name="arch" type="xml">
+      <form string="Kardex Detail">
+        <sheet>
+          <group>
+            <group>
+              <field name="stock_move_id" readonly="1"/>
+              <field name="move_qty_product" readonly="1"/>
+              <!--<field name="qty_product" readonly="1"/>-->
+              <field name="product_incomming"/>
+              <field name="product_outgoing"/>
+              <field name="move_date" readonly="1"/>
+            </group>
+          </group>
+        </sheet>
+      </form>
+    </field>
+  </record>
+
+</odoo>

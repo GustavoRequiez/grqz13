@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record id="stock_move_line_classification_view" model="ir.ui.view">
+    <field name="name">stock.move.line.classification.view</field>
+    <field name="model">stock.move.line</field>
+    <field name="inherit_id" ref="stock.view_move_line_form"/>
+    <field name="arch" type="xml">
+      <field name="location_dest_id" position="after">
+        <field name="line" invisible="1"/>
+        <field name="abc" invisible="1"/>
+        <field name="xyz" invisible="1"/>
+        <field name="categ" invisible="1"/>
+        <field name="sellers" invisible="1">
+          <tree>
+            <field name="name"/>
+          </tree>
+        </field>
+      </field>
+    </field>
+  </record>
+
+  <!-- <record model="ir.ui.view" id="stock_move_line_classification_search_view"> <field name="name">stock.movel.ine.classification.search.view</field> <field name="model">stock.move.line</field> <field name="inherit_id"
+  ref="stock.stock_move_line_view_search"/> <field name="arch" type="xml"> <xpath expr="//search" position="inside"> <group string="Group By"> <filter name="its_line_filter" string="Its Line" context="{'group_by': 'its_line_filter'}"/> </group> <group
+  string="Group By"> <filter name="classification_ABC_filter" string="Classification ABC" context="{'group_by':'classification_ABC_filter'}"/> </group> <group string="Group By"> <filter name="classification_XYZ_filter" string="Classification XYZ"
+  context="{'group_by': 'classification_XYZ_filter'}"/> </group> <group string="Group By"> <filter name="categ_id" string="Category" context="{'group_by': 'categ_id'}"/> </group> <group string="Group By"> <filter name="seller_id" string="Seller"
+  context="{'group_by': 'seller_id'}"/> </group> </xpath> </field> </record> -->
+
+</odoo>

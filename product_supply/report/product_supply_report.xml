@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <report id="action_print_report_product_supply" string="Product Supply Report" model="product.supply" report_type="qweb-pdf" file="product_supply.report_product_supply" name="product_supply.report_product_supply" menu="False"/>
+</odoo>

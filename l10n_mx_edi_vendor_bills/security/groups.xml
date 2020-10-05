@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="allow_force_invoice_generation" model="res.groups">
+        <field name="name">Allow to omit validations in the invoice generation</field>
+    </record>
+</odoo>

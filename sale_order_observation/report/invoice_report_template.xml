@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+  <template id="report_invoice_document_date" inherit_id="account.report_invoice_document">
+    <xpath expr="//t/div/table/thead/tr/th[1]" position="attributes">
+      <attribute name="style">width:10%;text-align:center;</attribute>
+    </xpath>
+    <xpath expr="//t/div/table/thead/tr/th[1]" position="after">
+      <th style="width:15%;" class="text-right">Prod. Code</th>
+    </xpath>
+    <xpath expr="//t/div/table/tbody/t/tr/t/td[1]" position="after">
+      <td class="text-right">
+        <span t-field="line.product_id.default_code"/>
+      </td>
+    </xpath>
+    <xpath expr="//t/div/table/thead/tr/th[3]" position="attributes">
+      <attribute name="style">width:30%;text-align:center;</attribute>
+    </xpath>
+    <xpath expr="//t/div/table/thead/tr/th[3]" position="after">
+      <th>Observation</th>
+    </xpath>
+    <xpath expr="//t/div/table/tbody/t/tr/t/td[3]" position="after">
+      <td class="text-right">
+        <span t-field="line.observation"/>
+      </td>
+    </xpath>
+    <xpath expr="//span[@t-field='o.narration']" position="replace"/>
+    <xpath expr="//div[hasclass('clearfix')]" position="after">
+      <table class="table table-condensed">
+        <tr>
+          <td style="width:15%;text-align:center;">
+            <strong>Pro-form:</strong>
+            <BR/>
+            <p t-field="o.origin"/>
+          </td>
+          <td style="width:15%;text-align:center;">
+            <B>Customer Reference:</B>
+            <BR/>
+            <p t-field="o.name"/>
+          </td>
+        </tr>
+      </table>
+    </xpath>
+    <xpath expr="//span[@t-field='o.partner_id.vat']" position="after">
+      <BR/>
+      <!-- <span t-field="o.partner_id.vat_split"/> -->
+    </xpath>
+  </template>
+
+</odoo>

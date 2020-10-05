@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="mrp_report_document">
+        <t t-set="docs" t-value="docs.with_context({'lang':user.partner_id.lang})"/>
+        <t t-call="web.external_layout">
+            <div class="page" style="font-size:16px;">
+                <br/>
+                <h3>
+                    <strong>WORK ORDER</strong>
+                </h3>
+                <table class="table table-condensed">
+                    <thead>
+                        <tr>
+                            <th>Production Order</th>
+                            <th class="text-center">Product Code</th>
+                            <th class="text-center">Product</th>
+                            <th class="text-center">Observation</th>
+                            <th class="text-center">Quantity</th>
+                            <th class="text-center">Customer</th>
+                            <th class="text-center">Current Date</th>
+                            <th class="text-center">Priority</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <t t-foreach="docs.sorted(key=lambda x: x.type_priority)" t-as="o">
+                            <tr>
+                                <td><span t-field="o.name"/></td>
+                                <td class="text-center"><span t-field="o.product_id.default_code"/></td>
+                                <td class="text-center"><span t-field="o.product_id.name"/></td>
+                                <td class="text-center"><span t-field="o.sale_line_observation"/></td>
+                                <td class="text-center"><span t-field="o.product_qty"/></td>
+                                <td class="text-center"><span t-field="o.partner_id.name"/></td>
+                                <td class="text-center"><span t-field="o.date_planned_start"/></td>
+                                <td class="text-center"><span t-field="o.sale_type_id"/></td>
+                            </tr>
+                        </t>
+                    </tbody>
+                </table>
+                <br/><br/>
+            </div>
+        </t>
+    </template>
+    <template id="mrp_drall_report2">
+        <t t-call="web.html_container">
+            <t t-call="requiez.mrp_report_document" t-lang="user.partner_id.lang"/>
+        </t>
+    </template>
+</odoo>

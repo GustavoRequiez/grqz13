@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="product_template_view_form" model="ir.ui.view">
+        <field name="name">product.template.view.form.inherited.buffer_size</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="stock.view_template_property_form"/>
+        <field name="arch" type="xml">
+            <field name="route_from_categ_ids" position="after">
+                <field name="buffer_size"/>
+            </field>
+        </field>
+    </record>
+</odoo>

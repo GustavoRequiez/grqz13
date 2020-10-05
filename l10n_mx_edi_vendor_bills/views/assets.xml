@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="assets_backend" inherit_id="web.assets_backend" name="vendor_bill_assets">
+        <xpath expr="." position="inside">
+            <link href="/l10n_mx_edi_vendor_bills/static/src/css/style.css" rel="stylesheet"/>
+            <script src="/l10n_mx_edi_vendor_bills/static/src/js/attach_xmls.js" type="text/javascript"/>
+        </xpath>
+    </template>
+</odoo>

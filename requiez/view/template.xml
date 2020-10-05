@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="requiez_assets_backend" name="requiez assets" inherit_id="web.assets_backend">
+        <xpath expr="." position="inside">
+            <script type="text/javascript" src="/requiez/static/src/js/basic_view.js"/>
+        </xpath>
+    </template>
+</odoo>

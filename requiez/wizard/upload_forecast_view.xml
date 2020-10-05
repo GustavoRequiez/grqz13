@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="upload_forecast_view" model="ir.ui.view">
+        <field name="name">upload.forecast.view</field>
+        <field name="model">upload.forecast</field>
+        <field name="arch" type="xml">
+            <form string="Upload Forecast">
+                <field invisible="1" name="state"/>
+                <p class="oe_grey" states="choose">
+                    This wizard lets upload a file. First column: Product name,
+                    Second column: date. Third column: quantity
+                </p>
+                <field name="data_file" states="choose" />
+                <footer>
+                    <button
+                        name="confirm"
+                        string="Confirm"
+                        type="object"
+                        default_focus="1"
+                        class="oe_highlight"/>
+                    or
+                    <button string="Cancel" class="oe_link" special="cancel" />
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_upload_forecast" model="ir.actions.act_window">
+        <field name="name">Upload Forecast</field>
+        <field name="res_model">upload.forecast</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+    <menuitem
+        id="mrp_upload_forecast"
+        name="Upload Forecast"
+        action="action_upload_forecast"
+        groups="mrp.group_mrp_manager"
+        parent="mrp.menu_mrp_reporting"/>
+</odoo>

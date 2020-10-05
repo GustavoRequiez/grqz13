@@ -1,0 +1,126 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#   * l10n_mx_edi_customer_bills
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-08-24 19:59+0000\n"
+"PO-Revision-Date: 2018-08-24 19:59+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_mx_edi_customer_bills
+#. openerp-web
+#: code:addons/l10n_mx_edi_customer_bills/static/src/js/attach_xmls.js:63
+#, python-format
+msgid ", </span> Your Company RFC: <span level=\"2\">"
+msgstr ", </span> RFC de su compañía: <span level=\"2\">"
+
+#. module: l10n_mx_edi_customer_bills
+#. openerp-web
+#: code:addons/l10n_mx_edi_customer_bills/static/src/js/attach_xmls.js:62
+#, python-format
+msgid "<div><span level=\"1\">The XML Emitter RFC</span> does not match with <span level=\"1\">your Company RFC</span>: "
+msgstr "<div><span level=\"1\">El RFC del emisor en el XML</span> no coincide con <span level=\"1\">el RFC de su compañía</span>: "
+
+#. module: l10n_mx_edi_customer_bills
+#. openerp-web
+#: code:addons/l10n_mx_edi_customer_bills/static/src/js/attach_xmls.js:49
+#, python-format
+msgid "<span>Wrong File: <span class=\"index-alert\"></span>"
+msgstr "<span>Archivo Incorrecto: <span class=\"index-alert\"></span>"
+
+#. module: l10n_mx_edi_customer_bills
+#: code:addons/l10n_mx_edi_customer_bills/wizards/attach_xmls_wizard.py:255
+#, python-format
+msgid "Account to set in the lines not found.<br/>"
+msgstr "Cuenta para configurar las líneas no encontrada.<br/>"
+
+#. module: l10n_mx_edi_customer_bills
+#: model:ir.actions.act_window,name:l10n_mx_edi_customer_bills.attach_xmls_wizard_customer_action
+msgid "Attach Customer Files"
+msgstr "Adjuntar Archivos para Clientes"
+
+#. module: l10n_mx_edi_customer_bills
+#: model:ir.ui.menu,name:l10n_mx_edi_customer_bills.menu_atach_xmls_customer_wizard
+msgid "Attach Multiple Customer XML's"
+msgstr "Adjuntar Múltiples XML's de Clientes"
+
+#. module: l10n_mx_edi_customer_bills
+#: model:ir.model,name:l10n_mx_edi_customer_bills.model_attach_xmls_wizard
+msgid "Attach xmls"
+msgstr "Adjuntar xmls"
+
+
+#. module: l10n_mx_edi_customer_bills
+#: model:account.payment.term,name:l10n_mx_edi_customer_bills.aux_account_payment_term_ppd
+msgid "Auxiliary PPD"
+msgstr "Auxiliar PPD"
+
+#. module: l10n_mx_edi_customer_bills
+#: code:addons/l10n_mx_edi_customer_bills/wizards/attach_xmls_wizard.py:274
+#, python-format
+msgid "FUEL - IEPS"
+msgstr "FUEL - IEPS"
+
+#. module: l10n_mx_edi_customer_bills
+#: code:addons/l10n_mx_edi_customer_bills/wizards/attach_xmls_wizard.py:367
+#, python-format
+msgid "Info"
+msgstr "Info"
+
+#. module: l10n_mx_edi_customer_bills
+#: model:ir.model,name:l10n_mx_edi_customer_bills.model_account_invoice
+msgid "Invoice"
+msgstr "Factura"
+
+#. module: l10n_mx_edi_customer_bills
+#: model:account.payment.term,note:l10n_mx_edi_customer_bills.aux_account_payment_term_ppd
+msgid "Payment terms: Auxiliary for PPD"
+msgstr "Términos de pago: Auxiliar para PPD"
+
+#. module: l10n_mx_edi_customer_bills
+#: code:addons/l10n_mx_edi_customer_bills/wizards/attach_xmls_wizard.py:225
+#, python-format
+msgid "Some products are not found in the system, and the account that is used like default is not configured in the journal, please set default account in the journal %s to create the invoice."
+msgstr "Algunos productos no fueron encontrados en el sistema y la cuenta usada por defecto no está configurada en el diario, por favor configure la cuenta por default en el diario %s para crear la factura."
+
+#. module: l10n_mx_edi_customer_bills
+#: code:addons/l10n_mx_edi_customer_bills/wizards/attach_xmls_wizard.py:71
+#, python-format
+msgid "Something went wrong. The parameter for XML files must be a dictionary."
+msgstr "Algo salió mal. El parámetro para archivos XML debe ser un diccionario."
+
+#. module: l10n_mx_edi_customer_bills
+#: code:addons/l10n_mx_edi_customer_bills/wizards/attach_xmls_wizard.py:364
+#, python-format
+msgid "This partner was created when invoice %s%s was added from a XML file. Please verify that the datas of partner are correct."
+msgstr "Este socio fue creado cuando la factura %s%s fue añadida desde un archivo XML. Por favor verifique que la información del socio sea correcta."
+
+#. module: l10n_mx_edi_customer_bills
+#. openerp-web
+#: code:addons/l10n_mx_edi_customer_bills/static/src/js/attach_xmls.js:63
+#, python-format
+msgid "XML Emitter RFC: <span level=\"2\">"
+msgstr "RFC del Emisor en el XML: <span level=\"2\">"
+
+#. module: l10n_mx_edi_customer_bills
+#. openerp-web
+#: code:addons/l10n_mx_edi_customer_bills/static/src/js/attach_xmls.js:43
+#, python-format
+msgid "XML removed, the TipoDeComprobante is not I or E."
+msgstr "XML eliminado, el TipoDeComprobante no es I o E."
+
+#. module: l10n_mx_edi_customer_bills
+#. openerp-web
+#: code:addons/l10n_mx_edi_customer_bills/static/src/js/attach_xmls.js:43
+#, python-format
+msgid "XML removed, the TipoDeComprobante is not I."
+msgstr "XML eliminado, el TipoDeComprobante no es I."
+

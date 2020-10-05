@@ -1,0 +1,158 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* product_supply
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0+e-20170815\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-10-02 20:22+0000\n"
+"PO-Revision-Date: 2017-10-02 20:22+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: product_supply
+#: model:ir.ui.view,arch_db:product_supply.report_supply_document
+msgid "<strong>Cantidad</strong>"
+msgstr "<strong>Cantidad</strong>"
+
+#. module: product_supply
+#: model:ir.ui.view,arch_db:product_supply.report_supply_document
+msgid "<strong>Generado:</strong>"
+msgstr "<strong>Generado:</strong>"
+
+#. module: product_supply
+#: model:ir.ui.view,arch_db:product_supply.report_supply_document
+msgid "<strong>Producto</strong>"
+msgstr "<strong>Producto</strong>"
+
+#. module: product_supply
+#: model:ir.ui.view,arch_db:product_supply.report_supply_document
+msgid "<strong>Ubicación Destino:</strong>"
+msgstr "<strong>Ubicación Destino:</strong>"
+
+#. module: product_supply
+#: model:ir.ui.view,arch_db:product_supply.report_supply_document
+msgid "<strong>Ubicación Origen:</strong>"
+msgstr "<strong>Ubicación Origen:</strong>"
+
+#. module: product_supply
+#: model:ir.model.fields,field_description:product_supply.field_stock_move_product_brand
+#: model:ir.ui.view,arch_db:product_supply.view_move_product_supply_search
+msgid "Brand"
+msgstr "Marca"
+
+#. module: product_supply
+#: model:ir.ui.view,arch_db:product_supply.product_supply_view
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: product_supply
+#: model:ir.ui.view,arch_db:product_supply.product_supply_view
+msgid "Confirm"
+msgstr "Confirmar"
+
+#. module: product_supply
+#: model:ir.actions.act_window,name:product_supply.action_product_supply
+msgid "Confirm supply"
+msgstr "Confirmar surtido"
+
+#. module: product_supply
+#: model:ir.model.fields,field_description:product_supply.field_product_supply_create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: product_supply
+#: model:ir.model.fields,field_description:product_supply.field_product_supply_create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: product_supply
+#: model:ir.model.fields,field_description:product_supply.field_stock_move_mrp_date
+msgid "Date_planned"
+msgstr "Date_planned"
+
+#. module: product_supply
+#: model:ir.model.fields,field_description:product_supply.field_product_supply_display_name
+#: model:ir.model.fields,field_description:product_supply.field_report_product_supply_report_supply_display_name
+msgid "Display Name"
+msgstr "Nombre a mostrar"
+
+#. module: product_supply
+#: model:ir.model.fields,field_description:product_supply.field_product_supply_id
+#: model:ir.model.fields,field_description:product_supply.field_report_product_supply_report_supply_id
+msgid "ID"
+msgstr "ID"
+
+#. module: product_supply
+#: model:ir.model.fields,field_description:product_supply.field_product_supply___last_update
+#: model:ir.model.fields,field_description:product_supply.field_report_product_supply_report_supply___last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: product_supply
+#: model:ir.model.fields,field_description:product_supply.field_product_supply_write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: product_supply
+#: model:ir.model.fields,field_description:product_supply.field_product_supply_write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: product_supply
+#: model:ir.ui.menu,name:product_supply.menu_outgoing2_material
+msgid "Outgoing Material"
+msgstr "Materia Prima Saliente"
+
+#. module: product_supply
+#: model:ir.actions.act_window,name:product_supply.action_outgoing2_material_tree
+#: model:ir.actions.act_window,name:product_supply.action_outgoing_material_tree
+#: model:ir.ui.menu,name:product_supply.menu_outgoing_material
+msgid "Outgoing Material for Tomorrow"
+msgstr "Materia Prima Saliente para mañana"
+
+#. module: product_supply
+#: model:ir.ui.view,arch_db:product_supply.product_supply_view
+msgid "Products supply"
+msgstr "Surtir Productos"
+
+#. module: product_supply
+#: model:ir.actions.report.xml,name:product_supply.product_supply_report
+msgid "Report"
+msgstr "Reporte"
+
+#. module: product_supply
+#: model:ir.model,name:product_supply.model_stock_move
+msgid "Stock Move"
+msgstr "Movimiento de Inventario"
+
+#. module: product_supply
+#: model:ir.ui.view,arch_db:product_supply.product_supply_view
+msgid "or"
+msgstr "o"
+
+#. module: product_supply
+#: model:ir.model,name:product_supply.model_product_supply
+msgid "product.supply"
+msgstr "product.supply"
+
+#. module: product_supply
+#: model:ir.model,name:product_supply.model_report_product_supply_report_supply
+msgid "report.product_supply.report_supply"
+msgstr "report.product_supply.report_supply"
+
+#. module: product_supply
+#: model:ir.model,name:product_supply.model_report_product_supply_report_report_supply
+msgid "report.product_supply_report.report_supply"
+msgstr "report.product_supply_report.report_supply"
+
+#. module: product_supply
+#: model:ir.ui.view,arch_db:product_supply.product_supply_view
+msgid "you want to print?"
+msgstr "you want to print?"
+

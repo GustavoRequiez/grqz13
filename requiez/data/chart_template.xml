@@ -1,0 +1,2146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record id='cuenta102_01' model='account.account.template'>
+    <field name='name'>Transferencias bancarias moneda nacional</field>
+    <field name='code'>102.01.01</field>
+    <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+    <field name="reconcile" eval="True"/>
+  </record>
+
+  <record id="mx_coa" model="account.chart.template">
+    <field name="name">Plan de Cuentas para Requiez</field>
+    <field name="bank_account_code_prefix">102.01.0</field>
+    <field name="cash_account_code_prefix">101.01.0</field>
+    <field name="code_digits">3</field>
+    <field name="currency_id" ref="base.MXN"/>
+    <!-- <field name="transfer_account_id" ref="cuenta102_01"/> -->
+    <field name="use_anglo_saxon" eval="True"/>
+    <field name="transfer_account_code_prefix">TODO</field>
+  </record>
+
+  <record id="cuenta_101_01_100001001" model="account.account.template">
+    <field name="chart_template_id" ref="mx_coa"/>
+    <field name="code">101.01.100001001</field>
+    <field name="name">GERARDO DURAN GOMEZ</field>
+    <field name="user_type_id" ref="account.data_account_type_liquidity"/>
+  </record>
+  <record id="cuenta_101_01_100001002" model="account.account.template">
+    <field name="code">101.01.100001002</field>
+    <field name="name">MAYRA PADILLA</field>
+    <field name="user_type_id" ref="account.data_account_type_liquidity"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_101_01_100001003" model="account.account.template">
+    <field name="code">101.01.100001003</field>
+    <field name="name">CLAUDIA SANCHEZ</field>
+    <field name="user_type_id" ref="account.data_account_type_liquidity"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_101_01_100001004" model="account.account.template">
+    <field name="code">101.01.100001004</field>
+    <field name="name">HUMBERTO CARDENAS</field>
+    <field name="user_type_id" ref="account.data_account_type_liquidity"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_101_01_100001005" model="account.account.template">
+    <field name="code">101.01.100001005</field>
+    <field name="name">LUIS JARAS</field>
+    <field name="user_type_id" ref="account.data_account_type_liquidity"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_101_01_100001006" model="account.account.template">
+    <field name="code">101.01.100001006</field>
+    <field name="name">MARCO MENDOZA</field>
+    <field name="user_type_id" ref="account.data_account_type_liquidity"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_101_01_100001007" model="account.account.template">
+    <field name="code">101.01.100001007</field>
+    <field name="name">RAUL QUINTERO AMADOR</field>
+    <field name="user_type_id" ref="account.data_account_type_liquidity"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_101_01_100001008" model="account.account.template">
+    <field name="code">101.01.100001008</field>
+    <field name="name">RICARDO OLUA HERNANDEZ</field>
+    <field name="user_type_id" ref="account.data_account_type_liquidity"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_101_01_100001009" model="account.account.template">
+    <field name="code">101.01.100001009</field>
+    <field name="name">MARTHA PATRICIA SOTO ARRIETA</field>
+    <field name="user_type_id" ref="account.data_account_type_liquidity"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_101_01_100001010" model="account.account.template">
+    <field name="code">101.01.100001010</field>
+    <field name="name">ROBERTO CARLOS CHAVEZ BARRAZA</field>
+    <field name="user_type_id" ref="account.data_account_type_liquidity"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_102_01_101001004" model="account.account.template">
+    <field name="code">102.01.101001004</field>
+    <field name="name">BANORTE CTA 2617</field>
+    <field name="user_type_id" ref="account.data_account_type_liquidity"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_102_01_101001005" model="account.account.template">
+    <field name="code">102.01.101001005</field>
+    <field name="name">BANAMEX CTA 4717</field>
+    <field name="user_type_id" ref="account.data_account_type_liquidity"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_102_01_101001006" model="account.account.template">
+    <field name="code">102.01.101001006</field>
+    <field name="name">BBVA BANCOMER CTA 7701</field>
+    <field name="user_type_id" ref="account.data_account_type_liquidity"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_102_01_101001007" model="account.account.template">
+    <field name="code">102.01.101001007</field>
+    <field name="name">BANAMEX GR CTA 0832</field>
+    <field name="user_type_id" ref="account.data_account_type_liquidity"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_102_01_101001008" model="account.account.template">
+    <field name="code">102.01.101001008</field>
+    <field name="name">SANTANDER CTA 0146</field>
+    <field name="user_type_id" ref="account.data_account_type_liquidity"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_102_01_101001009" model="account.account.template">
+    <field name="code">102.01.101001009</field>
+    <field name="name">SANTANDER CTA 3890</field>
+    <field name="user_type_id" ref="account.data_account_type_liquidity"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_102_01_101001010" model="account.account.template">
+    <field name="code">102.01.101001010</field>
+    <field name="name">BBVA BANCOMER CTA 8815</field>
+    <field name="user_type_id" ref="account.data_account_type_liquidity"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_102_01_101001011" model="account.account.template">
+    <field name="code">102.01.101001011</field>
+    <field name="name">BBVA BANCOMER CTA 4378</field>
+    <field name="user_type_id" ref="account.data_account_type_liquidity"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_102_01_101001012" model="account.account.template">
+    <field name="code">102.01.101001012</field>
+    <field name="name">BBVA BANCOMER CTA 4157</field>
+    <field name="user_type_id" ref="account.data_account_type_liquidity"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_102_01_101001013" model="account.account.template">
+    <field name="code">102.01.101001013</field>
+    <field name="name">BBVA BANCOMER CTA 3223</field>
+    <field name="user_type_id" ref="account.data_account_type_liquidity"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_102_01_101001017" model="account.account.template">
+    <field name="code">102.01.101001017</field>
+    <field name="name">BANAMEX CTA 3259</field>
+    <field name="user_type_id" ref="account.data_account_type_liquidity"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_102_01_101001018" model="account.account.template">
+    <field name="code">102.01.101001018</field>
+    <field name="name">BANAMEX CTA 3267</field>
+    <field name="user_type_id" ref="account.data_account_type_liquidity"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_102_01_101001019" model="account.account.template">
+    <field name="code">102.01.101001019</field>
+    <field name="name">BANAMEX CTA 3348</field>
+    <field name="user_type_id" ref="account.data_account_type_liquidity"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_102_01_101001021" model="account.account.template">
+    <field name="code">102.01.101001021</field>
+    <field name="name">LINEA DE CRED BNX 3259</field>
+    <field name="user_type_id" ref="account.data_account_type_liquidity"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_102_02_101002001" model="account.account.template">
+    <field name="code">102.02.101002001</field>
+    <field name="name">HSBC USD 003067004</field>
+    <field name="user_type_id" ref="account.data_account_type_liquidity"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_102_02_101002002" model="account.account.template">
+    <field name="code">102.02.101002002</field>
+    <field name="name">SANTANDER USD 82500118679</field>
+    <field name="user_type_id" ref="account.data_account_type_liquidity"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_102_02_101002003" model="account.account.template">
+    <field name="code">102.02.101002003</field>
+    <field name="name">BANAMEX USD 3902501</field>
+    <field name="user_type_id" ref="account.data_account_type_liquidity"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_102_02_101002004" model="account.account.template">
+    <field name="code">102.02.101002004</field>
+    <field name="name">BANAMEX USD 9278253</field>
+    <field name="user_type_id" ref="account.data_account_type_liquidity"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_103_03_102001001" model="account.account.template">
+    <field name="code">103.03.102001001</field>
+    <field name="name">BBVA</field>
+    <field name="user_type_id" ref="account.data_account_type_liquidity"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_103_03_102001002" model="account.account.template">
+    <field name="code">103.03.102001002</field>
+    <field name="name">SANTANDER SERFIN SA DE CV</field>
+    <field name="user_type_id" ref="account.data_account_type_liquidity"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_105_01_103001001" model="account.account.template">
+    <field name="code">105.01.103001001</field>
+    <field name="name">CLIENTES MONEDA NACIONAL</field>
+    <field name="user_type_id" ref="account.data_account_type_receivable"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_105_02_103003001" model="account.account.template">
+    <field name="code">105.02.103003001</field>
+    <field name="name">CLIENTES MONEDA DOLARES</field>
+    <field name="user_type_id" ref="account.data_account_type_receivable"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_107_05_108001000" model="account.account.template">
+    <field name="code">107.05.108001000</field>
+    <field name="name">JOSE DE JESUS LOZANO</field>
+    <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_107_05_108002000" model="account.account.template">
+    <field name="code">107.05.108002000</field>
+    <field name="name">MIGUEL RUBIO CARRILLO</field>
+    <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_107_05_108003000" model="account.account.template">
+    <field name="code">107.05.108003000</field>
+    <field name="name">GUSTAVO SALAS TAMAYO</field>
+    <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_107_05_108004000" model="account.account.template">
+    <field name="code">107.05.108004000</field>
+    <field name="name">"MULTISERVICIOS ADUANALES DE MANZANILLO S.C.</field>
+    <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_107_05_108005000" model="account.account.template">
+    <field name="code">107.05.108005000</field>
+    <field name="name">"LAUSANT COMERCIO EXTERIOR S.A. DE C.V.</field>
+    <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_107_05_108006000" model="account.account.template">
+    <field name="code">107.05.108006000</field>
+    <field name="name">"COCEX S.C.</field>
+    <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_107_05_108007000" model="account.account.template">
+    <field name="code">107.05.108007000</field>
+    <field name="name">GGA SPA</field>
+    <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_107_05_108008000" model="account.account.template">
+    <field name="code">107.05.108008000</field>
+    <field name="name">TC BANAMEX LIC. ARREOLA</field>
+    <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_107_05_108009000" model="account.account.template">
+    <field name="code">107.05.108009000</field>
+    <field name="name">ABELARDO ARREOLA GUTIERREZ</field>
+    <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_107_05_108010000" model="account.account.template">
+    <field name="code">107.05.108010000</field>
+    <field name="name">DEUDORES DIVERSOS</field>
+    <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_107_05_108011000" model="account.account.template">
+    <field name="code">107.05.108011000</field>
+    <field name="name">ABELARDO ARREOLA JIMENEZ</field>
+    <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_109_01_132001000" model="account.account.template">
+    <field name="code">109.01.132001000</field>
+    <field name="name">PRIMAS DE SEGUROS</field>
+    <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_109_05_132002000" model="account.account.template">
+    <field name="code">109.05.132002000</field>
+    <field name="name">RENTAS PAGADAS POR ANTICIPADO</field>
+    <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_109_23_132003000" model="account.account.template">
+    <field name="code">109.23.132003000</field>
+    <field name="name">GASTOS ANTICIPADOS</field>
+    <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_113_01_107001000" model="account.account.template">
+    <field name="code">113.01.107001000</field>
+    <field name="name">IVA A FAVOR</field>
+    <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_113_06_107003000" model="account.account.template">
+    <field name="code">113.06.107003000</field>
+    <field name="name">SUBSIDIO AL EMPLEO</field>
+    <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_113_08_107002000" model="account.account.template">
+    <field name="code">113.08.107002000</field>
+    <field name="name">ISR RETENIDO BANCO</field>
+    <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_114_01_131001000" model="account.account.template">
+    <field name="code">114.01.131001000</field>
+    <field name="name">ISR</field>
+    <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_115_02_113001000" model="account.account.template">
+    <field name="code">115.02.113001000</field>
+    <field name="name">MATERIAS PRIMAS Y MATERIALES</field>
+    <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_115_03_112001000" model="account.account.template">
+    <field name="code">115.03.112001000</field>
+    <field name="name">PRODUCCION EN PROCESO</field>
+    <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_115_04_111001000" model="account.account.template">
+    <field name="code">115.04.111001000</field>
+    <field name="name">ARTICULOS TERMINADOS Y COMPONENTES</field>
+    <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_115_07_114001000" model="account.account.template">
+    <field name="code">115.07.114001000</field>
+    <field name="name">ENTRADAS TRANSITORIAS</field>
+    <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_115_07_114002000" model="account.account.template">
+    <field name="code">115.07.114002000</field>
+    <field name="name">TRANSITORIAS DE IMPORTACION</field>
+    <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_118_01_105002000" model="account.account.template">
+    <field name="code">118.01.105002000</field>
+    <field name="name">IVA EFECTIVAMENTE PAGADO</field>
+    <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_118_02_105001000" model="account.account.template">
+    <field name="code">118.02.105001000</field>
+    <field name="name">IVA IMPORTACIONES</field>
+    <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_119_01_106001000" model="account.account.template">
+    <field name="code">119.01.106001000</field>
+    <field name="name">IVA PAGO PENDIENTE</field>
+    <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_120_01_104001001" model="account.account.template">
+    <field name="code">120.01.104001001</field>
+    <field name="name">ANTICIPO A PROVEEDORES NACIONAL</field>
+    <field name="user_type_id" ref="account.data_account_type_payable"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_120_02_104003001" model="account.account.template">
+    <field name="code">120.02.104003001</field>
+    <field name="name">ANTICIPO A PROVEEDORES DOLARES</field>
+    <field name="user_type_id" ref="account.data_account_type_payable"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_120_02_104003002" model="account.account.template">
+    <field name="code">120.02.104003002</field>
+    <field name="name">ANTICIPO A PROVEEDORES EUROS</field>
+    <field name="user_type_id" ref="account.data_account_type_payable"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_151_01_120005001" model="account.account.template">
+    <field name="code">151.01.120005001</field>
+    <field name="name">TERRENOS</field>
+    <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_152_01_120006001" model="account.account.template">
+    <field name="code">152.01.120006001</field>
+    <field name="name">EDIFICIOS</field>
+    <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_153_01_120001001" model="account.account.template">
+    <field name="code">153.01.120001001</field>
+    <field name="name">MAQUINARIA Y EQUIPO</field>
+    <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_154_01_120003001" model="account.account.template">
+    <field name="code">154.01.120003001</field>
+    <field name="name">EQUIPO DE TRASPORTE</field>
+    <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_155_01_120002001" model="account.account.template">
+    <field name="code">155.01.120002001</field>
+    <field name="name">MOBILIARIO Y EQUIPO DE OFICINA</field>
+    <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_156_01_120004001" model="account.account.template">
+    <field name="code">156.01.120004001</field>
+    <field name="name">EQUIPO DE COMPUTO</field>
+    <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_164_01_120007001" model="account.account.template">
+    <field name="code">164.01.120007001</field>
+    <field name="name">DADOS TROQUELES Y MOLDES</field>
+    <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_171_01_121002006" model="account.account.template">
+    <field name="code">171.01.121002006</field>
+    <field name="name">DEPRE EDIFICIOS</field>
+    <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_171_02_121002001" model="account.account.template">
+    <field name="code">171.02.121002001</field>
+    <field name="name">DEPRE MAQUINARIA Y EQUIPO</field>
+    <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_171_03_121002003" model="account.account.template">
+    <field name="code">171.03.121002003</field>
+    <field name="name">DEPRE EQUIPO DE TRASPORTE</field>
+    <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_171_04_121002002" model="account.account.template">
+    <field name="code">171.04.121002002</field>
+    <field name="name">DEPRE MOBILIARIO Y EQUIPO DE OFICINA</field>
+    <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_171_05_121002004" model="account.account.template">
+    <field name="code">171.05.121002004</field>
+    <field name="name">DEPRE EQUIPO DE COMPUTO</field>
+    <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_171_12_121002007" model="account.account.template">
+    <field name="code">171.12.121002007</field>
+    <field name="name">DEPRE DADOS TROQUELES Y MOLDES</field>
+    <field name="user_type_id" ref="account.data_account_type_fixed_assets"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_181_01_130001000" model="account.account.template">
+    <field name="code">181.01.130001000</field>
+    <field name="name">GASTOS DE INSTALACION</field>
+    <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_183_1_134001000" model="account.account.template">
+    <field name="code">183.1.134001000</field>
+    <field name="name">AMORTIZACION DE OTROS ACTIVOS DIFERIDOS</field>
+    <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_184_03_133001000" model="account.account.template">
+    <field name="code">184.03.133001000</field>
+    <field name="name">DEPOSITOS EN GARANTIA</field>
+    <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_201_01_206001001" model="account.account.template">
+    <field name="code">201.01.206001001</field>
+    <field name="name">PROVEEDORES MONEDA NACIONAL</field>
+    <field name="user_type_id" ref="account.data_account_type_payable"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_201_02_206002001" model="account.account.template">
+    <field name="code">201.02.206002001</field>
+    <field name="name">PROVEEDORES MONEDA DOLARES</field>
+    <field name="user_type_id" ref="account.data_account_type_payable"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_201_02_206003001" model="account.account.template">
+    <field name="code">201.02.206003001</field>
+    <field name="name">PROVEEDORES MONEDA EUROS</field>
+    <field name="user_type_id" ref="account.data_account_type_payable"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_205_02_209001000" model="account.account.template">
+    <field name="code">205.02.209001000</field>
+    <field name="name">ACREEDORES DIVERSOS</field>
+    <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_205_02_209002000" model="account.account.template">
+    <field name="code">205.02.209002000</field>
+    <field name="name">FONACOT</field>
+    <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_205_02_209003000" model="account.account.template">
+    <field name="code">205.02.209003000</field>
+    <field name="name">PTU</field>
+    <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_205_02_209004000" model="account.account.template">
+    <field name="code">205.02.209004000</field>
+    <field name="name">FONDO AHORRO</field>
+    <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_205_02_209005000" model="account.account.template">
+    <field name="code">205.02.209005000</field>
+    <field name="name">VIDA SEGUROS MONTERREY</field>
+    <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_205_02_209006000" model="account.account.template">
+    <field name="code">205.02.209006000</field>
+    <field name="name">SERVICIO DE COMEDOR</field>
+    <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_205_02_209007000" model="account.account.template">
+    <field name="code">205.02.209007000</field>
+    <field name="name">DESCUENTO DE LENTES</field>
+    <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_205_02_209008000" model="account.account.template">
+    <field name="code">205.02.209008000</field>
+    <field name="name">DIVIDENDOS POR PAGAR</field>
+    <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_206_01_207001001" model="account.account.template">
+    <field name="code">206.01.207001001</field>
+    <field name="name">ANTICIPO DE CLIENTES MN</field>
+    <field name="user_type_id" ref="account.data_account_type_receivable"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_206_02_207002001" model="account.account.template">
+    <field name="code">206.02.207002001</field>
+    <field name="name">ANTICIPO DE CLIENTES USD</field>
+    <field name="user_type_id" ref="account.data_account_type_receivable"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_208_01_202001000" model="account.account.template">
+    <field name="code">208.01.202001000</field>
+    <field name="name">IVA EFECTIVAMENTE COBRADO</field>
+    <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_209_01_01" model="account.account.template">
+    <field name="code">209.01.01</field>
+    <field name="name">ITNC</field>
+    <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_209_01_203001000" model="account.account.template">
+    <field name="code">209.01.203001000</field>
+    <field name="name">IVA PENDIENTE DE COBRO</field>
+    <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_210_01_205001000" model="account.account.template">
+    <field name="code">210.01.205001000</field>
+    <field name="name">SUELDOS POR PAGAR</field>
+    <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_211_01_210001000" model="account.account.template">
+    <field name="code">211.01.210001000</field>
+    <field name="name">IMSS MENSUAL</field>
+    <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_211_02_210004000" model="account.account.template">
+    <field name="code">211.02.210004000</field>
+    <field name="name">IMSS RCV</field>
+    <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_211_03_210002000" model="account.account.template">
+    <field name="code">211.03.210002000</field>
+    <field name="name">INFONAVIT PATRONAL</field>
+    <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_211_03_210003000" model="account.account.template">
+    <field name="code">211.03.210003000</field>
+    <field name="name">INFONAVIT CREDITOS TRABAJADORES</field>
+    <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_213_01_201003000" model="account.account.template">
+    <field name="code">213.01.201003000</field>
+    <field name="name">IVA POR PAGAR</field>
+    <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_213_03_201002000" model="account.account.template">
+    <field name="code">213.03.201002000</field>
+    <field name="name">ISR PERSONA MORAL</field>
+    <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_213_04_201001000" model="account.account.template">
+    <field name="code">213.04.201001000</field>
+    <field name="name">2% S/NOMINA</field>
+    <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_216_01_204001000" model="account.account.template">
+    <field name="code">216.01.204001000</field>
+    <field name="name">ISR RETENCION POR SALARIOS</field>
+    <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_216_03_204003000" model="account.account.template">
+    <field name="code">216.03.204003000</field>
+    <field name="name">10% ISR RETENCION ARRENDAMIENTOS</field>
+    <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_216_04_204002000" model="account.account.template">
+    <field name="code">216.04.204002000</field>
+    <field name="name">10% ISR RETENCION HONORARIOS</field>
+    <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_216_05_204004000" model="account.account.template">
+    <field name="code">216.05.204004000</field>
+    <field name="name">ISR DIVIDENDOS</field>
+    <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_216_1_204005000" model="account.account.template">
+    <field name="code">216.1.204005000</field>
+    <field name="name">10% IVA RETENIDO</field>
+    <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_216_1_204006000" model="account.account.template">
+    <field name="code">216.1.204006000</field>
+    <field name="name">4% IVA RETENIDO TRANSPORTISTAS</field>
+    <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_216_1_204007000" model="account.account.template">
+    <field name="code">216.1.204007000</field>
+    <field name="name">IVA RETENCION ARRENDAMIENTOS</field>
+    <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_216_1_204008000" model="account.account.template">
+    <field name="code">216.1.204008000</field>
+    <field name="name">IVA RETENIDO HONORARIOS</field>
+    <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_252_01_208001001" model="account.account.template">
+    <field name="code">252.01.208001001</field>
+    <field name="name">HSBC TC ARREOLA JIMENEZ ABELARDO</field>
+    <field name="user_type_id" ref="account.data_account_type_non_current_liabilities"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_252_01_208001002" model="account.account.template">
+    <field name="code">252.01.208001002</field>
+    <field name="name">HSBC TC PALAFOX ALVARO</field>
+    <field name="user_type_id" ref="account.data_account_type_non_current_liabilities"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_252_01_208001003" model="account.account.template">
+    <field name="code">252.01.208001003</field>
+    <field name="name">HSBC TC ABELARDO GUTIERREZ ABELARDO</field>
+    <field name="user_type_id" ref="account.data_account_type_non_current_liabilities"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_252_01_208001004" model="account.account.template">
+    <field name="code">252.01.208001004</field>
+    <field name="name">HSBC TC MONTES DE OCA ALDO</field>
+    <field name="user_type_id" ref="account.data_account_type_non_current_liabilities"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_252_01_208001005" model="account.account.template">
+    <field name="code">252.01.208001005</field>
+    <field name="name">AMERICAN EXPRESS COBRANZA</field>
+    <field name="user_type_id" ref="account.data_account_type_non_current_liabilities"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_252_01_208001006" model="account.account.template">
+    <field name="code">252.01.208001006</field>
+    <field name="name">BANAMEX LINEA DE CREDITO</field>
+    <field name="user_type_id" ref="account.data_account_type_non_current_liabilities"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_252_01_208001007" model="account.account.template">
+    <field name="code">252.01.208001007</field>
+    <field name="name">TC HSBC ALBERTO DE LA SOTA</field>
+    <field name="user_type_id" ref="account.data_account_type_non_current_liabilities"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_252_01_208001008" model="account.account.template">
+    <field name="code">252.01.208001008</field>
+    <field name="name">AMERICAN EXPRESS PLATINO LIC ARREOLA</field>
+    <field name="user_type_id" ref="account.data_account_type_non_current_liabilities"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_252_01_208001009" model="account.account.template">
+    <field name="code">252.01.208001009</field>
+    <field name="name">TC BANAMEX ARREOLA JIMENEZ ABELARDO</field>
+    <field name="user_type_id" ref="account.data_account_type_non_current_liabilities"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_252_01_208001010" model="account.account.template">
+    <field name="code">252.01.208001010</field>
+    <field name="name">TC BANAMEX ARREOLA GUTIERREZ ABE</field>
+    <field name="user_type_id" ref="account.data_account_type_non_current_liabilities"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_252_01_208001011" model="account.account.template">
+    <field name="code">252.01.208001011</field>
+    <field name="name">TC. BANAMEX PALAFOX ALVARO</field>
+    <field name="user_type_id" ref="account.data_account_type_non_current_liabilities"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_252_01_208001012" model="account.account.template">
+    <field name="code">252.01.208001012</field>
+    <field name="name">TC. BANAMEX ALDO MONTES</field>
+    <field name="user_type_id" ref="account.data_account_type_non_current_liabilities"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_252_01_208001013" model="account.account.template">
+    <field name="code">252.01.208001013</field>
+    <field name="name">TC. BANAMEX MARCO ANTONIO MTZ.</field>
+    <field name="user_type_id" ref="account.data_account_type_non_current_liabilities"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_252_02_208002001" model="account.account.template">
+    <field name="code">252.02.208002001</field>
+    <field name="name">TC USD AMERICAN EXPRESS LIC ARREOLA</field>
+    <field name="user_type_id" ref="account.data_account_type_non_current_liabilities"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_260_01_211001000" model="account.account.template">
+    <field name="code">260.01.211001000</field>
+    <field name="name">AGUINALDO</field>
+    <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_260_01_211002000" model="account.account.template">
+    <field name="code">260.01.211002000</field>
+    <field name="name">POSADA</field>
+    <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_260_01_211003000" model="account.account.template">
+    <field name="code">260.01.211003000</field>
+    <field name="name">BONO</field>
+    <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_260_01_211004000" model="account.account.template">
+    <field name="code">260.01.211004000</field>
+    <field name="name">PROVISION ISR</field>
+    <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_260_01_211005000" model="account.account.template">
+    <field name="code">260.01.211005000</field>
+    <field name="name">PROVISION PTU</field>
+    <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_301_01_300000001" model="account.account.template">
+    <field name="code">301.01.300000001</field>
+    <field name="name">CAPITAL SOCIAL</field>
+    <field name="user_type_id" ref="account.data_account_type_non_current_liabilities"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_303_01_301000001" model="account.account.template">
+    <field name="code">303.01.301000001</field>
+    <field name="name">RESERVA LEGAL</field>
+    <field name="user_type_id" ref="account.data_account_type_non_current_liabilities"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_304_01_303000001" model="account.account.template">
+    <field name="code">304.01.303000001</field>
+    <field name="name">RESULTADO EJERCICIOS ANTERIORES</field>
+    <field name="user_type_id" ref="account.data_account_type_non_current_liabilities"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_304_01_303000002" model="account.account.template">
+    <field name="code">304.01.303000002</field>
+    <field name="name">RESULTADO EJERCICIO 2017</field>
+    <field name="user_type_id" ref="account.data_unaffected_earnings"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_305_01_302000001" model="account.account.template">
+    <field name="code">305.01.302000001</field>
+    <field name="name">RESULTADO EJERCICIO</field>
+    <field name="user_type_id" ref="account.data_account_type_non_current_liabilities"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_306_01_304000001" model="account.account.template">
+    <field name="code">306.01.304000001</field>
+    <field name="name">CAPITAL SOCIAL PENDIENTE DE EXHIBIR</field>
+    <field name="user_type_id" ref="account.data_account_type_non_current_liabilities"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_401_01_400001000" model="account.account.template">
+    <field name="code">401.01.400001000</field>
+    <field name="name">VENTAS</field>
+    <field name="user_type_id" ref="account.data_account_type_revenue"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_401_01_400001001" model="account.account.template">
+    <field name="code">401.01.400001001</field>
+    <field name="name">REQUIEZ</field>
+    <field name="user_type_id" ref="account.data_account_type_revenue"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_401_01_400001002" model="account.account.template">
+    <field name="code">401.01.400001002</field>
+    <field name="name">EUROSEAT/LABENZE</field>
+    <field name="user_type_id" ref="account.data_account_type_revenue"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_401_01_400001003" model="account.account.template">
+    <field name="code">401.01.400001003</field>
+    <field name="name">MASSIMO</field>
+    <field name="user_type_id" ref="account.data_account_type_revenue"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_401_01_400001004" model="account.account.template">
+    <field name="code">401.01.400001004</field>
+    <field name="name">INGENIERIA</field>
+    <field name="user_type_id" ref="account.data_account_type_revenue"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_401_01_400001005" model="account.account.template">
+    <field name="code">401.01.400001005</field>
+    <field name="name">EXTERNA</field>
+    <field name="user_type_id" ref="account.data_account_type_revenue"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_401_01_400001006" model="account.account.template">
+    <field name="code">401.01.400001006</field>
+    <field name="name">OKAMURA</field>
+    <field name="user_type_id" ref="account.data_account_type_revenue"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_401_01_400001007" model="account.account.template">
+    <field name="code">401.01.400001007</field>
+    <field name="name">INFINITI</field>
+    <field name="user_type_id" ref="account.data_account_type_revenue"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_401_01_400001008" model="account.account.template">
+    <field name="code">401.01.400001008</field>
+    <field name="name">QUADRIFOGLIO</field>
+    <field name="user_type_id" ref="account.data_account_type_revenue"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_401_01_400003000" model="account.account.template">
+    <field name="code">401.01.400003000</field>
+    <field name="name">VENTAS POR ANTICIPOS DE CLIENTES</field>
+    <field name="user_type_id" ref="account.data_account_type_revenue"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_402_01_401001000" model="account.account.template">
+    <field name="code">402.01.401001000</field>
+    <field name="name">REBAJAS SOBRE VENTAS</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_402_01_401001001" model="account.account.template">
+    <field name="code">402.01.401001001</field>
+    <field name="name">REQUIEZ</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_402_01_401001002" model="account.account.template">
+    <field name="code">402.01.401001002</field>
+    <field name="name">EUROSEAT/LABENZE</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_402_01_401001003" model="account.account.template">
+    <field name="code">402.01.401001003</field>
+    <field name="name">MASSIMO</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_402_01_401001004" model="account.account.template">
+    <field name="code">402.01.401001004</field>
+    <field name="name">INGENIERIA</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_402_01_401001005" model="account.account.template">
+    <field name="code">402.01.401001005</field>
+    <field name="name">EXTERNA</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_402_01_401001006" model="account.account.template">
+    <field name="code">402.01.401001006</field>
+    <field name="name">OKAMURA</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_402_01_401001007" model="account.account.template">
+    <field name="code">402.01.401001007</field>
+    <field name="name">INFINITI</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_402_01_401001008" model="account.account.template">
+    <field name="code">402.01.401001008</field>
+    <field name="name">QUADRIFOGLIO</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_402_01_401002001" model="account.account.template">
+    <field name="code">402.01.401002001</field>
+    <field name="name">REQUIEZ</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_402_01_401002002" model="account.account.template">
+    <field name="code">402.01.401002002</field>
+    <field name="name">EUROSEAT/LABENZE</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_402_01_401002003" model="account.account.template">
+    <field name="code">402.01.401002003</field>
+    <field name="name">MASSIMO</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_402_01_401002004" model="account.account.template">
+    <field name="code">402.01.401002004</field>
+    <field name="name">INGENIERIA</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_402_01_401002005" model="account.account.template">
+    <field name="code">402.01.401002005</field>
+    <field name="name">EXTERNA</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_402_01_401002006" model="account.account.template">
+    <field name="code">402.01.401002006</field>
+    <field name="name">OKAMURA</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_402_01_401002007" model="account.account.template">
+    <field name="code">402.01.401002007</field>
+    <field name="name">INFINITI</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_402_01_401002008" model="account.account.template">
+    <field name="code">402.01.401002008</field>
+    <field name="name">QUADRIFOGLIO</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_402_01_401_01_01" model="account.account.template">
+    <field name="code">402.01.401.01.01</field>
+    <field name="name">VTG</field>
+    <field name="user_type_id" ref="account.data_account_type_revenue"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_402_01_402000001" model="account.account.template">
+    <field name="code">402.01.402000001</field>
+    <field name="name">VENTAS ACTIVO FIJO</field>
+    <field name="user_type_id" ref="account.data_account_type_revenue"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_403_01_403001000" model="account.account.template">
+    <field name="code">403.01.403001000</field>
+    <field name="name">OTROS INGRESOS</field>
+    <field name="user_type_id" ref="account.data_account_type_revenue"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_501_01_500001000" model="account.account.template">
+    <field name="code">501.01.500001000</field>
+    <field name="name">COSTO DE VENTAS</field>
+    <field name="user_type_id" ref="account.data_account_type_direct_costs"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_501_01_500001001" model="account.account.template">
+    <field name="code">501.01.500001001</field>
+    <field name="name">REQUIEZ</field>
+    <field name="user_type_id" ref="account.data_account_type_direct_costs"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_501_01_500001002" model="account.account.template">
+    <field name="code">501.01.500001002</field>
+    <field name="name">EUROSEAT/LABENZE</field>
+    <field name="user_type_id" ref="account.data_account_type_direct_costs"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_501_01_500001003" model="account.account.template">
+    <field name="code">501.01.500001003</field>
+    <field name="name">MASSIMO</field>
+    <field name="user_type_id" ref="account.data_account_type_direct_costs"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_501_01_500001004" model="account.account.template">
+    <field name="code">501.01.500001004</field>
+    <field name="name">INGENIERIA</field>
+    <field name="user_type_id" ref="account.data_account_type_direct_costs"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_501_01_500001005" model="account.account.template">
+    <field name="code">501.01.500001005</field>
+    <field name="name">EXTERNA</field>
+    <field name="user_type_id" ref="account.data_account_type_direct_costs"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_501_01_500001006" model="account.account.template">
+    <field name="code">501.01.500001006</field>
+    <field name="name">OKAMURA</field>
+    <field name="user_type_id" ref="account.data_account_type_direct_costs"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_501_01_500001007" model="account.account.template">
+    <field name="code">501.01.500001007</field>
+    <field name="name">INFINITI</field>
+    <field name="user_type_id" ref="account.data_account_type_direct_costs"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_501_01_500001008" model="account.account.template">
+    <field name="code">501.01.500001008</field>
+    <field name="name">QUADRIFOGLIO</field>
+    <field name="user_type_id" ref="account.data_account_type_direct_costs"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_501_08_500003000" model="account.account.template">
+    <field name="code">501.08.500003000</field>
+    <field name="name">DESPERDICIO EXTRAORDINARIO</field>
+    <field name="user_type_id" ref="account.data_account_type_direct_costs"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_501_08_500009000" model="account.account.template">
+    <field name="code">501.08.500009000</field>
+    <field name="name">AJUSTES INTERNOS</field>
+    <field name="user_type_id" ref="account.data_account_type_direct_costs"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_501_08_500009001" model="account.account.template">
+    <field name="code">501.08.500009001</field>
+    <field name="name">REQUIEZ</field>
+    <field name="user_type_id" ref="account.data_account_type_direct_costs"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_501_08_500009002" model="account.account.template">
+    <field name="code">501.08.500009002</field>
+    <field name="name">EUROSEAT/LABENZE</field>
+    <field name="user_type_id" ref="account.data_account_type_direct_costs"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_501_08_500009003" model="account.account.template">
+    <field name="code">501.08.500009003</field>
+    <field name="name">MASSIMO</field>
+    <field name="user_type_id" ref="account.data_account_type_direct_costs"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_501_08_500009004" model="account.account.template">
+    <field name="code">501.08.500009004</field>
+    <field name="name">INGENIERIA</field>
+    <field name="user_type_id" ref="account.data_account_type_direct_costs"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_501_08_500009005" model="account.account.template">
+    <field name="code">501.08.500009005</field>
+    <field name="name">EXTERNA</field>
+    <field name="user_type_id" ref="account.data_account_type_direct_costs"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_501_08_500009006" model="account.account.template">
+    <field name="code">501.08.500009006</field>
+    <field name="name">OKAMURA</field>
+    <field name="user_type_id" ref="account.data_account_type_direct_costs"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_501_08_500009007" model="account.account.template">
+    <field name="code">501.08.500009007</field>
+    <field name="name">INFINITI</field>
+    <field name="user_type_id" ref="account.data_account_type_direct_costs"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_501_08_500009008" model="account.account.template">
+    <field name="code">501.08.500009008</field>
+    <field name="name">QUADRIFOGLIO</field>
+    <field name="user_type_id" ref="account.data_account_type_direct_costs"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_503_01_512001000" model="account.account.template">
+    <field name="code">503.01.512001000</field>
+    <field name="name">REBAJAS SOBRE COMPRA</field>
+    <field name="user_type_id" ref="account.data_account_type_revenue"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_520003005" model="account.account.template">
+    <field name="code">520003005</field>
+    <field name="name">IMSS RCV</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_520004000" model="account.account.template">
+    <field name="code">520004000</field>
+    <field name="name">EQUIPO DE SEGURIDAD</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_601_84_01" model="account.account.template">
+    <field name="code">601.84.01</field>
+    <field name="name">OGG</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_01_530001000" model="account.account.template">
+    <field name="code">603.01.530001000</field>
+    <field name="name">SUELDOS</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_01_530001001" model="account.account.template">
+    <field name="code">603.01.530001001</field>
+    <field name="name">SUELDOS Y SALARIOS</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_03_530001002" model="account.account.template">
+    <field name="code">603.03.530001002</field>
+    <field name="name">TIEMPO EXTRA</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_04_530002006" model="account.account.template">
+    <field name="code">603.04.530002006</field>
+    <field name="name">PREMIO DE ASISTENCIA</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_06_530002001" model="account.account.template">
+    <field name="code">603.06.530002001</field>
+    <field name="name">VACACIONES</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_07_530002002" model="account.account.template">
+    <field name="code">603.07.530002002</field>
+    <field name="name">PRIMA VACACIONAL</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_08_530001005" model="account.account.template">
+    <field name="code">603.08.530001005</field>
+    <field name="name">PRIMA DOMINICAL</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_12_530002003" model="account.account.template">
+    <field name="code">603.12.530002003</field>
+    <field name="name">AGUINALDO</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_13_530001004" model="account.account.template">
+    <field name="code">603.13.530001004</field>
+    <field name="name">INDEMNIZACIONES</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_1_530001003" model="account.account.template">
+    <field name="code">603.1.530001003</field>
+    <field name="name">GRATIFICACIONES</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_15_530002004" model="account.account.template">
+    <field name="code">603.15.530002004</field>
+    <field name="name">DESPENSA</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_19_530002005" model="account.account.template">
+    <field name="code">603.19.530002005</field>
+    <field name="name">FONDO DE AHORRO</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_25_530002000" model="account.account.template">
+    <field name="code">603.25.530002000</field>
+    <field name="name">PRESTACIONES AL PERSONAL</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_25_530002007" model="account.account.template">
+    <field name="code">603.25.530002007</field>
+    <field name="name">BONO DE PUNTUALIDAD</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_26_530003001" model="account.account.template">
+    <field name="code">603.26.530003001</field>
+    <field name="name">IMSS</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_26_530003005" model="account.account.template">
+    <field name="code">603.26.530003005</field>
+    <field name="name">IMSS RCV</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_27_530003002" model="account.account.template">
+    <field name="code">603.27.530003002</field>
+    <field name="name">INFONAVIT</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_29_530003003" model="account.account.template">
+    <field name="code">603.29.530003003</field>
+    <field name="name">2% S/NOMINA</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_32_530013002" model="account.account.template">
+    <field name="code">603.32.530013002</field>
+    <field name="name">SERVICIOS ADMINISTRATIVOS</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_34_530013004" model="account.account.template">
+    <field name="code">603.34.530013004</field>
+    <field name="name">HONORARIOS PF</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_38_530013005" model="account.account.template">
+    <field name="code">603.38.530013005</field>
+    <field name="name">HONORARIOS PM</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_45_530008001" model="account.account.template">
+    <field name="code">603.45.530008001</field>
+    <field name="name">INMUEBLE PF</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_46_530005007" model="account.account.template">
+    <field name="code">603.46.530005007</field>
+    <field name="name">ESTACIONAMIENTO O PENSION</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_46_530008002" model="account.account.template">
+    <field name="code">603.46.530008002</field>
+    <field name="name">AUTOMOVIL</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_46_530008003" model="account.account.template">
+    <field name="code">603.46.530008003</field>
+    <field name="name">OTROS ARRENDAMIENTOS</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_46_530008004" model="account.account.template">
+    <field name="code">603.46.530008004</field>
+    <field name="name">INMUEBLE PM</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_48_530009001" model="account.account.template">
+    <field name="code">603.48.530009001</field>
+    <field name="name">COMBUSTIBLES Y LUBRICANTES</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_48_530009003" model="account.account.template">
+    <field name="code">603.48.530009003</field>
+    <field name="name">OTROS</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_49_530021001" model="account.account.template">
+    <field name="code">603.49.530021001</field>
+    <field name="name">GASTOS DE VIAJE</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_51_530005009" model="account.account.template">
+    <field name="code">603.51.530005009</field>
+    <field name="name">AGUA PURIFICADA</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_52_530009002" model="account.account.template">
+    <field name="code">603.52.530009002</field>
+    <field name="name">ENERGIA ELECTRICA</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_53_530005005" model="account.account.template">
+    <field name="code">603.53.530005005</field>
+    <field name="name">SEGURIDAD PRIVADA</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_54_530005006" model="account.account.template">
+    <field name="code">603.54.530005006</field>
+    <field name="name">SERVICIO DE LIMPIEZA</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_5_530006001" model="account.account.template">
+    <field name="code">603.5.530006001</field>
+    <field name="name">TELEFONO</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_5_530006002" model="account.account.template">
+    <field name="code">603.5.530006002</field>
+    <field name="name">RADIO Y/O CELULARES</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_55_530005002" model="account.account.template">
+    <field name="code">603.55.530005002</field>
+    <field name="name">PAPELERIA</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_55_530005003" model="account.account.template">
+    <field name="code">603.55.530005003</field>
+    <field name="name">VARIOS</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_55_530005004" model="account.account.template">
+    <field name="code">603.55.530005004</field>
+    <field name="name">EQUIPOS DE OFICINA</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_56_530005012" model="account.account.template">
+    <field name="code">603.56.530005012</field>
+    <field name="name">FUMIGACION</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_56_530007001" model="account.account.template">
+    <field name="code">603.56.530007001</field>
+    <field name="name">TRANSPORTE</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_56_530007002" model="account.account.template">
+    <field name="code">603.56.530007002</field>
+    <field name="name">EQ COMPUTO</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_56_530007003" model="account.account.template">
+    <field name="code">603.56.530007003</field>
+    <field name="name">PRODUCCION</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_56_530007004" model="account.account.template">
+    <field name="code">603.56.530007004</field>
+    <field name="name">EDIFICIOS</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_57_530011001" model="account.account.template">
+    <field name="code">603.57.530011001</field>
+    <field name="name">POLIZA DE AUTOMOVIL</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_57_530011002" model="account.account.template">
+    <field name="code">603.57.530011002</field>
+    <field name="name">POLIZA EMPRESARIAL</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_57_530011003" model="account.account.template">
+    <field name="code">603.57.530011003</field>
+    <field name="name">POLIZA DE TRANSPORTE</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_57_530011004" model="account.account.template">
+    <field name="code">603.57.530011004</field>
+    <field name="name">POLIZA DE GASTOS MEDICOS</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_57_530011005" model="account.account.template">
+    <field name="code">603.57.530011005</field>
+    <field name="name">FIANZAS</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_61_530012001" model="account.account.template">
+    <field name="code">603.61.530012001</field>
+    <field name="name">PROPAGANDA Y PUBLICIDAD</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_61_530012002" model="account.account.template">
+    <field name="code">603.61.530012002</field>
+    <field name="name">EXPOS</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_61_530012003" model="account.account.template">
+    <field name="code">603.61.530012003</field>
+    <field name="name">FERIAS Y CONVENCIONES</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_62_530020000" model="account.account.template">
+    <field name="code">603.62.530020000</field>
+    <field name="name">CAPACITACION AL PERSONAL</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_63_530026001" model="account.account.template">
+    <field name="code">603.63.530026001</field>
+    <field name="name">EN ESPECIE</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_6_530005001" model="account.account.template">
+    <field name="code">603.6.530005001</field>
+    <field name="name">CUOTAS Y SUSCRIPCIONES</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_6_530005008" model="account.account.template">
+    <field name="code">603.6.530005008</field>
+    <field name="name">CONTROLES DIGITALES</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_6_530005010" model="account.account.template">
+    <field name="code">603.6.530005010</field>
+    <field name="name">RECOLECCION BASURA</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_72_530006003" model="account.account.template">
+    <field name="code">603.72.530006003</field>
+    <field name="name">MENSAJERIA Y PAQUETERIA</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_72_530010001" model="account.account.template">
+    <field name="code">603.72.530010001</field>
+    <field name="name">FLETES Y ACARREOS</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_72_530010002" model="account.account.template">
+    <field name="code">603.72.530010002</field>
+    <field name="name">MANIOBRAS Y OTROS</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_75_530004001" model="account.account.template">
+    <field name="code">603.75.530004001</field>
+    <field name="name">EQUIPO</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_75_530004002" model="account.account.template">
+    <field name="code">603.75.530004002</field>
+    <field name="name">UNIFORMES DE TRABAJO</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_81_530015000" model="account.account.template">
+    <field name="code">603.81.530015000</field>
+    <field name="name">NO DEDUCIBLES</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_82_530005011" model="account.account.template">
+    <field name="code">603.82.530005011</field>
+    <field name="name">PASTELES</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_82_530013001" model="account.account.template">
+    <field name="code">603.82.530013001</field>
+    <field name="name">COMISIONES A TERCEROS</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_82_530014000" model="account.account.template">
+    <field name="code">603.82.530014000</field>
+    <field name="name">VARIOS</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_82_530016000" model="account.account.template">
+    <field name="code">603.82.530016000</field>
+    <field name="name">HERRAMIENTA Y EQUIPO</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_82_530017000" model="account.account.template">
+    <field name="code">603.82.530017000</field>
+    <field name="name">MATERIALES DE RETOQUE</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_82_530018000" model="account.account.template">
+    <field name="code">603.82.530018000</field>
+    <field name="name">ELEMENTOS DE GUARDADO</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_82_530019000" model="account.account.template">
+    <field name="code">603.82.530019000</field>
+    <field name="name">MATERIAL DE EMPAQUE</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_82_530023001" model="account.account.template">
+    <field name="code">603.82.530023001</field>
+    <field name="name">GASTOS DE REPRESENTACION</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_82_530024000" model="account.account.template">
+    <field name="code">603.82.530024000</field>
+    <field name="name">RECARGOS</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_82_530025001" model="account.account.template">
+    <field name="code">603.82.530025001</field>
+    <field name="name">INSUMOS PARA FABRICACION</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_82_530027001" model="account.account.template">
+    <field name="code">603.82.530027001</field>
+    <field name="name">EN INVENTARIO</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_82_530028000" model="account.account.template">
+    <field name="code">603.82.530028000</field>
+    <field name="name">CUENTAS INCOBRABLES</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_603_82_530099000" model="account.account.template">
+    <field name="code">603.82.530099000</field>
+    <field name="name">GASTOS APLICADOS</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_604_01_520001000" model="account.account.template">
+    <field name="code">604.01.520001000</field>
+    <field name="name">SUELDOS</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_604_01_520001001" model="account.account.template">
+    <field name="code">604.01.520001001</field>
+    <field name="name">SUELDOS Y SALARIOS</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_604_03_520001002" model="account.account.template">
+    <field name="code">604.03.520001002</field>
+    <field name="name">TIEMPO EXTRA</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_604_04_520002006" model="account.account.template">
+    <field name="code">604.04.520002006</field>
+    <field name="name">PREMIO DE ASISTENCIA</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_604_06_520002001" model="account.account.template">
+    <field name="code">604.06.520002001</field>
+    <field name="name">VACACIONES</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_604_07_520002002" model="account.account.template">
+    <field name="code">604.07.520002002</field>
+    <field name="name">PRIMA VACACIONAL</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_604_08_520001005" model="account.account.template">
+    <field name="code">604.08.520001005</field>
+    <field name="name">PRIMA DOMINICAL</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_604_12_520002003" model="account.account.template">
+    <field name="code">604.12.520002003</field>
+    <field name="name">AGUINALDO</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_604_13_520001004" model="account.account.template">
+    <field name="code">604.13.520001004</field>
+    <field name="name">INDEMNIZACIONES</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_604_1_520001003" model="account.account.template">
+    <field name="code">604.1.520001003</field>
+    <field name="name">GRATIFICACIONES</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_604_15_520002004" model="account.account.template">
+    <field name="code">604.15.520002004</field>
+    <field name="name">DESPENSA</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_604_19_520002005" model="account.account.template">
+    <field name="code">604.19.520002005</field>
+    <field name="name">FONDO DE AHORRO</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_604_25_520002000" model="account.account.template">
+    <field name="code">604.25.520002000</field>
+    <field name="name">PRESTACIONES AL PERSONAL</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_604_25_520002007" model="account.account.template">
+    <field name="code">604.25.520002007</field>
+    <field name="name">BONO DE PUNTUALIDAD</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_604_25_520002008" model="account.account.template">
+    <field name="code">604.25.520002008</field>
+    <field name="name">COMEDOR</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_604_26_520003001" model="account.account.template">
+    <field name="code">604.26.520003001</field>
+    <field name="name">IMSS</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_604_27_520003002" model="account.account.template">
+    <field name="code">604.27.520003002</field>
+    <field name="name">INFONAVIT</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_604_29_520003003" model="account.account.template">
+    <field name="code">604.29.520003003</field>
+    <field name="name">2% S/NOMINA</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_604_32_520013002" model="account.account.template">
+    <field name="code">604.32.520013002</field>
+    <field name="name">SERVICIOS ADMINISTRATIVOS</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_604_34_520013004" model="account.account.template">
+    <field name="code">604.34.520013004</field>
+    <field name="name">HONORARIOS PF</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_604_38_520013005" model="account.account.template">
+    <field name="code">604.38.520013005</field>
+    <field name="name">HONORARIOS PM</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_604_45_520008001" model="account.account.template">
+    <field name="code">604.45.520008001</field>
+    <field name="name">INMUEBLE PF</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_604_46_520005007" model="account.account.template">
+    <field name="code">604.46.520005007</field>
+    <field name="name">ESTACIONAMIENTO O PENSION</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_604_46_520008002" model="account.account.template">
+    <field name="code">604.46.520008002</field>
+    <field name="name">AUTOMOVIL</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_604_46_520008003" model="account.account.template">
+    <field name="code">604.46.520008003</field>
+    <field name="name">OTROS ARRENDAMIENTOS</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_604_46_520008004" model="account.account.template">
+    <field name="code">604.46.520008004</field>
+    <field name="name">INMUEBLE PM</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_604_48_520009001" model="account.account.template">
+    <field name="code">604.48.520009001</field>
+    <field name="name">COMBUSTIBLES Y LUBRICANTES</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_604_48_520009003" model="account.account.template">
+    <field name="code">604.48.520009003</field>
+    <field name="name">OTROS</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_604_49_520021001" model="account.account.template">
+    <field name="code">604.49.520021001</field>
+    <field name="name">GASTOS DE VIAJE</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_604_51_520005009" model="account.account.template">
+    <field name="code">604.51.520005009</field>
+    <field name="name">AGUA PURIFICADA</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_604_52_520009002" model="account.account.template">
+    <field name="code">604.52.520009002</field>
+    <field name="name">ENERGIA ELECTRICA</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_604_53_520005005" model="account.account.template">
+    <field name="code">604.53.520005005</field>
+    <field name="name">SEGURIDAD PRIVADA</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_604_54_520005006" model="account.account.template">
+    <field name="code">604.54.520005006</field>
+    <field name="name">SERVICIO DE LIMPIEZA</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_604_5_520006001" model="account.account.template">
+    <field name="code">604.5.520006001</field>
+    <field name="name">TELEFONO</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_604_5_520006002" model="account.account.template">
+    <field name="code">604.5.520006002</field>
+    <field name="name">RADIO Y/O CELULARES</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_604_55_520005002" model="account.account.template">
+    <field name="code">604.55.520005002</field>
+    <field name="name">PAPELERIA</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_604_55_520005003" model="account.account.template">
+    <field name="code">604.55.520005003</field>
+    <field name="name">VARIOS</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_604_55_520005004" model="account.account.template">
+    <field name="code">604.55.520005004</field>
+    <field name="name">EQUIPOS DE OFICINA</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_604_56_520005012" model="account.account.template">
+    <field name="code">604.56.520005012</field>
+    <field name="name">FUMIGACIONES</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_604_56_520007001" model="account.account.template">
+    <field name="code">604.56.520007001</field>
+    <field name="name">TRANSPORTE</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_604_56_520007002" model="account.account.template">
+    <field name="code">604.56.520007002</field>
+    <field name="name">EQ COMPUTO</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_604_56_520007003" model="account.account.template">
+    <field name="code">604.56.520007003</field>
+    <field name="name">PRODUCCION</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_604_56_520007004" model="account.account.template">
+    <field name="code">604.56.520007004</field>
+    <field name="name">EDIFICIOS</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_604_57_520011001" model="account.account.template">
+    <field name="code">604.57.520011001</field>
+    <field name="name">POLIZA DE AUTOMOVIL</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_604_57_520011002" model="account.account.template">
+    <field name="code">604.57.520011002</field>
+    <field name="name">POLIZA EMPRESARIAL</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_604_57_520011003" model="account.account.template">
+    <field name="code">604.57.520011003</field>
+    <field name="name">POLIZA DE TRANSPORTE</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_604_57_520011004" model="account.account.template">
+    <field name="code">604.57.520011004</field>
+    <field name="name">POLIZA DE GASTOS MEDICOS</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_604_57_520011005" model="account.account.template">
+    <field name="code">604.57.520011005</field>
+    <field name="name">FIANZAS</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_604_61_520012001" model="account.account.template">
+    <field name="code">604.61.520012001</field>
+    <field name="name">PROPAGANDA Y PUBLICIDAD</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_604_61_520012002" model="account.account.template">
+    <field name="code">604.61.520012002</field>
+    <field name="name">EXPOS</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_604_61_520012003" model="account.account.template">
+    <field name="code">604.61.520012003</field>
+    <field name="name">FERIAS Y CONVENCIONES</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_604_62_520020000" model="account.account.template">
+    <field name="code">604.62.520020000</field>
+    <field name="name">CAPACITACION AL PERSONAL</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_604_63_520026001" model="account.account.template">
+    <field name="code">604.63.520026001</field>
+    <field name="name">EN ESPECIE</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_604_6_520005001" model="account.account.template">
+    <field name="code">604.6.520005001</field>
+    <field name="name">CUOTAS Y SUSCRIPCIONES</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_604_6_520005008" model="account.account.template">
+    <field name="code">604.6.520005008</field>
+    <field name="name">CONTROLES DIGITALES</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_604_6_520005010" model="account.account.template">
+    <field name="code">604.6.520005010</field>
+    <field name="name">RECOLECCION BASURA</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_604_72_520006003" model="account.account.template">
+    <field name="code">604.72.520006003</field>
+    <field name="name">MENSAJERIA Y PAQUETERIA</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_604_72_520010001" model="account.account.template">
+    <field name="code">604.72.520010001</field>
+    <field name="name">FLETES Y ACARREOS</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_604_72_520010002" model="account.account.template">
+    <field name="code">604.72.520010002</field>
+    <field name="name">MANIOBRAS Y OTROS</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_604_75_520004001" model="account.account.template">
+    <field name="code">604.75.520004001</field>
+    <field name="name">EQUIPO</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_604_75_520004002" model="account.account.template">
+    <field name="code">604.75.520004002</field>
+    <field name="name">UNIFORMES DE TRABAJO</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_604_81_520015000" model="account.account.template">
+    <field name="code">604.81.520015000</field>
+    <field name="name">NO DEDUCIBLES</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_604_82_520005011" model="account.account.template">
+    <field name="code">604.82.520005011</field>
+    <field name="name">PASTELES</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_604_82_520014000" model="account.account.template">
+    <field name="code">604.82.520014000</field>
+    <field name="name">VARIOS</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_604_82_520016000" model="account.account.template">
+    <field name="code">604.82.520016000</field>
+    <field name="name">HERRAMIENTA Y EQUIPO</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_604_82_520017000" model="account.account.template">
+    <field name="code">604.82.520017000</field>
+    <field name="name">MATERIALES DE RETOQUE</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_604_82_520018000" model="account.account.template">
+    <field name="code">604.82.520018000</field>
+    <field name="name">ELEMENTOS DE GUARDADO</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_604_82_520019000" model="account.account.template">
+    <field name="code">604.82.520019000</field>
+    <field name="name">MATERIAL DE EMPAQUE</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_604_82_520023001" model="account.account.template">
+    <field name="code">604.82.520023001</field>
+    <field name="name">GASTOS DE REPRESENTACION</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_604_82_520024000" model="account.account.template">
+    <field name="code">604.82.520024000</field>
+    <field name="name">RECARGOS</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_604_82_520025001" model="account.account.template">
+    <field name="code">604.82.520025001</field>
+    <field name="name">INSUMOS PARA FABRICACION</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_604_82_520027001" model="account.account.template">
+    <field name="code">604.82.520027001</field>
+    <field name="name">EN INVENTARIO</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_604_82_520028000" model="account.account.template">
+    <field name="code">604.82.520028000</field>
+    <field name="name">CUENTAS INCOBRABLES</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_604_82_520099000" model="account.account.template">
+    <field name="code">604.82.520099000</field>
+    <field name="name">GASTOS APLICADOS</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_607_01_534002001" model="account.account.template">
+    <field name="code">607.01.534002001</field>
+    <field name="name">PARTIC TRABAJADORES EN LAS UTILIDADES</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_611_01_534001001" model="account.account.template">
+    <field name="code">611.01.534001001</field>
+    <field name="name">IMPUESTOS SOBRE LA RENTA DEL EJERCICIO</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_613_01_525005000" model="account.account.template">
+    <field name="code">613.01.525005000</field>
+    <field name="name">DEPRE EDIFICIOS</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_613_02_525001000" model="account.account.template">
+    <field name="code">613.02.525001000</field>
+    <field name="name">DEPRE MAQUINARIA Y EQUIPO</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_613_03_525003000" model="account.account.template">
+    <field name="code">613.03.525003000</field>
+    <field name="name">DEPRE EQUIPO DE TRASPORTE</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_613_04_525002000" model="account.account.template">
+    <field name="code">613.04.525002000</field>
+    <field name="name">DEPRE MOBILIARIO Y EQUIPO DE OFICINA</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_613_05_525004000" model="account.account.template">
+    <field name="code">613.05.525004000</field>
+    <field name="name">DEPRE EQUIPO DE COMPUTO</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_613_12_525006000" model="account.account.template">
+    <field name="code">613.12.525006000</field>
+    <field name="name">"DEPRE DADOS TROQUELES Y MOLDES</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_614_09_526001000" model="account.account.template">
+    <field name="code">614.09.526001000</field>
+    <field name="name">AMORTIZACION DE GASTOS DE INST.</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_701_01_531002000" model="account.account.template">
+    <field name="code">701.01.531002000</field>
+    <field name="name">PERDIDA EN TIPO DE CAMBIO
+    </field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_701_1_531001000" model="account.account.template">
+    <field name="code">701.1.531001000</field>
+    <field name="name">COMISIONES BANCARIAS</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_701_1_531003000" model="account.account.template">
+    <field name="code">701.1.531003000</field>
+    <field name="name">INTERESES POR CREDITOS</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_702_01_404002000" model="account.account.template">
+    <field name="code">702.01.404002000</field>
+    <field name="name">GANANCIA EN TIPO DE CAMBIO</field>
+    <field name="user_type_id" ref="account.data_account_type_revenue"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_702_04_404001000" model="account.account.template">
+    <field name="code">702.04.404001000</field>
+    <field name="name">RENDIMIENTOS</field>
+    <field name="user_type_id" ref="account.data_account_type_revenue"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_703_21_533001000" model="account.account.template">
+    <field name="code">703.21.533001000</field>
+    <field name="name">OTROS GASTOS</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_704_09_532001000" model="account.account.template">
+    <field name="code">704.09.532001000</field>
+    <field name="name">COSTO ACTIVO FIJO</field>
+    <field name="user_type_id" ref="account.data_account_type_expenses"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_899_01_801000000" model="account.account.template">
+    <field name="code">899.01.801000000</field>
+    <field name="name">CUENTA DE ORDEN DE INGRESOS</field>
+    <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+  <record id="cuenta_899_01_802000000" model="account.account.template">
+    <field name="code">899.01.802000000</field>
+    <field name="name">CUENTA DE ORDEN DE EGRESOS</field>
+    <field name="user_type_id" ref="account.data_account_type_non_current_assets"/>
+    <field name="chart_template_id" ref="mx_coa"/>
+  </record>
+</odoo>

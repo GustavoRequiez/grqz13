@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="sale_commission_settings_form" model="ir.ui.view">
+        <field name="name">sale.commission.settings.form</field>
+        <field name="model">sale.commission.setting</field>
+        <field name="arch" type="xml">
+            <form string="Commission Settings">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="day"/>
+                        </group>
+                        <group>
+                            <field name="commission"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="sale_commission_settings_tree" model="ir.ui.view">
+        <field name="name">sale.commission.settings.tree</field>
+        <field name="model">sale.commission.setting</field>
+        <field name="arch" type="xml">
+            <tree string="Commission Settings">
+                <field name="day"/>
+                <field name="commission"/>
+                <field name="id" invisible="1"/>
+            </tree>
+        </field>
+    </record>
+    <record id="sale_commission_settings_action" model="ir.actions.act_window">
+        <field name="name">Commission Settings</field>
+        <field name="res_model">sale.commission.setting</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="sale_commission.sale_commission_settings_tree"/>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">Click to set a new Commission Settings.</p>
+        </field>
+    </record>
+    <menuitem id="menu_sale_commission_settings" name="Commission Settings" sequence="7" action="sale_commission_settings_action" parent="sale.menu_sales_config"/>
+</odoo>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <record id="aux_account_payment_term_ppd" model="account.payment.term">
+        <field name="name">Auxiliary PPD</field>
+        <field name="note">Payment terms: Auxiliary for PPD</field>
+        <field name="line_ids" eval="[(5, 0), (0, 0, {'value': 'balance', 'value_amount': 0.0, 'sequence': 500, 'days': 15, 'option': 'day_after_invoice_date'})]"/>
+    </record>
+</odoo>

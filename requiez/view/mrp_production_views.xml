@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_sale_info_production_form_requiez" model="ir.ui.view">
+        <field name="name">view.sale.info.production.form.requiez</field>
+        <field name="model">mrp.production</field>
+        <field name="inherit_id" ref="mrp_sale_info.mrp_production_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='commitment_date']" position="attributes">
+                <attribute name="attrs">{'readonly': False}</attribute>
+            </xpath>
+        </field>
+    </record>
+</odoo>

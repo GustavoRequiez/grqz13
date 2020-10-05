@@ -1,0 +1,75 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* product_classification
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-09-04 14:31+0000\n"
+"PO-Revision-Date: 2019-09-04 14:31+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: product_classification
+#: model:ir.model.fields,field_description:product_classification.field_stock_move_line_abc
+msgid "ABC"
+msgstr "Clasificación ABC"
+
+#. module: product_classification
+#: model:ir.model.fields,field_description:product_classification.field_stock_move_line_categ
+msgid "Categ"
+msgstr "Categoría"
+
+#. module: product_classification
+#: model:ir.model.fields,field_description:product_classification.field_product_product_classification_ABC
+#: model:ir.model.fields,field_description:product_classification.field_product_template_classification_ABC
+msgid "Classification ABC"
+msgstr "Clasificación ABC"
+
+#. module: product_classification
+#: model:ir.model.fields,field_description:product_classification.field_product_product_classification_XYZ
+#: model:ir.model.fields,field_description:product_classification.field_product_template_classification_XYZ
+msgid "Classification XYZ"
+msgstr "Clasificación XYZ"
+
+#. module: product_classification
+#: model:ir.model.fields,field_description:product_classification.field_product_product_its_line
+#: model:ir.model.fields,field_description:product_classification.field_product_template_its_line
+msgid "Its Line"
+msgstr "Es Linea"
+
+#. module: product_classification
+#: model:ir.model.fields,field_description:product_classification.field_stock_move_line_line
+msgid "Line"
+msgstr "Es Linea"
+
+#. module: product_classification
+#: model:ir.model,name:product_classification.model_stock_move_line
+msgid "Packing Operation"
+msgstr "Operación de empaquetado"
+
+#. module: product_classification
+#: model:ir.model,name:product_classification.model_product_template
+msgid "Product Template"
+msgstr "Plantilla de producto"
+
+#. module: product_classification
+#: model:ir.model.fields,help:product_classification.field_stock_move_line_categ
+msgid "Select category for the current product"
+msgstr "Seleccione la categoría para el producto actual."
+
+#. module: product_classification
+#: model:ir.model.fields,field_description:product_classification.field_stock_move_line_sellers
+msgid "Seller"
+msgstr "Proveedor"
+
+#. module: product_classification
+#: model:ir.model.fields,field_description:product_classification.field_stock_move_line_xyz
+msgid "XYZ"
+msgstr "Clasificación XYZ"
+

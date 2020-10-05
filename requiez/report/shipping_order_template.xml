@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <template id="shipping_order_report_document">
+    <t t-set="docs" t-value="docs.with_context({'lang':user.partner_id.lang})"/>
+    <t t-foreach="docs" t-as="o">
+      <t t-call="web.basic_layout">
+        <div class="page">
+          <div class="row mt32 mb32">
+            <div class="col-xs-6 mt4 mb4">
+              <table class="table table-condensed">
+                <tr>
+                  <td align="justify" style="font-size: 18px;border: 1px solid #ddd;border-collapse:collapse;" colspan="2" class="text-center">
+                    <strong><span t-esc="o.company_id.name"/></strong>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="justify" style="font-size: 15px; background-color: #DDDDDD; border: 1px solid #ddd;border-collapse:collapse; " colspan="2" class="text-center">
+                    <span>Destination</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="justify" class="text-center" colspan="2" style="font-size: 18px;border: 1px solid #ddd;border-collapse: collapse;  text-transform: uppercase;">
+                    <strong><span t-esc="o.partner_id.state_id.name"/></strong>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="justify" class="text-center" style="font-size: 15px; background-color: #DDDDDD; border: 1px solid #ddd;border-collapse:collapse;" colspan="2">
+                    <span>Customer</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="justify" class="text-center" style="font-size:18px;border: 1px solid #ddd;border-collapse: collapse;" colspan="2">
+                    <strong>
+                      <t t-if="o.partner_id.parent_id.name">
+                        <span t-esc="o.partner_id.parent_id.name"/>,
+                      </t>
+                      <span t-esc="o.partner_id.name"/>
+                    </strong>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="justify" colspan="2" class="text-center" style="font-size: 15px; background-color: #DDDDDD; border: 1px solid #ddd;border-collapse:collapse;">
+                    <span>Delivery Address</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="text-center" colspan="2" style="font-size: 20px;border: 1px solid #ddd;border-collapse: collapse; text-transform: uppercase;">
+                    <strong>
+                      <span t-if="o.partner_id.street_name" t-esc="o.partner_id.street_name"/>
+                      <span t-if="o.partner_id.l10n_mx_edi_colony" t-esc="o.partner_id.l10n_mx_edi_colony"/>
+                      <span t-if="o.partner_id.zip" t-esc="o.partner_id.zip"/>
+                      <span t-if="o.partner_id.city" t-esc="o.partner_id.city"/>
+                      <span t-if="o.partner_id.state_id" t-esc="o.partner_id.state_id.name"/>
+                      <span t-if="o.partner_id.phone" t-esc="o.partner_id.phone"/>
+                    </strong>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="justify" class="text-center" style="font-size: 17px;border: 1px solid #ddd;border-collapse:collapse;">
+                    <span>No. of Boxes</span>
+                  </td>
+                  <td align="justify" class="text-center" style="font-size: 20px;border: 1px solid #ddd;border-collapse:collapse;">
+                    <strong><span t-esc="o.box"/></strong>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="justify" class="text-center" style="font-size: 17px;border: 1px solid #ddd;border-collapse:collapse;">
+                    <span>Sale Order</span>
+                  </td>
+                  <td align="justify" class="text-center" style="font-size: 20px;border: 1px solid #ddd;border-collapse:collapse;">
+                    <strong>
+                      <span t-esc="o.origin"/>
+                    </strong>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="justify" class="text-center" style="font-size: 15px;border: 1px solid #ddd;border-collapse:collapse;">
+                    <span>Declared Value</span>
+                  </td>
+                  <td align="justify" class="text-center" style="font-size: 15px;border: 1px solid #ddd;border-collapse:collapse;">
+                    <strong>
+                      <span>S/V</span>
+                    </strong>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="30" align="justify" class="text-center" style="font-size: 15px;border: 1px solid #ddd;border-collapse:collapse;">
+                    <span>Transport</span>
+                  </td>
+                  <td align="justify" class="text-center" style="font-size: 15px;border: 1px solid #ddd;border-collapse:collapse;">
+                    <strong>
+                      <span t-esc="o.carrier_id.name if o.carrier_id else ''"/>
+                    </strong>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="col-xs-6 mt4 mb4">
+              <table class="table table-condensed">
+                <tr>
+                  <td align="justify" style="font-size: 18px;border: 1px solid #ddd;border-collapse:collapse;" colspan="2" class="text-center">
+                    <strong><span t-esc="o.company_id.name"/></strong>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="justify" style="font-size: 15px; background-color: #DDDDDD; border: 1px solid #ddd;border-collapse:collapse; " colspan="2" class="text-center">
+                    <span>Destination</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="justify" class="text-center" colspan="2" style="font-size: 18px;border: 1px solid #ddd;border-collapse: collapse;  text-transform: uppercase;">
+                    <strong><span t-esc="o.partner_id.state_id.name"/></strong>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="justify" class="text-center" style="font-size: 15px; background-color: #DDDDDD; border: 1px solid #ddd;border-collapse:collapse;" colspan="2">
+                    <span>Customer</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="justify" class="text-center" style="font-size:18px;border: 1px solid #ddd;border-collapse: collapse;" colspan="2">
+                    <strong>
+                      <t t-if="o.partner_id.parent_id.name">
+                        <span t-esc="o.partner_id.parent_id.name"/>,
+                      </t>
+                      <span t-esc="o.partner_id.name"/>
+                    </strong>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="justify" colspan="2" class="text-center" style="font-size: 15px; background-color: #DDDDDD; border: 1px solid #ddd;border-collapse:collapse;">
+                    <span>Delivery Address</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="text-center" colspan="2" style="font-size: 20px;border: 1px solid #ddd;border-collapse: collapse; text-transform: uppercase;">
+                    <strong>
+                      <span t-if="o.partner_id.street_name" t-esc="o.partner_id.street_name"/>
+                      <span t-if="o.partner_id.l10n_mx_edi_colony" t-esc="o.partner_id.l10n_mx_edi_colony"/>
+                      <span t-if="o.partner_id.zip" t-esc="o.partner_id.zip"/>
+                      <span t-if="o.partner_id.city" t-esc="o.partner_id.city"/>
+                      <span t-if="o.partner_id.state_id" t-esc="o.partner_id.state_id.name"/>
+                      <span t-if="o.partner_id.phone" t-esc="o.partner_id.phone"/>
+                    </strong>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="justify" class="text-center" style="font-size: 17px;border: 1px solid #ddd;border-collapse:collapse;">
+                    <span>No. of Boxes</span>
+                  </td>
+                  <td align="justify" class="text-center" style="font-size: 20px;border: 1px solid #ddd;border-collapse:collapse;">
+                    <strong><span t-esc="o.box"/></strong>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="justify" class="text-center" style="font-size: 17px;border: 1px solid #ddd;border-collapse:collapse;">
+                    <span>Sale Order</span>
+                  </td>
+                  <td align="justify" class="text-center" style="font-size: 20px;border: 1px solid #ddd;border-collapse:collapse;">
+                    <strong>
+                      <span t-esc="o.origin"/>
+                    </strong>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="justify" class="text-center" style="font-size: 15px;border: 1px solid #ddd;border-collapse:collapse;">
+                    <span>Declared Value</span>
+                  </td>
+                  <td align="justify" class="text-center" style="font-size: 15px;border: 1px solid #ddd;border-collapse:collapse;">
+                    <strong>
+                      <span>S/V</span>
+                    </strong>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="30" align="justify" class="text-center" style="font-size: 15px;border: 1px solid #ddd;border-collapse:collapse;">
+                    <span>Transport</span>
+                  </td>
+                  <td align="justify" class="text-center" style="font-size: 15px;border: 1px solid #ddd;border-collapse:collapse;">
+                    <strong>
+                      <span t-esc="o.carrier_id.name if o.carrier_id else ''"/>
+                    </strong>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </t>
+    </t>
+  </template>
+
+  <template id="print_shipping_order_report">
+    <t t-call="web.html_container">
+      <t t-call="requiez.shipping_order_report_document" t-lang="user.partner_id.lang"/>
+    </t>
+  </template>
+</odoo>
